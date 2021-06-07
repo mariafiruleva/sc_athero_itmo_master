@@ -1,0 +1,939 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Creating conda environment /mnt/tank/scratch/mfiruleva/scn/config/5d179225.yaml...
+Downloading and installing remote packages.
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+Downloading and Extracting Packages
+bioconductor-rsamtoo | 4.0 MB    |            |   0% bioconductor-rsamtoo | 4.0 MB    |            |   0% bioconductor-rsamtoo | 4.0 MB    | 9          |   9% bioconductor-rsamtoo | 4.0 MB    | #6         |  16% bioconductor-rsamtoo | 4.0 MB    | ####6      |  47% bioconductor-rsamtoo | 4.0 MB    | ######1    |  61% bioconductor-rsamtoo | 4.0 MB    | #######3   |  73% bioconductor-rsamtoo | 4.0 MB    | ########5  |  85% bioconductor-rsamtoo | 4.0 MB    | ########## | 100% 
+six-1.15.0           | 13 KB     |            |   0% six-1.15.0           | 13 KB     | ########## | 100% 
+patsy-0.5.1          | 375 KB    |            |   0% patsy-0.5.1          | 375 KB    | ###8       |  38% patsy-0.5.1          | 375 KB    | ########## | 100% 
+libgfortran4-7.5.0   | 1.3 MB    |            |   0% libgfortran4-7.5.0   | 1.3 MB    | 1          |   1% libgfortran4-7.5.0   | 1.3 MB    | ####3      |  44% libgfortran4-7.5.0   | 1.3 MB    | ########## | 100% 
+libxcb-1.13          | 502 KB    |            |   0% libxcb-1.13          | 502 KB    | 3          |   3% libxcb-1.13          | 502 KB    | ######3    |  64% libxcb-1.13          | 502 KB    | ########## | 100% 
+r-survival-3.2_3     | 7.5 MB    |            |   0% r-survival-3.2_3     | 7.5 MB    |            |   0% r-survival-3.2_3     | 7.5 MB    | 8          |   9% r-survival-3.2_3     | 7.5 MB    | #5         |  15% r-survival-3.2_3     | 7.5 MB    | #9         |  19% r-survival-3.2_3     | 7.5 MB    | ##9        |  29% r-survival-3.2_3     | 7.5 MB    | ###6       |  36% r-survival-3.2_3     | 7.5 MB    | ####4      |  44% r-survival-3.2_3     | 7.5 MB    | #####1     |  52% r-survival-3.2_3     | 7.5 MB    | #####8     |  58% r-survival-3.2_3     | 7.5 MB    | #######    |  71% r-survival-3.2_3     | 7.5 MB    | #######8   |  79% r-survival-3.2_3     | 7.5 MB    | ########9  |  89% r-survival-3.2_3     | 7.5 MB    | ########## | 100% 
+fonts-conda-forge-1  | 4 KB      |            |   0% fonts-conda-forge-1  | 4 KB      | ########## | 100% 
+pkg-config-0.29.2    | 273 KB    |            |   0% pkg-config-0.29.2    | 273 KB    | 5          |   6% pkg-config-0.29.2    | 273 KB    | ########## | 100% 
+google-cloud-storage | 57 KB     |            |   0% google-cloud-storage | 57 KB     | ########## | 100% 
+graphviz-2.42.3      | 7.3 MB    |            |   0% graphviz-2.42.3      | 7.3 MB    |            |   0% graphviz-2.42.3      | 7.3 MB    | 7          |   7% graphviz-2.42.3      | 7.3 MB    | 8          |   9% graphviz-2.42.3      | 7.3 MB    | ##         |  20% graphviz-2.42.3      | 7.3 MB    | ###1       |  31% graphviz-2.42.3      | 7.3 MB    | ####4      |  44% graphviz-2.42.3      | 7.3 MB    | #####2     |  53% graphviz-2.42.3      | 7.3 MB    | ######     |  60% graphviz-2.42.3      | 7.3 MB    | ######8    |  68% graphviz-2.42.3      | 7.3 MB    | #######6   |  77% graphviz-2.42.3      | 7.3 MB    | ########4  |  85% graphviz-2.42.3      | 7.3 MB    | #########7 |  98% graphviz-2.42.3      | 7.3 MB    | ########## | 100% 
+make-4.3             | 507 KB    |            |   0% make-4.3             | 507 KB    | 3          |   3% make-4.3             | 507 KB    | ########## | 100% 
+gts-0.7.6            | 400 KB    |            |   0% gts-0.7.6            | 400 KB    | 3          |   4% gts-0.7.6            | 400 KB    | ########## | 100% 
+bioconductor-biocpar | 1.1 MB    |            |   0% bioconductor-biocpar | 1.1 MB    | 1          |   1% bioconductor-biocpar | 1.1 MB    | #######1   |  72% bioconductor-biocpar | 1.1 MB    | ########## | 100% 
+pyasn1-modules-0.2.7 | 63 KB     |            |   0% pyasn1-modules-0.2.7 | 63 KB     | ########## | 100% 
+graphite2-1.3.13     | 101 KB    |            |   0% graphite2-1.3.13     | 101 KB    | #5         |  16% graphite2-1.3.13     | 101 KB    | ########## | 100% 
+libtiff-4.1.0        | 618 KB    |            |   0% libtiff-4.1.0        | 618 KB    | 2          |   3% libtiff-4.1.0        | 618 KB    | ########## | 100% 
+jinja2-2.11.2        | 97 KB     |            |   0% jinja2-2.11.2        | 97 KB     | ########## | 100% 
+jbig-2.1             | 41 KB     |            |   0% jbig-2.1             | 41 KB     | ###8       |  39% jbig-2.1             | 41 KB     | ########## | 100% 
+r-selectr-0.4_2      | 475 KB    |            |   0% r-selectr-0.4_2      | 475 KB    | ###        |  30% r-selectr-0.4_2      | 475 KB    | #########4 |  94% r-selectr-0.4_2      | 475 KB    | ########## | 100% 
+ipython_genutils-0.2 | 39 KB     |            |   0% ipython_genutils-0.2 | 39 KB     | ####1      |  41% ipython_genutils-0.2 | 39 KB     | ########## | 100% 
+bioconductor-rhtslib | 1.9 MB    |            |   0% bioconductor-rhtslib | 1.9 MB    |            |   1% bioconductor-rhtslib | 1.9 MB    | #2         |  13% bioconductor-rhtslib | 1.9 MB    | ###2       |  32% bioconductor-rhtslib | 1.9 MB    | #######6   |  77% bioconductor-rhtslib | 1.9 MB    | ########## | 100% 
+pysftp-0.2.9         | 18 KB     |            |   0% pysftp-0.2.9         | 18 KB     | ########8  |  89% pysftp-0.2.9         | 18 KB     | ########## | 100% 
+r-ellipsis-0.3.1     | 49 KB     |            |   0% r-ellipsis-0.3.1     | 49 KB     | ########## | 100% 
+libedit-3.1.20191231 | 121 KB    |            |   0% libedit-3.1.20191231 | 121 KB    | #3         |  13% libedit-3.1.20191231 | 121 KB    | ########## | 100% 
+datrie-0.8.2         | 158 KB    |            |   0% datrie-0.8.2         | 158 KB    | #          |  10% datrie-0.8.2         | 158 KB    | ########## | 100% 
+r-gtools-3.8.2       | 333 KB    |            |   0% r-gtools-3.8.2       | 333 KB    | #9         |  19% r-gtools-3.8.2       | 333 KB    | ####8      |  48% r-gtools-3.8.2       | 333 KB    | ########## | 100% 
+gcc_linux-64-7.5.0   | 23 KB     |            |   0% gcc_linux-64-7.5.0   | 23 KB     | ########## | 100% 
+sra-tools-2.10.8     | 60.5 MB   |            |   0% sra-tools-2.10.8     | 60.5 MB   |            |   0% sra-tools-2.10.8     | 60.5 MB   | 1          |   1% sra-tools-2.10.8     | 60.5 MB   | 2          |   3% sra-tools-2.10.8     | 60.5 MB   | 3          |   3% sra-tools-2.10.8     | 60.5 MB   | 3          |   4% sra-tools-2.10.8     | 60.5 MB   | 4          |   4% sra-tools-2.10.8     | 60.5 MB   | 5          |   6% sra-tools-2.10.8     | 60.5 MB   | 6          |   7% sra-tools-2.10.8     | 60.5 MB   | 8          |   8% sra-tools-2.10.8     | 60.5 MB   | 9          |   9% sra-tools-2.10.8     | 60.5 MB   | #1         |  11% sra-tools-2.10.8     | 60.5 MB   | #2         |  13% sra-tools-2.10.8     | 60.5 MB   | #3         |  14% sra-tools-2.10.8     | 60.5 MB   | #4         |  15% sra-tools-2.10.8     | 60.5 MB   | #6         |  16% sra-tools-2.10.8     | 60.5 MB   | #7         |  18% sra-tools-2.10.8     | 60.5 MB   | #9         |  20% sra-tools-2.10.8     | 60.5 MB   | ##         |  21% sra-tools-2.10.8     | 60.5 MB   | ##1        |  22% sra-tools-2.10.8     | 60.5 MB   | ##3        |  23% sra-tools-2.10.8     | 60.5 MB   | ##4        |  24% sra-tools-2.10.8     | 60.5 MB   | ##5        |  26% sra-tools-2.10.8     | 60.5 MB   | ##6        |  27% sra-tools-2.10.8     | 60.5 MB   | ##8        |  28% sra-tools-2.10.8     | 60.5 MB   | ##9        |  30% sra-tools-2.10.8     | 60.5 MB   | ###        |  31% sra-tools-2.10.8     | 60.5 MB   | ###1       |  32% sra-tools-2.10.8     | 60.5 MB   | ###3       |  34% sra-tools-2.10.8     | 60.5 MB   | ###5       |  35% sra-tools-2.10.8     | 60.5 MB   | ###6       |  36% sra-tools-2.10.8     | 60.5 MB   | ###7       |  38% sra-tools-2.10.8     | 60.5 MB   | ###8       |  39% sra-tools-2.10.8     | 60.5 MB   | ####       |  41% sra-tools-2.10.8     | 60.5 MB   | ####2      |  43% sra-tools-2.10.8     | 60.5 MB   | ####4      |  44% sra-tools-2.10.8     | 60.5 MB   | ####5      |  45% sra-tools-2.10.8     | 60.5 MB   | ####6      |  47% sra-tools-2.10.8     | 60.5 MB   | ####8      |  49% sra-tools-2.10.8     | 60.5 MB   | #####      |  50% sra-tools-2.10.8     | 60.5 MB   | #####1     |  52% sra-tools-2.10.8     | 60.5 MB   | #####3     |  53% sra-tools-2.10.8     | 60.5 MB   | #####4     |  54% sra-tools-2.10.8     | 60.5 MB   | #####6     |  56% sra-tools-2.10.8     | 60.5 MB   | #####7     |  57% sra-tools-2.10.8     | 60.5 MB   | #####9     |  60% sra-tools-2.10.8     | 60.5 MB   | ######1    |  61% sra-tools-2.10.8     | 60.5 MB   | ######2    |  63% sra-tools-2.10.8     | 60.5 MB   | ######4    |  64% sra-tools-2.10.8     | 60.5 MB   | ######5    |  65% sra-tools-2.10.8     | 60.5 MB   | ######7    |  67% sra-tools-2.10.8     | 60.5 MB   | ######8    |  68% sra-tools-2.10.8     | 60.5 MB   | #######    |  70% sra-tools-2.10.8     | 60.5 MB   | #######1   |  72% sra-tools-2.10.8     | 60.5 MB   | #######2   |  73% sra-tools-2.10.8     | 60.5 MB   | #######5   |  75% sra-tools-2.10.8     | 60.5 MB   | #######6   |  76% sra-tools-2.10.8     | 60.5 MB   | #######8   |  78% sra-tools-2.10.8     | 60.5 MB   | #######9   |  79% sra-tools-2.10.8     | 60.5 MB   | ########   |  81% sra-tools-2.10.8     | 60.5 MB   | ########1  |  82% sra-tools-2.10.8     | 60.5 MB   | ########3  |  84% sra-tools-2.10.8     | 60.5 MB   | ########4  |  85% sra-tools-2.10.8     | 60.5 MB   | ########6  |  86% sra-tools-2.10.8     | 60.5 MB   | ########7  |  87% sra-tools-2.10.8     | 60.5 MB   | ########8  |  88% sra-tools-2.10.8     | 60.5 MB   | #########  |  90% sra-tools-2.10.8     | 60.5 MB   | #########1 |  91% sra-tools-2.10.8     | 60.5 MB   | #########2 |  92% sra-tools-2.10.8     | 60.5 MB   | #########3 |  93% sra-tools-2.10.8     | 60.5 MB   | #########4 |  95% sra-tools-2.10.8     | 60.5 MB   | #########6 |  96% sra-tools-2.10.8     | 60.5 MB   | #########7 |  97% sra-tools-2.10.8     | 60.5 MB   | #########8 |  99% sra-tools-2.10.8     | 60.5 MB   | #########9 | 100% sra-tools-2.10.8     | 60.5 MB   | ########## | 100% 
+r-withr-2.2.0        | 227 KB    |            |   0% r-withr-2.2.0        | 227 KB    | 7          |   7% r-withr-2.2.0        | 227 KB    | ########## | 100% 
+r-colorspace-1.4_1   | 2.5 MB    |            |   0% r-colorspace-1.4_1   | 2.5 MB    | 3          |   3% r-colorspace-1.4_1   | 2.5 MB    | ##3        |  23% r-colorspace-1.4_1   | 2.5 MB    | ###8       |  39% r-colorspace-1.4_1   | 2.5 MB    | ####7      |  47% r-colorspace-1.4_1   | 2.5 MB    | ######8    |  69% r-colorspace-1.4_1   | 2.5 MB    | ########## | 100% 
+pcre-8.44            | 269 KB    |            |   0% pcre-8.44            | 269 KB    | 5          |   6% pcre-8.44            | 269 KB    | ########## | 100% 
+r-forcats-0.5.0      | 376 KB    |            |   0% r-forcats-0.5.0      | 376 KB    | 4          |   4% r-forcats-0.5.0      | 376 KB    | ########## | 100% 
+paramiko-2.7.1       | 139 KB    |            |   0% paramiko-2.7.1       | 139 KB    | #1         |  12% paramiko-2.7.1       | 139 KB    | ########## | 100% 
+libgfortran-ng-7.5.0 | 22 KB     |            |   0% libgfortran-ng-7.5.0 | 22 KB     | #######4   |  74% libgfortran-ng-7.5.0 | 22 KB     | ########## | 100% 
+pyrsistent-0.16.0    | 93 KB     |            |   0% pyrsistent-0.16.0    | 93 KB     | ########## | 100% 
+r-cellranger-1.1.0   | 116 KB    |            |   0% r-cellranger-1.1.0   | 116 KB    | ########2  |  83% r-cellranger-1.1.0   | 116 KB    | ########## | 100% 
+gtk2-2.24.32         | 7.3 MB    |            |   0% gtk2-2.24.32         | 7.3 MB    | 1          |   1% gtk2-2.24.32         | 7.3 MB    | 5          |   6% gtk2-2.24.32         | 7.3 MB    | #6         |  17% gtk2-2.24.32         | 7.3 MB    | ##2        |  23% gtk2-2.24.32         | 7.3 MB    | ###3       |  33% gtk2-2.24.32         | 7.3 MB    | ###9       |  39% gtk2-2.24.32         | 7.3 MB    | ####4      |  45% gtk2-2.24.32         | 7.3 MB    | #####1     |  51% gtk2-2.24.32         | 7.3 MB    | #####7     |  58% gtk2-2.24.32         | 7.3 MB    | ######6    |  67% gtk2-2.24.32         | 7.3 MB    | #######4   |  75% gtk2-2.24.32         | 7.3 MB    | ########3  |  83% gtk2-2.24.32         | 7.3 MB    | ########9  |  90% gtk2-2.24.32         | 7.3 MB    | ########## | 100% 
+r-ps-1.3.3           | 235 KB    |            |   0% r-ps-1.3.3           | 235 KB    | 6          |   7% r-ps-1.3.3           | 235 KB    | ########## | 100% 
+sysroot_linux-64-2.1 | 30.2 MB   |            |   0% sysroot_linux-64-2.1 | 30.2 MB   |            |   0% sysroot_linux-64-2.1 | 30.2 MB   |            |   1% sysroot_linux-64-2.1 | 30.2 MB   | 1          |   1% sysroot_linux-64-2.1 | 30.2 MB   | 4          |   5% sysroot_linux-64-2.1 | 30.2 MB   | 6          |   6% sysroot_linux-64-2.1 | 30.2 MB   | #          |  10% sysroot_linux-64-2.1 | 30.2 MB   | #2         |  12% sysroot_linux-64-2.1 | 30.2 MB   | #4         |  14% sysroot_linux-64-2.1 | 30.2 MB   | #6         |  17% sysroot_linux-64-2.1 | 30.2 MB   | ##         |  20% sysroot_linux-64-2.1 | 30.2 MB   | ##2        |  22% sysroot_linux-64-2.1 | 30.2 MB   | ##4        |  24% sysroot_linux-64-2.1 | 30.2 MB   | ##6        |  27% sysroot_linux-64-2.1 | 30.2 MB   | ##8        |  28% sysroot_linux-64-2.1 | 30.2 MB   | ###1       |  32% sysroot_linux-64-2.1 | 30.2 MB   | ###4       |  34% sysroot_linux-64-2.1 | 30.2 MB   | ###8       |  39% sysroot_linux-64-2.1 | 30.2 MB   | ####       |  41% sysroot_linux-64-2.1 | 30.2 MB   | ####3      |  43% sysroot_linux-64-2.1 | 30.2 MB   | ####6      |  46% sysroot_linux-64-2.1 | 30.2 MB   | ####8      |  49% sysroot_linux-64-2.1 | 30.2 MB   | #####3     |  54% sysroot_linux-64-2.1 | 30.2 MB   | #####6     |  56% sysroot_linux-64-2.1 | 30.2 MB   | #####9     |  59% sysroot_linux-64-2.1 | 30.2 MB   | ######1    |  62% sysroot_linux-64-2.1 | 30.2 MB   | ######6    |  67% sysroot_linux-64-2.1 | 30.2 MB   | ######8    |  69% sysroot_linux-64-2.1 | 30.2 MB   | #######1   |  71% sysroot_linux-64-2.1 | 30.2 MB   | #######4   |  75% sysroot_linux-64-2.1 | 30.2 MB   | #######7   |  78% sysroot_linux-64-2.1 | 30.2 MB   | ########1  |  81% sysroot_linux-64-2.1 | 30.2 MB   | ########3  |  84% sysroot_linux-64-2.1 | 30.2 MB   | ########6  |  86% sysroot_linux-64-2.1 | 30.2 MB   | ########9  |  89% sysroot_linux-64-2.1 | 30.2 MB   | #########3 |  93% sysroot_linux-64-2.1 | 30.2 MB   | #########5 |  95% sysroot_linux-64-2.1 | 30.2 MB   | #########7 |  98% sysroot_linux-64-2.1 | 30.2 MB   | ########## | 100% 
+rsa-4.6              | 26 KB     |            |   0% rsa-4.6              | 26 KB     | ######     |  60% rsa-4.6              | 26 KB     | ########## | 100% 
+r-lsei-1.2_0.1       | 82 KB     |            |   0% r-lsei-1.2_0.1       | 82 KB     | #9         |  19% r-lsei-1.2_0.1       | 82 KB     | ########## | 100% 
+appdirs-1.4.3        | 16 KB     |            |   0% appdirs-1.4.3        | 16 KB     | ########## | 100% 
+pyasn1-0.4.8         | 58 KB     |            |   0% pyasn1-0.4.8         | 58 KB     | ##7        |  28% pyasn1-0.4.8         | 58 KB     | ########## | 100% 
+r-pkgbuild-1.1.0     | 155 KB    |            |   0% r-pkgbuild-1.1.0     | 155 KB    | #          |  10% r-pkgbuild-1.1.0     | 155 KB    | ########## | 100% 
+attrs-19.3.0         | 39 KB     |            |   0% attrs-19.3.0         | 39 KB     | ####1      |  41% attrs-19.3.0         | 39 KB     | ########## | 100% 
+bustools-0.40.0      | 236 KB    |            |   0% bustools-0.40.0      | 236 KB    | 6          |   7% bustools-0.40.0      | 236 KB    | ########## | 100% 
+r-gridextra-2.3      | 1.0 MB    |            |   0% r-gridextra-2.3      | 1.0 MB    | 1          |   1% r-gridextra-2.3      | 1.0 MB    | ####7      |  48% r-gridextra-2.3      | 1.0 MB    | ########## | 100% 
+boto3-1.14.37        | 98 KB     |            |   0% boto3-1.14.37        | 98 KB     | #6         |  16% boto3-1.14.37        | 98 KB     | ########## | 100% 
+r-futile.logger-1.4. | 108 KB    |            |   0% r-futile.logger-1.4. | 108 KB    | #4         |  15% r-futile.logger-1.4. | 108 KB    | ########## | 100% 
+libblas-3.8.0        | 11 KB     |            |   0% libblas-3.8.0        | 11 KB     | ########## | 100% 
+r-r.utils-2.9.2      | 1.4 MB    |            |   0% r-r.utils-2.9.2      | 1.4 MB    | 1          |   1% r-r.utils-2.9.2      | 1.4 MB    | ########7  |  87% r-r.utils-2.9.2      | 1.4 MB    | ########## | 100% 
+bioconductor-beachma | 1.1 MB    |            |   0% bioconductor-beachma | 1.1 MB    | 1          |   1% bioconductor-beachma | 1.1 MB    | ######4    |  65% bioconductor-beachma | 1.1 MB    | #########6 |  96% bioconductor-beachma | 1.1 MB    | ########## | 100% 
+r-data.table-1.12.8  | 1.8 MB    |            |   0% r-data.table-1.12.8  | 1.8 MB    |            |   1% r-data.table-1.12.8  | 1.8 MB    | ###2       |  32% r-data.table-1.12.8  | 1.8 MB    | #########  |  91% r-data.table-1.12.8  | 1.8 MB    | ########## | 100% 
+r-plyr-1.8.6         | 833 KB    |            |   0% r-plyr-1.8.6         | 833 KB    | 1          |   2% r-plyr-1.8.6         | 833 KB    | #######3   |  73% r-plyr-1.8.6         | 833 KB    | ########## | 100% 
+r-snow-0.4_3         | 124 KB    |            |   0% r-snow-0.4_3         | 124 KB    | #2         |  13% r-snow-0.4_3         | 124 KB    | ########## | 100% 
+spectra-0.0.11       | 19 KB     |            |   0% spectra-0.0.11       | 19 KB     | ########4  |  84% spectra-0.0.11       | 19 KB     | ########## | 100% 
+r-gbrd-0.4_11        | 55 KB     |            |   0% r-gbrd-0.4_11        | 55 KB     | ########## | 100% 
+pygraphviz-1.3       | 110 KB    |            |   0% pygraphviz-1.3       | 110 KB    | ########## | 100% 
+r-formatr-1.7        | 166 KB    |            |   0% r-formatr-1.7        | 166 KB    | 9          |  10% r-formatr-1.7        | 166 KB    | ########## | 100% 
+googleapis-common-pr | 69 KB     |            |   0% googleapis-common-pr | 69 KB     | ##3        |  23% googleapis-common-pr | 69 KB     | ########## | 100% 
+r-tibble-3.0.3       | 385 KB    |            |   0% r-tibble-3.0.3       | 385 KB    | 4          |   4% r-tibble-3.0.3       | 385 KB    | #########5 |  96% r-tibble-3.0.3       | 385 KB    | ########## | 100% 
+r-purrr-0.3.4        | 411 KB    |            |   0% r-purrr-0.3.4        | 411 KB    | 3          |   4% r-purrr-0.3.4        | 411 KB    | ########## | 100% 
+pyyaml-5.1.2         | 189 KB    |            |   0% pyyaml-5.1.2         | 189 KB    | 8          |   8% pyyaml-5.1.2         | 189 KB    | ########## | 100% 
+conda-package-handli | 872 KB    |            |   0% conda-package-handli | 872 KB    | 1          |   2% conda-package-handli | 872 KB    | #######7   |  77% conda-package-handli | 872 KB    | ########## | 100% 
+chardet-3.0.4        | 173 KB    |            |   0% chardet-3.0.4        | 173 KB    | 9          |   9% chardet-3.0.4        | 173 KB    | ########## | 100% 
+jmespath-0.10.0      | 22 KB     |            |   0% jmespath-0.10.0      | 22 KB     | #######1   |  72% jmespath-0.10.0      | 22 KB     | ########## | 100% 
+r-isoband-0.2.2      | 2.5 MB    |            |   0% r-isoband-0.2.2      | 2.5 MB    |            |   1% r-isoband-0.2.2      | 2.5 MB    | ########## | 100% 
+r-ggridges-0.5.2     | 2.2 MB    |            |   0% r-ggridges-0.5.2     | 2.2 MB    |            |   1% r-ggridges-0.5.2     | 2.2 MB    | ##7        |  28% r-ggridges-0.5.2     | 2.2 MB    | ####       |  41% r-ggridges-0.5.2     | 2.2 MB    | ########1  |  82% r-ggridges-0.5.2     | 2.2 MB    | ########## | 100% 
+r-testthat-2.3.2     | 1.1 MB    |            |   0% r-testthat-2.3.2     | 1.1 MB    | 1          |   1% r-testthat-2.3.2     | 1.1 MB    | #####8     |  58% r-testthat-2.3.2     | 1.1 MB    | ########## | 100% 
+r-rcppparallel-5.0.2 | 1.6 MB    |            |   0% r-rcppparallel-5.0.2 | 1.6 MB    |            |   1% r-rcppparallel-5.0.2 | 1.6 MB    | ##9        |  29% r-rcppparallel-5.0.2 | 1.6 MB    | #######    |  70% r-rcppparallel-5.0.2 | 1.6 MB    | ########## | 100% 
+asn1crypto-1.3.0     | 158 KB    |            |   0% asn1crypto-1.3.0     | 158 KB    | #          |  10% asn1crypto-1.3.0     | 158 KB    | ########## | 100% 
+r-farver-2.0.3       | 1.4 MB    |            |   0% r-farver-2.0.3       | 1.4 MB    | 1          |   1% r-farver-2.0.3       | 1.4 MB    | ####7      |  47% r-farver-2.0.3       | 1.4 MB    | ######2    |  63% r-farver-2.0.3       | 1.4 MB    | ########## | 100% 
+r-gdata-2.18.0       | 1.1 MB    |            |   0% r-gdata-2.18.0       | 1.1 MB    | 1          |   1% r-gdata-2.18.0       | 1.1 MB    | ######5    |  65% r-gdata-2.18.0       | 1.1 MB    | ########## | 100% 
+r-rmarkdown-2.3      | 3.0 MB    |            |   0% r-rmarkdown-2.3      | 3.0 MB    |            |   1% r-rmarkdown-2.3      | 3.0 MB    | ##6        |  27% r-rmarkdown-2.3      | 3.0 MB    | ####7      |  47% r-rmarkdown-2.3      | 3.0 MB    | #####8     |  58% r-rmarkdown-2.3      | 3.0 MB    | ########## | 100% 
+bioconductor-genomei | 6 KB      |            |   0% bioconductor-genomei | 6 KB      | ########## | 100% 
+r-zoo-1.8_8          | 1.1 MB    |            |   0% r-zoo-1.8_8          | 1.1 MB    | 1          |   1% r-zoo-1.8_8          | 1.1 MB    | ###9       |  40% r-zoo-1.8_8          | 1.1 MB    | ########## | 100% 
+r-progress-1.2.2     | 90 KB     |            |   0% r-progress-1.2.2     | 90 KB     | ########## | 100% 
+cachetools-4.1.1     | 12 KB     |            |   0% cachetools-4.1.1     | 12 KB     | ########## | 100% 
+jsonschema-3.2.0     | 45 KB     |            |   0% jsonschema-3.2.0     | 45 KB     | ########## | 100% 
+r-base-3.6.3         | 23.3 MB   |            |   0% r-base-3.6.3         | 23.3 MB   |            |   0% r-base-3.6.3         | 23.3 MB   | 3          |   3% r-base-3.6.3         | 23.3 MB   | 5          |   6% r-base-3.6.3         | 23.3 MB   | 8          |   8% r-base-3.6.3         | 23.3 MB   | #2         |  12% r-base-3.6.3         | 23.3 MB   | #4         |  14% r-base-3.6.3         | 23.3 MB   | #6         |  16% r-base-3.6.3         | 23.3 MB   | ##         |  21% r-base-3.6.3         | 23.3 MB   | ##3        |  23% r-base-3.6.3         | 23.3 MB   | ##6        |  26% r-base-3.6.3         | 23.3 MB   | ##9        |  29% r-base-3.6.3         | 23.3 MB   | ###4       |  34% r-base-3.6.3         | 23.3 MB   | ###8       |  38% r-base-3.6.3         | 23.3 MB   | ####       |  41% r-base-3.6.3         | 23.3 MB   | ####6      |  47% r-base-3.6.3         | 23.3 MB   | #####      |  50% r-base-3.6.3         | 23.3 MB   | #####3     |  54% r-base-3.6.3         | 23.3 MB   | #####7     |  57% r-base-3.6.3         | 23.3 MB   | ######     |  60% r-base-3.6.3         | 23.3 MB   | ######5    |  65% r-base-3.6.3         | 23.3 MB   | ######8    |  68% r-base-3.6.3         | 23.3 MB   | #######1   |  71% r-base-3.6.3         | 23.3 MB   | #######5   |  76% r-base-3.6.3         | 23.3 MB   | #######8   |  79% r-base-3.6.3         | 23.3 MB   | ########1  |  82% r-base-3.6.3         | 23.3 MB   | ########5  |  85% r-base-3.6.3         | 23.3 MB   | ########8  |  88% r-base-3.6.3         | 23.3 MB   | #########1 |  91% r-base-3.6.3         | 23.3 MB   | #########4 |  95% r-base-3.6.3         | 23.3 MB   | #########7 |  98% r-base-3.6.3         | 23.3 MB   | ########## | 100% 
+r-generics-0.0.2     | 82 KB     |            |   0% r-generics-0.0.2     | 82 KB     | #9         |  20% r-generics-0.0.2     | 82 KB     | ########## | 100% 
+r-future.apply-1.6.0 | 143 KB    |            |   0% r-future.apply-1.6.0 | 143 KB    | #1         |  11% r-future.apply-1.6.0 | 143 KB    | ########## | 100% 
+r-dqrng-0.2.1        | 165 KB    |            |   0% r-dqrng-0.2.1        | 165 KB    | 9          |  10% r-dqrng-0.2.1        | 165 KB    | ########## | 100% 
+r-prettyunits-1.1.1  | 41 KB     |            |   0% r-prettyunits-1.1.1  | 41 KB     | ###9       |  39% r-prettyunits-1.1.1  | 41 KB     | ########## | 100% 
+llvm-tools-9.0.1     | 4.9 MB    |            |   0% llvm-tools-9.0.1     | 4.9 MB    |            |   0% llvm-tools-9.0.1     | 4.9 MB    | 7          |   8% llvm-tools-9.0.1     | 4.9 MB    | #4         |  14% llvm-tools-9.0.1     | 4.9 MB    | ###        |  30% llvm-tools-9.0.1     | 4.9 MB    | #####5     |  56% llvm-tools-9.0.1     | 4.9 MB    | ######7    |  67% llvm-tools-9.0.1     | 4.9 MB    | #######8   |  78% llvm-tools-9.0.1     | 4.9 MB    | #########6 |  96% llvm-tools-9.0.1     | 4.9 MB    | ########## | 100% 
+r-r.methodss3-1.8.0  | 94 KB     |            |   0% r-r.methodss3-1.8.0  | 94 KB     | #7         |  17% r-r.methodss3-1.8.0  | 94 KB     | ########## | 100% 
+lz4-c-1.9.2          | 203 KB    |            |   0% lz4-c-1.9.2          | 203 KB    | 7          |   8% lz4-c-1.9.2          | 203 KB    | ########## | 100% 
+pycairo-1.19.1       | 77 KB     |            |   0% pycairo-1.19.1       | 77 KB     | ########## | 100% 
+r-rappdirs-0.3.1     | 86 KB     |            |   0% r-rappdirs-0.3.1     | 86 KB     | ########## | 100% 
+r-lifecycle-0.2.0    | 112 KB    |            |   0% r-lifecycle-0.2.0    | 112 KB    | #4         |  14% r-lifecycle-0.2.0    | 112 KB    | ########## | 100% 
+threadpoolctl-2.1.0  | 16 KB     |            |   0% threadpoolctl-2.1.0  | 16 KB     | #########7 |  97% threadpoolctl-2.1.0  | 16 KB     | ########## | 100% 
+r-rspectra-0.16_0    | 491 KB    |            |   0% r-rspectra-0.16_0    | 491 KB    | 3          |   3% r-rspectra-0.16_0    | 491 KB    | #######8   |  78% r-rspectra-0.16_0    | 491 KB    | ########## | 100% 
+fit-sne-1.1.0        | 65 KB     |            |   0% fit-sne-1.1.0        | 65 KB     | ########## | 100% 
+pip-20.1.1           | 2.0 MB    |            |   0% pip-20.1.1           | 2.0 MB    | 7          |   7% pip-20.1.1           | 2.0 MB    | ##1        |  22% pip-20.1.1           | 2.0 MB    | ####7      |  48% pip-20.1.1           | 2.0 MB    | #######5   |  76% pip-20.1.1           | 2.0 MB    | ########## | 100% 
+r-locfit-1.5_9.4     | 563 KB    |            |   0% r-locfit-1.5_9.4     | 563 KB    | 2          |   3% r-locfit-1.5_9.4     | 563 KB    | ########## | 100% 
+r-rcpp-1.0.5         | 2.0 MB    |            |   0% r-rcpp-1.0.5         | 2.0 MB    |            |   1% r-rcpp-1.0.5         | 2.0 MB    | ##4        |  24% r-rcpp-1.0.5         | 2.0 MB    | ###4       |  34% r-rcpp-1.0.5         | 2.0 MB    | #########2 |  93% r-rcpp-1.0.5         | 2.0 MB    | ########## | 100% 
+r-askpass-1.1        | 28 KB     |            |   0% r-askpass-1.1        | 28 KB     | #####6     |  57% r-askpass-1.1        | 28 KB     | ########## | 100% 
+libiconv-1.15        | 2.0 MB    |            |   0% libiconv-1.15        | 2.0 MB    |            |   1% libiconv-1.15        | 2.0 MB    | ##7        |  27% libiconv-1.15        | 2.0 MB    | ####7      |  48% libiconv-1.15        | 2.0 MB    | #####9     |  60% libiconv-1.15        | 2.0 MB    | #######9   |  79% libiconv-1.15        | 2.0 MB    | ########## | 100% 
+r-viridislite-0.3.0  | 66 KB     |            |   0% r-viridislite-0.3.0  | 66 KB     | ########## | 100% 
+libwebp-base-1.1.0   | 869 KB    |            |   0% libwebp-base-1.1.0   | 869 KB    | 1          |   2% libwebp-base-1.1.0   | 869 KB    | #####8     |  59% libwebp-base-1.1.0   | 869 KB    | ########## | 100% 
+bioconductor-genomic | 2.2 MB    |            |   0% bioconductor-genomic | 2.2 MB    |            |   1% bioconductor-genomic | 2.2 MB    | ###1       |  31% bioconductor-genomic | 2.2 MB    | #####5     |  56% bioconductor-genomic | 2.2 MB    | ########2  |  83% bioconductor-genomic | 2.2 MB    | ########## | 100% 
+docutils-0.15.2      | 736 KB    |            |   0% docutils-0.15.2      | 736 KB    | 2          |   2% docutils-0.15.2      | 736 KB    | #########7 |  98% docutils-0.15.2      | 736 KB    | ########## | 100% 
+r-pkgload-1.1.0      | 168 KB    |            |   0% r-pkgload-1.1.0      | 168 KB    | 9          |  10% r-pkgload-1.1.0      | 168 KB    | ########## | 100% 
+importlib-metadata-1 | 51 KB     |            |   0% importlib-metadata-1 | 51 KB     | ###1       |  32% importlib-metadata-1 | 51 KB     | ########## | 100% 
+libgcc-devel_linux-6 | 3.6 MB    |            |   0% libgcc-devel_linux-6 | 3.6 MB    |            |   0% libgcc-devel_linux-6 | 3.6 MB    | ##         |  20% libgcc-devel_linux-6 | 3.6 MB    | ###4       |  34% libgcc-devel_linux-6 | 3.6 MB    | #####8     |  59% libgcc-devel_linux-6 | 3.6 MB    | #######3   |  74% libgcc-devel_linux-6 | 3.6 MB    | #########6 |  97% libgcc-devel_linux-6 | 3.6 MB    | ########## | 100% 
+r-reticulate-1.16    | 1.1 MB    |            |   0% r-reticulate-1.16    | 1.1 MB    | 1          |   1% r-reticulate-1.16    | 1.1 MB    | ########3  |  84% r-reticulate-1.16    | 1.1 MB    | ########## | 100% 
+r-praise-1.0.0       | 23 KB     |            |   0% r-praise-1.0.0       | 23 KB     | ######8    |  69% r-praise-1.0.0       | 23 KB     | ########## | 100% 
+botocore-1.17.37     | 4.0 MB    |            |   0% botocore-1.17.37     | 4.0 MB    |            |   0% botocore-1.17.37     | 4.0 MB    | 2          |   3% botocore-1.17.37     | 4.0 MB    | #6         |  16% botocore-1.17.37     | 4.0 MB    | ##7        |  27% botocore-1.17.37     | 4.0 MB    | #####2     |  53% botocore-1.17.37     | 4.0 MB    | #######3   |  74% botocore-1.17.37     | 4.0 MB    | ########5  |  85% botocore-1.17.37     | 4.0 MB    | ########## | 100% 
+pycosat-0.6.3        | 107 KB    |            |   0% pycosat-0.6.3        | 107 KB    | #4         |  15% pycosat-0.6.3        | 107 KB    | ########## | 100% 
+r-fs-1.4.2           | 483 KB    |            |   0% r-fs-1.4.2           | 483 KB    | 3          |   3% r-fs-1.4.2           | 483 KB    | ########## | 100% 
+networkx-2.4         | 1.2 MB    |            |   0% networkx-2.4         | 1.2 MB    | 7          |   8% networkx-2.4         | 1.2 MB    | ###        |  30% networkx-2.4         | 1.2 MB    | ######1    |  62% networkx-2.4         | 1.2 MB    | ########## | 100% 
+libsodium-1.0.16     | 302 KB    |            |   0% libsodium-1.0.16     | 302 KB    | ##6        |  26% libsodium-1.0.16     | 302 KB    | ########## | 100% 
+umap-learn-0.4.2     | 108 KB    |            |   0% umap-learn-0.4.2     | 108 KB    | #4         |  15% umap-learn-0.4.2     | 108 KB    | ########## | 100% 
+r-rcolorbrewer-1.1_2 | 62 KB     |            |   0% r-rcolorbrewer-1.1_2 | 62 KB     | ##6        |  26% r-rcolorbrewer-1.1_2 | 62 KB     | ########## | 100% 
+glib-2.65.0          | 3.5 MB    |            |   0% glib-2.65.0          | 3.5 MB    |            |   0% glib-2.65.0          | 3.5 MB    | 7          |   7% glib-2.65.0          | 3.5 MB    | #8         |  19% glib-2.65.0          | 3.5 MB    | ###2       |  32% glib-2.65.0          | 3.5 MB    | ####9      |  50% glib-2.65.0          | 3.5 MB    | #####8     |  59% glib-2.65.0          | 3.5 MB    | ########   |  80% glib-2.65.0          | 3.5 MB    | #########6 |  97% glib-2.65.0          | 3.5 MB    | ########## | 100% 
+wheel-0.34.2         | 49 KB     |            |   0% wheel-0.34.2         | 49 KB     | ###2       |  33% wheel-0.34.2         | 49 KB     | ########## | 100% 
+tornado-6.0.4        | 649 KB    |            |   0% tornado-6.0.4        | 649 KB    | #4         |  15% tornado-6.0.4        | 649 KB    | ######1    |  62% tornado-6.0.4        | 649 KB    | ########## | 100% 
+pytables-3.6.1       | 1.5 MB    |            |   0% pytables-3.6.1       | 1.5 MB    | 1          |   1% pytables-3.6.1       | 1.5 MB    | ##5        |  26% pytables-3.6.1       | 1.5 MB    | ####5      |  45% pytables-3.6.1       | 1.5 MB    | #######4   |  74% pytables-3.6.1       | 1.5 MB    | ########## | 100% 
+r-tidyselect-1.1.0   | 205 KB    |            |   0% r-tidyselect-1.1.0   | 205 KB    | ####6      |  47% r-tidyselect-1.1.0   | 205 KB    | ########## | 100% 
+python-3.7.6         | 53.0 MB   |            |   0% python-3.7.6         | 53.0 MB   |            |   0% python-3.7.6         | 53.0 MB   |            |   1% python-3.7.6         | 53.0 MB   | 1          |   2% python-3.7.6         | 53.0 MB   | 3          |   3% python-3.7.6         | 53.0 MB   | 4          |   4% python-3.7.6         | 53.0 MB   | 5          |   5% python-3.7.6         | 53.0 MB   | 6          |   6% python-3.7.6         | 53.0 MB   | 7          |   8% python-3.7.6         | 53.0 MB   | 9          |   9% python-3.7.6         | 53.0 MB   | #          |  10% python-3.7.6         | 53.0 MB   | #1         |  12% python-3.7.6         | 53.0 MB   | #3         |  13% python-3.7.6         | 53.0 MB   | #4         |  15% python-3.7.6         | 53.0 MB   | #6         |  16% python-3.7.6         | 53.0 MB   | #7         |  17% python-3.7.6         | 53.0 MB   | #9         |  19% python-3.7.6         | 53.0 MB   | ##         |  21% python-3.7.6         | 53.0 MB   | ##2        |  22% python-3.7.6         | 53.0 MB   | ##3        |  23% python-3.7.6         | 53.0 MB   | ##4        |  25% python-3.7.6         | 53.0 MB   | ##5        |  26% python-3.7.6         | 53.0 MB   | ##7        |  28% python-3.7.6         | 53.0 MB   | ##9        |  29% python-3.7.6         | 53.0 MB   | ###        |  31% python-3.7.6         | 53.0 MB   | ###1       |  32% python-3.7.6         | 53.0 MB   | ###3       |  34% python-3.7.6         | 53.0 MB   | ###5       |  35% python-3.7.6         | 53.0 MB   | ###6       |  37% python-3.7.6         | 53.0 MB   | ###8       |  39% python-3.7.6         | 53.0 MB   | ####       |  40% python-3.7.6         | 53.0 MB   | ####2      |  42% python-3.7.6         | 53.0 MB   | ####4      |  45% python-3.7.6         | 53.0 MB   | ####6      |  46% python-3.7.6         | 53.0 MB   | ####7      |  48% python-3.7.6         | 53.0 MB   | ####9      |  50% python-3.7.6         | 53.0 MB   | #####2     |  53% python-3.7.6         | 53.0 MB   | #####4     |  55% python-3.7.6         | 53.0 MB   | #####6     |  57% python-3.7.6         | 53.0 MB   | #####8     |  58% python-3.7.6         | 53.0 MB   | #####9     |  59% python-3.7.6         | 53.0 MB   | ######1    |  61% python-3.7.6         | 53.0 MB   | ######2    |  63% python-3.7.6         | 53.0 MB   | ######4    |  65% python-3.7.6         | 53.0 MB   | ######6    |  67% python-3.7.6         | 53.0 MB   | ######8    |  68% python-3.7.6         | 53.0 MB   | #######    |  70% python-3.7.6         | 53.0 MB   | #######1   |  72% python-3.7.6         | 53.0 MB   | #######3   |  73% python-3.7.6         | 53.0 MB   | #######4   |  75% python-3.7.6         | 53.0 MB   | #######5   |  76% python-3.7.6         | 53.0 MB   | #######7   |  77% python-3.7.6         | 53.0 MB   | #######9   |  79% python-3.7.6         | 53.0 MB   | ########   |  81% python-3.7.6         | 53.0 MB   | ########3  |  84% python-3.7.6         | 53.0 MB   | ########5  |  85% python-3.7.6         | 53.0 MB   | ########8  |  88% python-3.7.6         | 53.0 MB   | ########9  |  90% python-3.7.6         | 53.0 MB   | #########1 |  91% python-3.7.6         | 53.0 MB   | #########2 |  93% python-3.7.6         | 53.0 MB   | #########4 |  94% python-3.7.6         | 53.0 MB   | #########6 |  97% python-3.7.6         | 53.0 MB   | #########8 |  98% python-3.7.6         | 53.0 MB   | #########9 | 100% python-3.7.6         | 53.0 MB   | ########## | 100% 
+r-promises-1.1.1     | 1.2 MB    |            |   0% r-promises-1.1.1     | 1.2 MB    | 1          |   1% r-promises-1.1.1     | 1.2 MB    | ####8      |  48% r-promises-1.1.1     | 1.2 MB    | ######4    |  65% r-promises-1.1.1     | 1.2 MB    | ########## | 100% 
+idna-2.8             | 101 KB    |            |   0% idna-2.8             | 101 KB    | #5         |  16% idna-2.8             | 101 KB    | ########## | 100% 
+async-timeout-3.0.1  | 12 KB     |            |   0% async-timeout-3.0.1  | 12 KB     | ########## | 100% 
+zipp-3.1.0           | 13 KB     |            |   0% zipp-3.1.0           | 13 KB     | ########## | 100% 
+r-backports-1.1.8    | 84 KB     |            |   0% r-backports-1.1.8    | 84 KB     | #9         |  19% r-backports-1.1.8    | 84 KB     | ########## | 100% 
+urllib3-1.25.8       | 165 KB    |            |   0% urllib3-1.25.8       | 165 KB    | #######7   |  78% urllib3-1.25.8       | 165 KB    | ########## | 100% 
+libtool-2.4.6        | 503 KB    |            |   0% libtool-2.4.6        | 503 KB    | 3          |   3% libtool-2.4.6        | 503 KB    | ######3    |  64% libtool-2.4.6        | 503 KB    | ########## | 100% 
+r-r6-2.4.1           | 63 KB     |            |   0% r-r6-2.4.1           | 63 KB     | ##5        |  25% r-r6-2.4.1           | 63 KB     | ########## | 100% 
+r-rlang-0.4.7        | 1.0 MB    |            |   0% r-rlang-0.4.7        | 1.0 MB    | 1          |   2% r-rlang-0.4.7        | 1.0 MB    | ######3    |  63% r-rlang-0.4.7        | 1.0 MB    | ########8  |  89% r-rlang-0.4.7        | 1.0 MB    | ########## | 100% 
+r-ggrepel-0.8.2      | 662 KB    |            |   0% r-ggrepel-0.8.2      | 662 KB    | ##1        |  22% r-ggrepel-0.8.2      | 662 KB    | ####1      |  41% r-ggrepel-0.8.2      | 662 KB    | ########## | 100% 
+seaborn-base-0.10.1  | 158 KB    |            |   0% seaborn-base-0.10.1  | 158 KB    | ######     |  61% seaborn-base-0.10.1  | 158 KB    | ########## | 100% 
+font-ttf-dejavu-sans | 386 KB    |            |   0% font-ttf-dejavu-sans | 386 KB    | 4          |   4% font-ttf-dejavu-sans | 386 KB    | ########## | 100% 
+r-rprojroot-1.3_2    | 98 KB     |            |   0% r-rprojroot-1.3_2    | 98 KB     | #6         |  16% r-rprojroot-1.3_2    | 98 KB     | ########## | 100% 
+joblib-0.16.0        | 210 KB    |            |   0% joblib-0.16.0        | 210 KB    | 7          |   8% joblib-0.16.0        | 210 KB    | ########## | 100% 
+dropbox-10.1.1       | 408 KB    |            |   0% dropbox-10.1.1       | 408 KB    | 3          |   4% dropbox-10.1.1       | 408 KB    | #####8     |  59% dropbox-10.1.1       | 408 KB    | ########## | 100% 
+libcblas-3.8.0       | 11 KB     |            |   0% libcblas-3.8.0       | 11 KB     | ########## | 100% 
+r-httr-1.4.1         | 491 KB    |            |   0% r-httr-1.4.1         | 491 KB    | 3          |   3% r-httr-1.4.1         | 491 KB    | ########## | 100% 
+google-resumable-med | 33 KB     |            |   0% google-resumable-med | 33 KB     | ########## | 100% 
+r-hexbin-1.28.1      | 1.0 MB    |            |   0% r-hexbin-1.28.1      | 1.0 MB    | 1          |   2% r-hexbin-1.28.1      | 1.0 MB    | ########3  |  83% r-hexbin-1.28.1      | 1.0 MB    | ########## | 100% 
+_libgcc_mutex-0.1    | 3 KB      |            |   0% _libgcc_mutex-0.1    | 3 KB      | ########## | 100% 
+r-futile.options-1.0 | 27 KB     |            |   0% r-futile.options-1.0 | 27 KB     | #####9     |  60% r-futile.options-1.0 | 27 KB     | ########## | 100% 
+nbformat-5.0.7       | 103 KB    |            |   0% nbformat-5.0.7       | 103 KB    | ########## | 100% 
+r-labeling-0.3       | 71 KB     |            |   0% r-labeling-0.3       | 71 KB     | ##2        |  23% r-labeling-0.3       | 71 KB     | ########## | 100% 
+libopenblas-0.3.10   | 7.8 MB    |            |   0% libopenblas-0.3.10   | 7.8 MB    | 1          |   2% libopenblas-0.3.10   | 7.8 MB    | 9          |   9% libopenblas-0.3.10   | 7.8 MB    | #1         |  12% libopenblas-0.3.10   | 7.8 MB    | #9         |  19% libopenblas-0.3.10   | 7.8 MB    | ###        |  31% libopenblas-0.3.10   | 7.8 MB    | ####3      |  43% libopenblas-0.3.10   | 7.8 MB    | #####1     |  52% libopenblas-0.3.10   | 7.8 MB    | ######     |  60% libopenblas-0.3.10   | 7.8 MB    | ######8    |  68% libopenblas-0.3.10   | 7.8 MB    | #######7   |  77% libopenblas-0.3.10   | 7.8 MB    | ########4  |  85% libopenblas-0.3.10   | 7.8 MB    | #########8 |  99% libopenblas-0.3.10   | 7.8 MB    | ########## | 100% 
+r-glue-1.4.1         | 140 KB    |            |   0% r-glue-1.4.1         | 140 KB    | #1         |  11% r-glue-1.4.1         | 140 KB    | #####6     |  57% r-glue-1.4.1         | 140 KB    | #######9   |  80% r-glue-1.4.1         | 140 KB    | ########## | 100% 
+r-scales-1.1.1       | 558 KB    |            |   0% r-scales-1.1.1       | 558 KB    | 2          |   3% r-scales-1.1.1       | 558 KB    | ########## | 100% 
+r-desc-1.2.0         | 305 KB    |            |   0% r-desc-1.2.0         | 305 KB    | 5          |   5% r-desc-1.2.0         | 305 KB    | ########## | 100% 
+r-globals-0.12.5     | 89 KB     |            |   0% r-globals-0.12.5     | 89 KB     | #8         |  18% r-globals-0.12.5     | 89 KB     | ########## | 100% 
+r-codetools-0.2_16   | 107 KB    |            |   0% r-codetools-0.2_16   | 107 KB    | #4         |  15% r-codetools-0.2_16   | 107 KB    | ########## | 100% 
+bioconductor-rhdf5li | 3.8 MB    |            |   0% bioconductor-rhdf5li | 3.8 MB    |            |   0% bioconductor-rhdf5li | 3.8 MB    | 2          |   2% bioconductor-rhdf5li | 3.8 MB    | ##4        |  24% bioconductor-rhdf5li | 3.8 MB    | ###4       |  34% bioconductor-rhdf5li | 3.8 MB    | ####7      |  47% bioconductor-rhdf5li | 3.8 MB    | ######6    |  67% bioconductor-rhdf5li | 3.8 MB    | #######9   |  79% bioconductor-rhdf5li | 3.8 MB    | ########## | 100% 
+bioconductor-rhdf5-2 | 2.4 MB    |            |   0% bioconductor-rhdf5-2 | 2.4 MB    |            |   1% bioconductor-rhdf5-2 | 2.4 MB    | ##         |  20% bioconductor-rhdf5-2 | 2.4 MB    | ####3      |  43% bioconductor-rhdf5-2 | 2.4 MB    | #####4     |  54% bioconductor-rhdf5-2 | 2.4 MB    | ########9  |  90% bioconductor-rhdf5-2 | 2.4 MB    | ########## | 100% 
+libssh2-1.9.0        | 346 KB    |            |   0% libssh2-1.9.0        | 346 KB    | ###7       |  37% libssh2-1.9.0        | 346 KB    | ########## | 100% 
+mock-4.0.2           | 31 KB     |            |   0% mock-4.0.2           | 31 KB     | #####2     |  52% mock-4.0.2           | 31 KB     | ########## | 100% 
+bioconductor-singlec | 1.4 MB    |            |   0% bioconductor-singlec | 1.4 MB    | 2          |   2% bioconductor-singlec | 1.4 MB    | #####7     |  58% bioconductor-singlec | 1.4 MB    | #######5   |  75% bioconductor-singlec | 1.4 MB    | ########## | 100% 
+sqlite-3.32.3        | 2.0 MB    |            |   0% sqlite-3.32.3        | 2.0 MB    |            |   1% sqlite-3.32.3        | 2.0 MB    | #9         |  19% sqlite-3.32.3        | 2.0 MB    | ####3      |  44% sqlite-3.32.3        | 2.0 MB    | #######    |  70% sqlite-3.32.3        | 2.0 MB    | ########## | 100% 
+r-stringi-1.4.6      | 783 KB    |            |   0% r-stringi-1.4.6      | 783 KB    | 2          |   2% r-stringi-1.4.6      | 783 KB    | ####4      |  45% r-stringi-1.4.6      | 783 KB    | ########## | 100% 
+python_abi-3.7       | 4 KB      |            |   0% python_abi-3.7       | 4 KB      | ########## | 100% 
+libwebp-1.1.0        | 85 KB     |            |   0% libwebp-1.1.0        | 85 KB     | ########## | 100% 
+r-knitr-1.29         | 1.3 MB    |            |   0% r-knitr-1.29         | 1.3 MB    | 1          |   1% r-knitr-1.29         | 1.3 MB    | ########## | 100% 
+r-listenv-0.8.0      | 118 KB    |            |   0% r-listenv-0.8.0      | 118 KB    | #3         |  14% r-listenv-0.8.0      | 118 KB    | ########## | 100% 
+r-whisker-0.4        | 80 KB     |            |   0% r-whisker-0.4        | 80 KB     | #9         |  20% r-whisker-0.4        | 80 KB     | ########## | 100% 
+giflib-5.2.1         | 82 KB     |            |   0% giflib-5.2.1         | 82 KB     | #9         |  20% giflib-5.2.1         | 82 KB     | ########## | 100% 
+pandoc-2.10.1        | 19.3 MB   |            |   0% pandoc-2.10.1        | 19.3 MB   |            |   1% pandoc-2.10.1        | 19.3 MB   | 3          |   3% pandoc-2.10.1        | 19.3 MB   | 4          |   4% pandoc-2.10.1        | 19.3 MB   | 8          |   9% pandoc-2.10.1        | 19.3 MB   | #2         |  12% pandoc-2.10.1        | 19.3 MB   | #5         |  16% pandoc-2.10.1        | 19.3 MB   | #8         |  18% pandoc-2.10.1        | 19.3 MB   | ##3        |  24% pandoc-2.10.1        | 19.3 MB   | ##8        |  28% pandoc-2.10.1        | 19.3 MB   | ###1       |  31% pandoc-2.10.1        | 19.3 MB   | ###4       |  34% pandoc-2.10.1        | 19.3 MB   | ###8       |  39% pandoc-2.10.1        | 19.3 MB   | ####1      |  41% pandoc-2.10.1        | 19.3 MB   | ####9      |  49% pandoc-2.10.1        | 19.3 MB   | #####3     |  53% pandoc-2.10.1        | 19.3 MB   | #####6     |  57% pandoc-2.10.1        | 19.3 MB   | ######     |  61% pandoc-2.10.1        | 19.3 MB   | ######4    |  65% pandoc-2.10.1        | 19.3 MB   | ######9    |  70% pandoc-2.10.1        | 19.3 MB   | #######3   |  73% pandoc-2.10.1        | 19.3 MB   | #######6   |  76% pandoc-2.10.1        | 19.3 MB   | ########1  |  82% pandoc-2.10.1        | 19.3 MB   | ########5  |  85% pandoc-2.10.1        | 19.3 MB   | ########9  |  89% pandoc-2.10.1        | 19.3 MB   | #########4 |  95% pandoc-2.10.1        | 19.3 MB   | #########9 |  99% pandoc-2.10.1        | 19.3 MB   | ########## | 100% 
+requests-2.22.0      | 90 KB     |            |   0% requests-2.22.0      | 90 KB     | #7         |  18% requests-2.22.0      | 90 KB     | ########## | 100% 
+r-stringr-1.4.0      | 221 KB    |            |   0% r-stringr-1.4.0      | 221 KB    | ######5    |  65% r-stringr-1.4.0      | 221 KB    | ########## | 100% 
+matplotlib-3.3.0     | 6 KB      |            |   0% matplotlib-3.3.0     | 6 KB      | ########## | 100% 
+r-htmlwidgets-1.5.1  | 688 KB    |            |   0% r-htmlwidgets-1.5.1  | 688 KB    | 2          |   2% r-htmlwidgets-1.5.1  | 688 KB    | ####6      |  46% r-htmlwidgets-1.5.1  | 688 KB    | ########## | 100% 
+gxx_linux-64-7.5.0   | 22 KB     |            |   0% gxx_linux-64-7.5.0   | 22 KB     | ########## | 100% 
+libdeflate-1.6       | 60 KB     |            |   0% libdeflate-1.6       | 60 KB     | ##6        |  27% libdeflate-1.6       | 60 KB     | ########## | 100% 
+r-broom-0.7.0        | 1.6 MB    |            |   0% r-broom-0.7.0        | 1.6 MB    |            |   1% r-broom-0.7.0        | 1.6 MB    | ########## | 100% 
+r-magrittr-1.5       | 173 KB    |            |   0% r-magrittr-1.5       | 173 KB    | #######3   |  74% r-magrittr-1.5       | 173 KB    | ########## | 100% 
+aioeasywebdav-2.4.0  | 18 KB     |            |   0% aioeasywebdav-2.4.0  | 18 KB     | ########9  |  89% aioeasywebdav-2.4.0  | 18 KB     | ########## | 100% 
+r-readxl-1.3.1       | 855 KB    |            |   0% r-readxl-1.3.1       | 855 KB    | 1          |   2% r-readxl-1.3.1       | 855 KB    | #########3 |  94% r-readxl-1.3.1       | 855 KB    | ########## | 100% 
+r-rvest-0.3.5        | 658 KB    |            |   0% r-rvest-0.3.5        | 658 KB    | 2          |   2% r-rvest-0.3.5        | 658 KB    | ########## | 100% 
+bioconductor-genomic | 2.3 MB    |            |   0% bioconductor-genomic | 2.3 MB    |            |   1% bioconductor-genomic | 2.3 MB    | ##4        |  25% bioconductor-genomic | 2.3 MB    | ###3       |  34% bioconductor-genomic | 2.3 MB    | #####7     |  58% bioconductor-genomic | 2.3 MB    | ########1  |  82% bioconductor-genomic | 2.3 MB    | ########## | 100% 
+fftw-3.3.8           | 3.9 MB    |            |   0% fftw-3.3.8           | 3.9 MB    |            |   0% fftw-3.3.8           | 3.9 MB    | 6          |   6% fftw-3.3.8           | 3.9 MB    | #2         |  13% fftw-3.3.8           | 3.9 MB    | ##8        |  28% fftw-3.3.8           | 3.9 MB    | #####      |  51% fftw-3.3.8           | 3.9 MB    | #######2   |  72% fftw-3.3.8           | 3.9 MB    | ########6  |  86% fftw-3.3.8           | 3.9 MB    | ########## | 100% 
+fonts-conda-ecosyste | 4 KB      |            |   0% fonts-conda-ecosyste | 4 KB      | ########## | 100% 
+entrez-direct-13.3   | 4.7 MB    |            |   0% entrez-direct-13.3   | 4.7 MB    |            |   0% entrez-direct-13.3   | 4.7 MB    | ######6    |  66% entrez-direct-13.3   | 4.7 MB    | ########6  |  87% entrez-direct-13.3   | 4.7 MB    | ########## | 100% 
+bioconductor-summari | 2.6 MB    |            |   0% bioconductor-summari | 2.6 MB    |            |   1% bioconductor-summari | 2.6 MB    | #8         |  18% bioconductor-summari | 2.6 MB    | ###6       |  36% bioconductor-summari | 2.6 MB    | ######8    |  68% bioconductor-summari | 2.6 MB    | #########  |  91% bioconductor-summari | 2.6 MB    | ########## | 100% 
+python-igraph-0.8.2  | 2.1 MB    |            |   0% python-igraph-0.8.2  | 2.1 MB    |            |   1% python-igraph-0.8.2  | 2.1 MB    | ###        |  31% python-igraph-0.8.2  | 2.1 MB    | ####       |  40% python-igraph-0.8.2  | 2.1 MB    | ######5    |  65% python-igraph-0.8.2  | 2.1 MB    | ########2  |  82% python-igraph-0.8.2  | 2.1 MB    | ########## | 100% 
+scipy-1.2.1          | 17.7 MB   |            |   0% scipy-1.2.1          | 17.7 MB   |            |   0% scipy-1.2.1          | 17.7 MB   |            |   1% scipy-1.2.1          | 17.7 MB   | 7          |   8% scipy-1.2.1          | 17.7 MB   | #1         |  11% scipy-1.2.1          | 17.7 MB   | #6         |  16% scipy-1.2.1          | 17.7 MB   | #9         |  19% scipy-1.2.1          | 17.7 MB   | ##2        |  23% scipy-1.2.1          | 17.7 MB   | ##5        |  26% scipy-1.2.1          | 17.7 MB   | ###2       |  32% scipy-1.2.1          | 17.7 MB   | ###5       |  36% scipy-1.2.1          | 17.7 MB   | ###8       |  39% scipy-1.2.1          | 17.7 MB   | ####1      |  42% scipy-1.2.1          | 17.7 MB   | ####4      |  44% scipy-1.2.1          | 17.7 MB   | ####7      |  47% scipy-1.2.1          | 17.7 MB   | #####1     |  52% scipy-1.2.1          | 17.7 MB   | #####5     |  55% scipy-1.2.1          | 17.7 MB   | #####9     |  60% scipy-1.2.1          | 17.7 MB   | ######2    |  63% scipy-1.2.1          | 17.7 MB   | ######9    |  69% scipy-1.2.1          | 17.7 MB   | #######3   |  74% scipy-1.2.1          | 17.7 MB   | #######9   |  79% scipy-1.2.1          | 17.7 MB   | ########2  |  83% scipy-1.2.1          | 17.7 MB   | ########5  |  86% scipy-1.2.1          | 17.7 MB   | #########  |  90% scipy-1.2.1          | 17.7 MB   | #########3 |  93% scipy-1.2.1          | 17.7 MB   | #########6 |  97% scipy-1.2.1          | 17.7 MB   | ########## | 100% 
+r-matrix-1.2_18      | 3.8 MB    |            |   0% r-matrix-1.2_18      | 3.8 MB    |            |   0% r-matrix-1.2_18      | 3.8 MB    | #1         |  12% r-matrix-1.2_18      | 3.8 MB    | ##3        |  24% r-matrix-1.2_18      | 3.8 MB    | ####7      |  48% r-matrix-1.2_18      | 3.8 MB    | ######6    |  67% r-matrix-1.2_18      | 3.8 MB    | #########  |  91% r-matrix-1.2_18      | 3.8 MB    | ########## | 100% 
+gsl-2.6              | 3.1 MB    |            |   0% gsl-2.6              | 3.1 MB    | 4          |   5% gsl-2.6              | 3.1 MB    | #2         |  12% gsl-2.6              | 3.1 MB    | ##         |  20% gsl-2.6              | 3.1 MB    | #####3     |  54% gsl-2.6              | 3.1 MB    | #########8 |  99% gsl-2.6              | 3.1 MB    | ########## | 100% 
+certifi-2020.6.20    | 159 KB    |            |   0% certifi-2020.6.20    | 159 KB    | #          |  10% certifi-2020.6.20    | 159 KB    | ########## | 100% 
+r-curl-4.3           | 702 KB    |            |   0% r-curl-4.3           | 702 KB    | #5         |  16% r-curl-4.3           | 702 KB    | #####6     |  57% r-curl-4.3           | 702 KB    | ########## | 100% 
+cffi-1.14.0          | 225 KB    |            |   0% cffi-1.14.0          | 225 KB    | 7          |   7% cffi-1.14.0          | 225 KB    | ########## | 100% 
+lcms2-2.11           | 419 KB    |            |   0% lcms2-2.11           | 419 KB    | #1         |  11% lcms2-2.11           | 419 KB    | ######4    |  65% lcms2-2.11           | 419 KB    | ########## | 100% 
+r-rcppeigen-0.3.3.7. | 1.5 MB    |            |   0% r-rcppeigen-0.3.3.7. | 1.5 MB    | #1         |  11% r-rcppeigen-0.3.3.7. | 1.5 MB    | ####7      |  48% r-rcppeigen-0.3.3.7. | 1.5 MB    | ######2    |  62% r-rcppeigen-0.3.3.7. | 1.5 MB    | ########## | 100% 
+r-fnn-1.1.3          | 145 KB    |            |   0% r-fnn-1.1.3          | 145 KB    | #1         |  11% r-fnn-1.1.3          | 145 KB    | ########## | 100% 
+r-gtable-0.3.0       | 425 KB    |            |   0% r-gtable-0.3.0       | 425 KB    | 3          |   4% r-gtable-0.3.0       | 425 KB    | ########## | 100% 
+blas-1.0             | 48 KB     |            |   0% blas-1.0             | 48 KB     | ###3       |  33% blas-1.0             | 48 KB     | ########## | 100% 
+r-matrixstats-0.56.0 | 925 KB    |            |   0% r-matrixstats-0.56.0 | 925 KB    | 1          |   2% r-matrixstats-0.56.0 | 925 KB    | ######2    |  62% r-matrixstats-0.56.0 | 925 KB    | ########## | 100% 
+r-lattice-0.20_41    | 1.1 MB    |            |   0% r-lattice-0.20_41    | 1.1 MB    | 1          |   1% r-lattice-0.20_41    | 1.1 MB    | #####1     |  51% r-lattice-0.20_41    | 1.1 MB    | ######6    |  67% r-lattice-0.20_41    | 1.1 MB    | ########## | 100% 
+r-cli-2.0.2          | 395 KB    |            |   0% r-cli-2.0.2          | 395 KB    | 4          |   4% r-cli-2.0.2          | 395 KB    | ########## | 100% 
+gitdb-4.0.5          | 49 KB     |            |   0% gitdb-4.0.5          | 49 KB     | ###2       |  33% gitdb-4.0.5          | 49 KB     | ########## | 100% 
+liblapack-3.8.0      | 11 KB     |            |   0% liblapack-3.8.0      | 11 KB     | ########## | 100% 
+ratelimiter-1.2.0    | 12 KB     |            |   0% ratelimiter-1.2.0    | 12 KB     | ########## | 100% 
+bioconductor-iranges | 2.4 MB    |            |   0% bioconductor-iranges | 2.4 MB    |            |   1% bioconductor-iranges | 2.4 MB    | ##5        |  25% bioconductor-iranges | 2.4 MB    | ####3      |  43% bioconductor-iranges | 2.4 MB    | ######1    |  62% bioconductor-iranges | 2.4 MB    | ########2  |  82% bioconductor-iranges | 2.4 MB    | ########## | 100% 
+r-functools-0.2.0    | 68 KB     |            |   0% r-functools-0.2.0    | 68 KB     | ##3        |  24% r-functools-0.2.0    | 68 KB     | ########## | 100% 
+fribidi-1.0.10       | 115 KB    |            |   0% fribidi-1.0.10       | 115 KB    | #3         |  14% fribidi-1.0.10       | 115 KB    | ########## | 100% 
+cycler-0.10.0        | 13 KB     |            |   0% cycler-0.10.0        | 13 KB     | ########## | 100% 
+r-tidyr-1.1.0        | 774 KB    |            |   0% r-tidyr-1.1.0        | 774 KB    | 2          |   2% r-tidyr-1.1.0        | 774 KB    | ####5      |  45% r-tidyr-1.1.0        | 774 KB    | ########## | 100% 
+r-tinytex-0.24       | 114 KB    |            |   0% r-tinytex-0.24       | 114 KB    | #4         |  14% r-tinytex-0.24       | 114 KB    | ########## | 100% 
+expat-2.2.9          | 196 KB    |            |   0% expat-2.2.9          | 196 KB    | 8          |   8% expat-2.2.9          | 196 KB    | ########## | 100% 
+libcurl-7.71.1       | 312 KB    |            |   0% libcurl-7.71.1       | 312 KB    | 5          |   5% libcurl-7.71.1       | 312 KB    | ########## | 100% 
+gcc_impl_linux-64-7. | 38.4 MB   |            |   0% gcc_impl_linux-64-7. | 38.4 MB   |            |   0% gcc_impl_linux-64-7. | 38.4 MB   | 1          |   2% gcc_impl_linux-64-7. | 38.4 MB   | 3          |   3% gcc_impl_linux-64-7. | 38.4 MB   | 3          |   4% gcc_impl_linux-64-7. | 38.4 MB   | 4          |   5% gcc_impl_linux-64-7. | 38.4 MB   | 5          |   6% gcc_impl_linux-64-7. | 38.4 MB   | 8          |   8% gcc_impl_linux-64-7. | 38.4 MB   | #          |  10% gcc_impl_linux-64-7. | 38.4 MB   | #1         |  12% gcc_impl_linux-64-7. | 38.4 MB   | #3         |  13% gcc_impl_linux-64-7. | 38.4 MB   | #5         |  16% gcc_impl_linux-64-7. | 38.4 MB   | #7         |  17% gcc_impl_linux-64-7. | 38.4 MB   | #9         |  19% gcc_impl_linux-64-7. | 38.4 MB   | ##         |  21% gcc_impl_linux-64-7. | 38.4 MB   | ##1        |  22% gcc_impl_linux-64-7. | 38.4 MB   | ##4        |  24% gcc_impl_linux-64-7. | 38.4 MB   | ##6        |  26% gcc_impl_linux-64-7. | 38.4 MB   | ##8        |  28% gcc_impl_linux-64-7. | 38.4 MB   | ##9        |  30% gcc_impl_linux-64-7. | 38.4 MB   | ###1       |  31% gcc_impl_linux-64-7. | 38.4 MB   | ###3       |  33% gcc_impl_linux-64-7. | 38.4 MB   | ###5       |  35% gcc_impl_linux-64-7. | 38.4 MB   | ###6       |  37% gcc_impl_linux-64-7. | 38.4 MB   | ###9       |  39% gcc_impl_linux-64-7. | 38.4 MB   | ####1      |  41% gcc_impl_linux-64-7. | 38.4 MB   | ####4      |  45% gcc_impl_linux-64-7. | 38.4 MB   | ####6      |  47% gcc_impl_linux-64-7. | 38.4 MB   | ####8      |  48% gcc_impl_linux-64-7. | 38.4 MB   | #####      |  51% gcc_impl_linux-64-7. | 38.4 MB   | #####2     |  53% gcc_impl_linux-64-7. | 38.4 MB   | #####4     |  55% gcc_impl_linux-64-7. | 38.4 MB   | #####6     |  56% gcc_impl_linux-64-7. | 38.4 MB   | #####8     |  58% gcc_impl_linux-64-7. | 38.4 MB   | ######1    |  61% gcc_impl_linux-64-7. | 38.4 MB   | ######3    |  63% gcc_impl_linux-64-7. | 38.4 MB   | ######4    |  65% gcc_impl_linux-64-7. | 38.4 MB   | ######8    |  68% gcc_impl_linux-64-7. | 38.4 MB   | #######    |  70% gcc_impl_linux-64-7. | 38.4 MB   | #######2   |  73% gcc_impl_linux-64-7. | 38.4 MB   | #######4   |  75% gcc_impl_linux-64-7. | 38.4 MB   | #######6   |  77% gcc_impl_linux-64-7. | 38.4 MB   | #######8   |  79% gcc_impl_linux-64-7. | 38.4 MB   | ########   |  81% gcc_impl_linux-64-7. | 38.4 MB   | ########2  |  82% gcc_impl_linux-64-7. | 38.4 MB   | ########4  |  85% gcc_impl_linux-64-7. | 38.4 MB   | ########6  |  87% gcc_impl_linux-64-7. | 38.4 MB   | ########8  |  89% gcc_impl_linux-64-7. | 38.4 MB   | #########  |  91% gcc_impl_linux-64-7. | 38.4 MB   | #########2 |  93% gcc_impl_linux-64-7. | 38.4 MB   | #########4 |  95% gcc_impl_linux-64-7. | 38.4 MB   | #########6 |  97% gcc_impl_linux-64-7. | 38.4 MB   | ########## | 100% 
+r-jsonlite-1.7.0     | 1.0 MB    |            |   0% r-jsonlite-1.7.0     | 1.0 MB    | 1          |   1% r-jsonlite-1.7.0     | 1.0 MB    | ########## | 100% 
+r-reshape2-1.4.4     | 135 KB    |            |   0% r-reshape2-1.4.4     | 135 KB    | #1         |  12% r-reshape2-1.4.4     | 135 KB    | ########## | 100% 
+numpy-1.19.0         | 5.2 MB    |            |   0% numpy-1.19.0         | 5.2 MB    |            |   0% numpy-1.19.0         | 5.2 MB    | #4         |  14% numpy-1.19.0         | 5.2 MB    | ##8        |  28% numpy-1.19.0         | 5.2 MB    | ####       |  41% numpy-1.19.0         | 5.2 MB    | ####8      |  48% numpy-1.19.0         | 5.2 MB    | ######6    |  66% numpy-1.19.0         | 5.2 MB    | ########4  |  85% numpy-1.19.0         | 5.2 MB    | #########7 |  97% numpy-1.19.0         | 5.2 MB    | ########## | 100% 
+r-crayon-1.3.4       | 757 KB    |            |   0% r-crayon-1.3.4       | 757 KB    | 2          |   2% r-crayon-1.3.4       | 757 KB    | #####4     |  55% r-crayon-1.3.4       | 757 KB    | ########## | 100% 
+jupyter_core-4.6.3   | 75 KB     |            |   0% jupyter_core-4.6.3   | 75 KB     | ########## | 100% 
+bioconductor-droplet | 2.2 MB    |            |   0% bioconductor-droplet | 2.2 MB    |            |   1% bioconductor-droplet | 2.2 MB    | ####2      |  42% bioconductor-droplet | 2.2 MB    | #####6     |  56% bioconductor-droplet | 2.2 MB    | ########5  |  86% bioconductor-droplet | 2.2 MB    | ########## | 100% 
+markupsafe-1.1.1     | 26 KB     |            |   0% markupsafe-1.1.1     | 26 KB     | ######     |  61% markupsafe-1.1.1     | 26 KB     | ########## | 100% 
+zstd-1.4.5           | 716 KB    |            |   0% zstd-1.4.5           | 716 KB    | 2          |   2% zstd-1.4.5           | 716 KB    | ########## | 100% 
+libprotobuf-3.12.4   | 2.3 MB    |            |   0% libprotobuf-3.12.4   | 2.3 MB    |            |   1% libprotobuf-3.12.4   | 2.3 MB    | #8         |  18% libprotobuf-3.12.4   | 2.3 MB    | ###        |  31% libprotobuf-3.12.4   | 2.3 MB    | ######9    |  70% libprotobuf-3.12.4   | 2.3 MB    | #########6 |  97% libprotobuf-3.12.4   | 2.3 MB    | ########## | 100% 
+r-rcppannoy-0.0.16   | 431 KB    |            |   0% r-rcppannoy-0.0.16   | 431 KB    | 3          |   4% r-rcppannoy-0.0.16   | 431 KB    | ########## | 100% 
+r-kernsmooth-2.23_17 | 104 KB    |            |   0% r-kernsmooth-2.23_17 | 104 KB    | ########## | 100% 
+configargparse-1.2.3 | 32 KB     |            |   0% configargparse-1.2.3 | 32 KB     | ####9      |  50% configargparse-1.2.3 | 32 KB     | ########## | 100% 
+libstdcxx-devel_linu | 9.3 MB    |            |   0% libstdcxx-devel_linu | 9.3 MB    |            |   0% libstdcxx-devel_linu | 9.3 MB    | 2          |   2% libstdcxx-devel_linu | 9.3 MB    | 2          |   3% libstdcxx-devel_linu | 9.3 MB    | 3          |   4% libstdcxx-devel_linu | 9.3 MB    | #          |  11% libstdcxx-devel_linu | 9.3 MB    | ##         |  20% libstdcxx-devel_linu | 9.3 MB    | ##6        |  27% libstdcxx-devel_linu | 9.3 MB    | ###2       |  33% libstdcxx-devel_linu | 9.3 MB    | ####1      |  42% libstdcxx-devel_linu | 9.3 MB    | ####7      |  47% libstdcxx-devel_linu | 9.3 MB    | #####8     |  58% libstdcxx-devel_linu | 9.3 MB    | ######3    |  64% libstdcxx-devel_linu | 9.3 MB    | #######1   |  71% libstdcxx-devel_linu | 9.3 MB    | ########1  |  81% libstdcxx-devel_linu | 9.3 MB    | #########  |  90% libstdcxx-devel_linu | 9.3 MB    | #########6 |  97% libstdcxx-devel_linu | 9.3 MB    | ########## | 100% 
+bioconductor-zlibbio | 113 KB    |            |   0% bioconductor-zlibbio | 113 KB    | #4         |  14% bioconductor-zlibbio | 113 KB    | ########## | 100% 
+r-irlba-2.3.3        | 308 KB    |            |   0% r-irlba-2.3.3        | 308 KB    | 5          |   5% r-irlba-2.3.3        | 308 KB    | ########## | 100% 
+r-lubridate-1.7.9    | 1.1 MB    |            |   0% r-lubridate-1.7.9    | 1.1 MB    | 1          |   1% r-lubridate-1.7.9    | 1.1 MB    | #####1     |  52% r-lubridate-1.7.9    | 1.1 MB    | ######7    |  68% r-lubridate-1.7.9    | 1.1 MB    | ########## | 100% 
+traitlets-4.3.3      | 138 KB    |            |   0% traitlets-4.3.3      | 138 KB    | #1         |  12% traitlets-4.3.3      | 138 KB    | ########## | 100% 
+font-ttf-ubuntu-0.83 | 1.8 MB    |            |   0% font-ttf-ubuntu-0.83 | 1.8 MB    |            |   1% font-ttf-ubuntu-0.83 | 1.8 MB    | ##9        |  30% font-ttf-ubuntu-0.83 | 1.8 MB    | ###9       |  39% font-ttf-ubuntu-0.83 | 1.8 MB    | #####5     |  56% font-ttf-ubuntu-0.83 | 1.8 MB    | ########## | 100% 
+_openmp_mutex-4.5    | 22 KB     |            |   0% _openmp_mutex-4.5    | 22 KB     | ########## | 100% 
+multidict-4.7.5      | 69 KB     |            |   0% multidict-4.7.5      | 69 KB     | ##3        |  23% multidict-4.7.5      | 69 KB     | ########## | 100% 
+r-sdmtools-1.1_221.2 | 251 KB    |            |   0% r-sdmtools-1.1_221.2 | 251 KB    | 6          |   6% r-sdmtools-1.1_221.2 | 251 KB    | ########## | 100% 
+tqdm-4.48.0          | 52 KB     |            |   0% tqdm-4.48.0          | 52 KB     | ###        |  31% tqdm-4.48.0          | 52 KB     | ########## | 100% 
+r-openssl-1.4.2      | 1.2 MB    |            |   0% r-openssl-1.4.2      | 1.2 MB    | 1          |   1% r-openssl-1.4.2      | 1.2 MB    | ####2      |  42% r-openssl-1.4.2      | 1.2 MB    | ########6  |  87% r-openssl-1.4.2      | 1.2 MB    | ########## | 100% 
+r-sctransform-0.2.1  | 336 KB    |            |   0% r-sctransform-0.2.1  | 336 KB    | 4          |   5% r-sctransform-0.2.1  | 336 KB    | ########## | 100% 
+r-rann-2.6.1         | 61 KB     |            |   0% r-rann-2.6.1         | 61 KB     | ########## | 100% 
+freetype-2.10.2      | 915 KB    |            |   0% freetype-2.10.2      | 915 KB    | 6          |   7% freetype-2.10.2      | 915 KB    | #          |  10% freetype-2.10.2      | 915 KB    | #########9 | 100% freetype-2.10.2      | 915 KB    | ########## | 100% 
+pysam-0.16.0.1       | 2.5 MB    |            |   0% pysam-0.16.0.1       | 2.5 MB    |            |   1% pysam-0.16.0.1       | 2.5 MB    | #1         |  12% pysam-0.16.0.1       | 2.5 MB    | ####       |  41% pysam-0.16.0.1       | 2.5 MB    | #####3     |  54% pysam-0.16.0.1       | 2.5 MB    | #######7   |  78% pysam-0.16.0.1       | 2.5 MB    | ########## | 100% 
+pynacl-1.3.0         | 1.3 MB    |            |   0% pynacl-1.3.0         | 1.3 MB    | 1          |   1% pynacl-1.3.0         | 1.3 MB    | ####6      |  47% pynacl-1.3.0         | 1.3 MB    | ######2    |  62% pynacl-1.3.0         | 1.3 MB    | ########## | 100% 
+r-ica-1.0_2          | 87 KB     |            |   0% r-ica-1.0_2          | 87 KB     | #8         |  18% r-ica-1.0_2          | 87 KB     | ########## | 100% 
+libpng-1.6.37        | 364 KB    |            |   0% libpng-1.6.37        | 364 KB    | ###        |  31% libpng-1.6.37        | 364 KB    | ########## | 100% 
+r-rocr-1.0_11        | 439 KB    |            |   0% r-rocr-1.0_11        | 439 KB    | 3          |   4% r-rocr-1.0_11        | 439 KB    | ########## | 100% 
+perl-5.26.2          | 15.9 MB   |            |   0% perl-5.26.2          | 15.9 MB   |            |   1% perl-5.26.2          | 15.9 MB   | 3          |   4% perl-5.26.2          | 15.9 MB   | 7          |   7% perl-5.26.2          | 15.9 MB   | 9          |   9% perl-5.26.2          | 15.9 MB   | #1         |  12% perl-5.26.2          | 15.9 MB   | #7         |  17% perl-5.26.2          | 15.9 MB   | ##         |  21% perl-5.26.2          | 15.9 MB   | ##9        |  30% perl-5.26.2          | 15.9 MB   | ###3       |  34% perl-5.26.2          | 15.9 MB   | ###8       |  39% perl-5.26.2          | 15.9 MB   | ####2      |  43% perl-5.26.2          | 15.9 MB   | ####6      |  46% perl-5.26.2          | 15.9 MB   | #####      |  50% perl-5.26.2          | 15.9 MB   | #####7     |  57% perl-5.26.2          | 15.9 MB   | ######3    |  63% perl-5.26.2          | 15.9 MB   | ######7    |  67% perl-5.26.2          | 15.9 MB   | #######4   |  74% perl-5.26.2          | 15.9 MB   | #######9   |  79% perl-5.26.2          | 15.9 MB   | ########3  |  83% perl-5.26.2          | 15.9 MB   | #########5 |  96% perl-5.26.2          | 15.9 MB   | ########## | 100% 
+bioconductor-biocgen | 691 KB    |            |   0% bioconductor-biocgen | 691 KB    | 2          |   2% bioconductor-biocgen | 691 KB    | ########## | 100% 
+r-png-0.1_7          | 47 KB     |            |   0% r-png-0.1_7          | 47 KB     | ###4       |  34% r-png-0.1_7          | 47 KB     | ########## | 100% 
+r-gplots-3.0.4       | 595 KB    |            |   0% r-gplots-3.0.4       | 595 KB    | 2          |   3% r-gplots-3.0.4       | 595 KB    | ########## | 100% 
+psutil-5.7.2         | 342 KB    |            |   0% psutil-5.7.2         | 342 KB    | 4          |   5% psutil-5.7.2         | 342 KB    | ########## | 100% 
+r-assertthat-0.2.1   | 74 KB     |            |   0% r-assertthat-0.2.1   | 74 KB     | ##1        |  22% r-assertthat-0.2.1   | 74 KB     | ########## | 100% 
+gmp-6.2.0            | 818 KB    |            |   0% gmp-6.2.0            | 818 KB    | 1          |   2% gmp-6.2.0            | 818 KB    | #####4     |  55% gmp-6.2.0            | 818 KB    | ########## | 100% 
+r-abind-1.4_5        | 82 KB     |            |   0% r-abind-1.4_5        | 82 KB     | #9         |  19% r-abind-1.4_5        | 82 KB     | ########## | 100% 
+r-lambda.r-1.2.4     | 120 KB    |            |   0% r-lambda.r-1.2.4     | 120 KB    | #3         |  13% r-lambda.r-1.2.4     | 120 KB    | ########## | 100% 
+libllvm9-9.0.1       | 25.1 MB   |            |   0% libllvm9-9.0.1       | 25.1 MB   |            |   0% libllvm9-9.0.1       | 25.1 MB   | 2          |   3% libllvm9-9.0.1       | 25.1 MB   | 5          |   5% libllvm9-9.0.1       | 25.1 MB   | 8          |   9% libllvm9-9.0.1       | 25.1 MB   | #2         |  12% libllvm9-9.0.1       | 25.1 MB   | #4         |  14% libllvm9-9.0.1       | 25.1 MB   | #6         |  16% libllvm9-9.0.1       | 25.1 MB   | #8         |  19% libllvm9-9.0.1       | 25.1 MB   | ##2        |  22% libllvm9-9.0.1       | 25.1 MB   | ##4        |  25% libllvm9-9.0.1       | 25.1 MB   | ##7        |  27% libllvm9-9.0.1       | 25.1 MB   | ##9        |  29% libllvm9-9.0.1       | 25.1 MB   | ###2       |  32% libllvm9-9.0.1       | 25.1 MB   | ###5       |  36% libllvm9-9.0.1       | 25.1 MB   | ###8       |  38% libllvm9-9.0.1       | 25.1 MB   | ####       |  41% libllvm9-9.0.1       | 25.1 MB   | ####3      |  43% libllvm9-9.0.1       | 25.1 MB   | ####5      |  45% libllvm9-9.0.1       | 25.1 MB   | ####9      |  49% libllvm9-9.0.1       | 25.1 MB   | #####1     |  52% libllvm9-9.0.1       | 25.1 MB   | #####4     |  55% libllvm9-9.0.1       | 25.1 MB   | #####7     |  58% libllvm9-9.0.1       | 25.1 MB   | ######     |  60% libllvm9-9.0.1       | 25.1 MB   | ######6    |  67% libllvm9-9.0.1       | 25.1 MB   | #######    |  70% libllvm9-9.0.1       | 25.1 MB   | #######3   |  73% libllvm9-9.0.1       | 25.1 MB   | #######6   |  76% libllvm9-9.0.1       | 25.1 MB   | #######9   |  79% libllvm9-9.0.1       | 25.1 MB   | ########1  |  82% libllvm9-9.0.1       | 25.1 MB   | ########4  |  85% libllvm9-9.0.1       | 25.1 MB   | ########7  |  88% libllvm9-9.0.1       | 25.1 MB   | #########1 |  92% libllvm9-9.0.1       | 25.1 MB   | #########5 |  96% libllvm9-9.0.1       | 25.1 MB   | #########8 |  98% libllvm9-9.0.1       | 25.1 MB   | ########## | 100% 
+perl-xml-parser-2.44 | 165 KB    |            |   0% perl-xml-parser-2.44 | 165 KB    | 9          |  10% perl-xml-parser-2.44 | 165 KB    | ########## | 100% 
+r-ggplot2-3.3.2      | 3.9 MB    |            |   0% r-ggplot2-3.3.2      | 3.9 MB    |            |   0% r-ggplot2-3.3.2      | 3.9 MB    | 5          |   6% r-ggplot2-3.3.2      | 3.9 MB    | ##         |  21% r-ggplot2-3.3.2      | 3.9 MB    | ####7      |  48% r-ggplot2-3.3.2      | 3.9 MB    | #####7     |  57% r-ggplot2-3.3.2      | 3.9 MB    | #######2   |  72% r-ggplot2-3.3.2      | 3.9 MB    | ########## | 100% 
+r-leiden-0.3.1       | 1.3 MB    |            |   0% r-leiden-0.3.1       | 1.3 MB    | 1          |   1% r-leiden-0.3.1       | 1.3 MB    | ###        |  30% r-leiden-0.3.1       | 1.3 MB    | ########## | 100% 
+r-rcppprogress-0.4.2 | 37 KB     |            |   0% r-rcppprogress-0.4.2 | 37 KB     | ####3      |  43% r-rcppprogress-0.4.2 | 37 KB     | ########## | 100% 
+r-highr-0.8          | 60 KB     |            |   0% r-highr-0.8          | 60 KB     | ##6        |  26% r-highr-0.8          | 60 KB     | ########## | 100% 
+r-pbapply-1.4_2      | 80 KB     |            |   0% r-pbapply-1.4_2      | 80 KB     | ##         |  20% r-pbapply-1.4_2      | 80 KB     | ########## | 100% 
+r-rtsne-0.15         | 126 KB    |            |   0% r-rtsne-0.15         | 126 KB    | #2         |  13% r-rtsne-0.15         | 126 KB    | ########## | 100% 
+sed-4.8              | 254 KB    |            |   0% sed-4.8              | 254 KB    | #####6     |  57% sed-4.8              | 254 KB    | ########## | 100% 
+google-cloud-core-1. | 25 KB     |            |   0% google-cloud-core-1. | 25 KB     | ########## | 100% 
+gfortran_impl_linux- | 9.0 MB    |            |   0% gfortran_impl_linux- | 9.0 MB    | 1          |   1% gfortran_impl_linux- | 9.0 MB    | 3          |   4% gfortran_impl_linux- | 9.0 MB    | #1         |  11% gfortran_impl_linux- | 9.0 MB    | #8         |  18% gfortran_impl_linux- | 9.0 MB    | ##3        |  23% gfortran_impl_linux- | 9.0 MB    | ###2       |  33% gfortran_impl_linux- | 9.0 MB    | ###8       |  39% gfortran_impl_linux- | 9.0 MB    | ####4      |  45% gfortran_impl_linux- | 9.0 MB    | #####5     |  55% gfortran_impl_linux- | 9.0 MB    | ######2    |  62% gfortran_impl_linux- | 9.0 MB    | ######9    |  69% gfortran_impl_linux- | 9.0 MB    | #######6   |  77% gfortran_impl_linux- | 9.0 MB    | ########3  |  83% gfortran_impl_linux- | 9.0 MB    | #########3 |  94% gfortran_impl_linux- | 9.0 MB    | ########## | 100% 
+r-mime-0.9           | 52 KB     |            |   0% r-mime-0.9           | 52 KB     | ###1       |  31% r-mime-0.9           | 52 KB     | ########## | 100% 
+grpcio-1.31.0        | 2.2 MB    |            |   0% grpcio-1.31.0        | 2.2 MB    | 5          |   6% grpcio-1.31.0        | 2.2 MB    | #6         |  17% grpcio-1.31.0        | 2.2 MB    | ######     |  60% grpcio-1.31.0        | 2.2 MB    | ########8  |  88% grpcio-1.31.0        | 2.2 MB    | ########## | 100% 
+r-hms-0.5.3          | 122 KB    |            |   0% r-hms-0.5.3          | 122 KB    | #3         |  13% r-hms-0.5.3          | 122 KB    | ########## | 100% 
+gdk-pixbuf-2.38.2    | 653 KB    |            |   0% gdk-pixbuf-2.38.2    | 653 KB    | 2          |   2% gdk-pixbuf-2.38.2    | 653 KB    | #######1   |  71% gdk-pixbuf-2.38.2    | 653 KB    | ########## | 100% 
+natsort-7.0.1        | 35 KB     |            |   0% natsort-7.0.1        | 35 KB     | ####5      |  46% natsort-7.0.1        | 35 KB     | ########## | 100% 
+importlib_metadata-1 | 11 KB     |            |   0% importlib_metadata-1 | 11 KB     | ########## | 100% 
+r-callr-3.4.3        | 392 KB    |            |   0% r-callr-3.4.3        | 392 KB    | 4          |   4% r-callr-3.4.3        | 392 KB    | ########## | 100% 
+r-vctrs-0.3.2        | 1.0 MB    |            |   0% r-vctrs-0.3.2        | 1.0 MB    | 1          |   2% r-vctrs-0.3.2        | 1.0 MB    | #####9     |  59% r-vctrs-0.3.2        | 1.0 MB    | #########3 |  93% r-vctrs-0.3.2        | 1.0 MB    | ########## | 100% 
+decorator-4.4.2      | 14 KB     |            |   0% decorator-4.4.2      | 14 KB     | ########## | 100% 
+lzo-2.10             | 317 KB    |            |   0% lzo-2.10             | 317 KB    | 5          |   5% lzo-2.10             | 317 KB    | ########## | 100% 
+r-uwot-0.1.8         | 432 KB    |            |   0% r-uwot-0.1.8         | 432 KB    | 3          |   4% r-uwot-0.1.8         | 432 KB    | ########8  |  89% r-uwot-0.1.8         | 432 KB    | ########## | 100% 
+r-pkgconfig-2.0.3    | 24 KB     |            |   0% r-pkgconfig-2.0.3    | 24 KB     | ########## | 100% 
+r-rsvd-1.0.3         | 5.9 MB    |            |   0% r-rsvd-1.0.3         | 5.9 MB    |            |   0% r-rsvd-1.0.3         | 5.9 MB    | #2         |  13% r-rsvd-1.0.3         | 5.9 MB    | ##2        |  22% r-rsvd-1.0.3         | 5.9 MB    | ##9        |  30% r-rsvd-1.0.3         | 5.9 MB    | ###9       |  40% r-rsvd-1.0.3         | 5.9 MB    | #####3     |  53% r-rsvd-1.0.3         | 5.9 MB    | ######3    |  64% r-rsvd-1.0.3         | 5.9 MB    | #######1   |  72% r-rsvd-1.0.3         | 5.9 MB    | #######8   |  78% r-rsvd-1.0.3         | 5.9 MB    | #########  |  91% r-rsvd-1.0.3         | 5.9 MB    | ########## | 100% 
+r-dbplyr-1.4.4       | 643 KB    |            |   0% r-dbplyr-1.4.4       | 643 KB    | 2          |   2% r-dbplyr-1.4.4       | 643 KB    | #########4 |  95% r-dbplyr-1.4.4       | 643 KB    | ########## | 100% 
+binutils_linux-64-2. | 22 KB     |            |   0% binutils_linux-64-2. | 22 KB     | #######2   |  73% binutils_linux-64-2. | 22 KB     | ########## | 100% 
+pycparser-2.19       | 172 KB    |            |   0% pycparser-2.19       | 172 KB    | 9          |   9% pycparser-2.19       | 172 KB    | ########## | 100% 
+r-seurat-3.1.5       | 1.6 MB    |            |   0% r-seurat-3.1.5       | 1.6 MB    |            |   1% r-seurat-3.1.5       | 1.6 MB    | ###1       |  31% r-seurat-3.1.5       | 1.6 MB    | ####2      |  43% r-seurat-3.1.5       | 1.6 MB    | #######5   |  76% r-seurat-3.1.5       | 1.6 MB    | ########## | 100% 
+xz-5.2.5             | 438 KB    |            |   0% xz-5.2.5             | 438 KB    | 3          |   4% xz-5.2.5             | 438 KB    | ########## | 100% 
+bioconductor-mast-1. | 7.9 MB    |            |   0% bioconductor-mast-1. | 7.9 MB    |            |   0% bioconductor-mast-1. | 7.9 MB    | 1          |   2% bioconductor-mast-1. | 7.9 MB    | #3         |  13% bioconductor-mast-1. | 7.9 MB    | ##         |  20% bioconductor-mast-1. | 7.9 MB    | ##7        |  27% bioconductor-mast-1. | 7.9 MB    | ###4       |  35% bioconductor-mast-1. | 7.9 MB    | ####5      |  45% bioconductor-mast-1. | 7.9 MB    | #####4     |  54% bioconductor-mast-1. | 7.9 MB    | ######     |  61% bioconductor-mast-1. | 7.9 MB    | #######1   |  72% bioconductor-mast-1. | 7.9 MB    | ########3  |  84% bioconductor-mast-1. | 7.9 MB    | #########2 |  92% bioconductor-mast-1. | 7.9 MB    | #########9 |  99% bioconductor-mast-1. | 7.9 MB    | ########## | 100% 
+libev-4.33           | 107 KB    |            |   0% libev-4.33           | 107 KB    | ########## | 100% 
+google-auth-1.20.0   | 56 KB     |            |   0% google-auth-1.20.0   | 56 KB     | ##8        |  29% google-auth-1.20.0   | 56 KB     | ########## | 100% 
+r-npsurv-0.4_0.1     | 195 KB    |            |   0% r-npsurv-0.4_0.1     | 195 KB    | 8          |   8% r-npsurv-0.4_0.1     | 195 KB    | ########## | 100% 
+pyopenssl-19.1.0     | 47 KB     |            |   0% pyopenssl-19.1.0     | 47 KB     | ########## | 100% 
+llvmlite-0.33.0      | 20.9 MB   |            |   0% llvmlite-0.33.0      | 20.9 MB   |            |   0% llvmlite-0.33.0      | 20.9 MB   | 4          |   5% llvmlite-0.33.0      | 20.9 MB   | 7          |   7% llvmlite-0.33.0      | 20.9 MB   | 9          |   9% llvmlite-0.33.0      | 20.9 MB   | #1         |  11% llvmlite-0.33.0      | 20.9 MB   | #3         |  14% llvmlite-0.33.0      | 20.9 MB   | #8         |  19% llvmlite-0.33.0      | 20.9 MB   | ##1        |  22% llvmlite-0.33.0      | 20.9 MB   | ##5        |  26% llvmlite-0.33.0      | 20.9 MB   | ###        |  30% llvmlite-0.33.0      | 20.9 MB   | ###3       |  34% llvmlite-0.33.0      | 20.9 MB   | ###6       |  37% llvmlite-0.33.0      | 20.9 MB   | ####       |  41% llvmlite-0.33.0      | 20.9 MB   | ####7      |  47% llvmlite-0.33.0      | 20.9 MB   | #####2     |  53% llvmlite-0.33.0      | 20.9 MB   | #####6     |  56% llvmlite-0.33.0      | 20.9 MB   | #####9     |  60% llvmlite-0.33.0      | 20.9 MB   | ######2    |  63% llvmlite-0.33.0      | 20.9 MB   | ######9    |  70% llvmlite-0.33.0      | 20.9 MB   | #######3   |  74% llvmlite-0.33.0      | 20.9 MB   | #######9   |  80% llvmlite-0.33.0      | 20.9 MB   | ########3  |  83% llvmlite-0.33.0      | 20.9 MB   | ########6  |  87% llvmlite-0.33.0      | 20.9 MB   | #########1 |  92% llvmlite-0.33.0      | 20.9 MB   | #########5 |  96% llvmlite-0.33.0      | 20.9 MB   | ########## | 100% 
+pyparsing-2.4.7      | 64 KB     |            |   0% pyparsing-2.4.7      | 64 KB     | ##4        |  25% pyparsing-2.4.7      | 64 KB     | ########## | 100% 
+readline-8.0         | 428 KB    |            |   0% readline-8.0         | 428 KB    | 3          |   4% readline-8.0         | 428 KB    | ########## | 100% 
+conda-4.8.3          | 3.0 MB    |            |   0% conda-4.8.3          | 3.0 MB    | 3          |   3% conda-4.8.3          | 3.0 MB    | #8         |  19% conda-4.8.3          | 3.0 MB    | ##4        |  24% conda-4.8.3          | 3.0 MB    | ####2      |  42% conda-4.8.3          | 3.0 MB    | ######1    |  61% conda-4.8.3          | 3.0 MB    | ########## | 100% 
+bioconductor-loomexp | 904 KB    |            |   0% bioconductor-loomexp | 904 KB    | 1          |   2% bioconductor-loomexp | 904 KB    | ##8        |  28% bioconductor-loomexp | 904 KB    | ########4  |  85% bioconductor-loomexp | 904 KB    | ########## | 100% 
+r-nlme-3.1_148       | 2.3 MB    |            |   0% r-nlme-3.1_148       | 2.3 MB    |            |   1% r-nlme-3.1_148       | 2.3 MB    | ##8        |  28% r-nlme-3.1_148       | 2.3 MB    | #####3     |  54% r-nlme-3.1_148       | 2.3 MB    | ########1  |  82% r-nlme-3.1_148       | 2.3 MB    | ########## | 100% 
+r-sys-3.3            | 48 KB     |            |   0% r-sys-3.3            | 48 KB     | ###3       |  33% r-sys-3.3            | 48 KB     | ########## | 100% 
+c-ares-1.16.1        | 112 KB    |            |   0% c-ares-1.16.1        | 112 KB    | #4         |  14% c-ares-1.16.1        | 112 KB    | ########## | 100% 
+gitpython-3.1.7      | 109 KB    |            |   0% gitpython-3.1.7      | 109 KB    | #4         |  15% gitpython-3.1.7      | 109 KB    | ########## | 100% 
+ca-certificates-2020 | 145 KB    |            |   0% ca-certificates-2020 | 145 KB    | #1         |  11% ca-certificates-2020 | 145 KB    | ########## | 100% 
+font-ttf-source-code | 922 KB    |            |   0% font-ttf-source-code | 922 KB    | #5         |  16% font-ttf-source-code | 922 KB    | #######2   |  73% font-ttf-source-code | 922 KB    | ########## | 100% 
+gxx_impl_linux-64-7. | 9.5 MB    |            |   0% gxx_impl_linux-64-7. | 9.5 MB    |            |   0% gxx_impl_linux-64-7. | 9.5 MB    | 6          |   6% gxx_impl_linux-64-7. | 9.5 MB    | 8          |   8% gxx_impl_linux-64-7. | 9.5 MB    | #7         |  17% gxx_impl_linux-64-7. | 9.5 MB    | ##3        |  23% gxx_impl_linux-64-7. | 9.5 MB    | ###2       |  32% gxx_impl_linux-64-7. | 9.5 MB    | ###7       |  38% gxx_impl_linux-64-7. | 9.5 MB    | ####3      |  44% gxx_impl_linux-64-7. | 9.5 MB    | #####3     |  54% gxx_impl_linux-64-7. | 9.5 MB    | ######     |  60% gxx_impl_linux-64-7. | 9.5 MB    | ######6    |  67% gxx_impl_linux-64-7. | 9.5 MB    | #######3   |  73% gxx_impl_linux-64-7. | 9.5 MB    | #######8   |  79% gxx_impl_linux-64-7. | 9.5 MB    | ########5  |  85% gxx_impl_linux-64-7. | 9.5 MB    | #########5 |  96% gxx_impl_linux-64-7. | 9.5 MB    | ########## | 100% 
+r-crosstalk-1.1.0.1  | 670 KB    |            |   0% r-crosstalk-1.1.0.1  | 670 KB    | #1         |  12% r-crosstalk-1.1.0.1  | 670 KB    | ######9    |  69% r-crosstalk-1.1.0.1  | 670 KB    | ########## | 100% 
+ruamel_yaml-0.15.87  | 271 KB    |            |   0% ruamel_yaml-0.15.87  | 271 KB    | 5          |   6% ruamel_yaml-0.15.87  | 271 KB    | ########## | 100% 
+pysocks-1.7.1        | 27 KB     |            |   0% pysocks-1.7.1        | 27 KB     | #####9     |  60% pysocks-1.7.1        | 27 KB     | ########## | 100% 
+r-rstudioapi-0.11    | 267 KB    |            |   0% r-rstudioapi-0.11    | 267 KB    | 6          |   6% r-rstudioapi-0.11    | 267 KB    | ########## | 100% 
+bwidget-1.9.14       | 119 KB    |            |   0% bwidget-1.9.14       | 119 KB    | #3         |  13% bwidget-1.9.14       | 119 KB    | ########## | 100% 
+bioconductor-rtrackl | 2.9 MB    |            |   0% bioconductor-rtrackl | 2.9 MB    |            |   1% bioconductor-rtrackl | 2.9 MB    | 8          |   9% bioconductor-rtrackl | 2.9 MB    | ####1      |  42% bioconductor-rtrackl | 2.9 MB    | ######     |  60% bioconductor-rtrackl | 2.9 MB    | ########8  |  88% bioconductor-rtrackl | 2.9 MB    | ########## | 100% 
+pygments-2.6.1       | 687 KB    |            |   0% pygments-2.6.1       | 687 KB    | 2          |   2% pygments-2.6.1       | 687 KB    | ########## | 100% 
+kiwisolver-1.2.0     | 91 KB     |            |   0% kiwisolver-1.2.0     | 91 KB     | #7         |  18% kiwisolver-1.2.0     | 91 KB     | ########## | 100% 
+bioconductor-delayed | 2.1 MB    |            |   0% bioconductor-delayed | 2.1 MB    | 5          |   6% bioconductor-delayed | 2.1 MB    | #8         |  18% bioconductor-delayed | 2.1 MB    | ##2        |  23% bioconductor-delayed | 2.1 MB    | #######    |  71% bioconductor-delayed | 2.1 MB    | #########6 |  96% bioconductor-delayed | 2.1 MB    | ########## | 100% 
+bioconductor-xvector | 724 KB    |            |   0% bioconductor-xvector | 724 KB    | 2          |   2% bioconductor-xvector | 724 KB    | ######6    |  66% bioconductor-xvector | 724 KB    | ########## | 100% 
+librsvg-2.49.3       | 16.6 MB   |            |   0% librsvg-2.49.3       | 16.6 MB   |            |   0% librsvg-2.49.3       | 16.6 MB   | 4          |   5% librsvg-2.49.3       | 16.6 MB   | 7          |   8% librsvg-2.49.3       | 16.6 MB   | #2         |  13% librsvg-2.49.3       | 16.6 MB   | #8         |  19% librsvg-2.49.3       | 16.6 MB   | ##3        |  23% librsvg-2.49.3       | 16.6 MB   | ##6        |  27% librsvg-2.49.3       | 16.6 MB   | ###        |  30% librsvg-2.49.3       | 16.6 MB   | ###6       |  37% librsvg-2.49.3       | 16.6 MB   | ####       |  41% librsvg-2.49.3       | 16.6 MB   | ####4      |  45% librsvg-2.49.3       | 16.6 MB   | ####8      |  48% librsvg-2.49.3       | 16.6 MB   | #####1     |  52% librsvg-2.49.3       | 16.6 MB   | #####5     |  55% librsvg-2.49.3       | 16.6 MB   | #####8     |  59% librsvg-2.49.3       | 16.6 MB   | ######2    |  63% librsvg-2.49.3       | 16.6 MB   | ######6    |  67% librsvg-2.49.3       | 16.6 MB   | #######    |  70% librsvg-2.49.3       | 16.6 MB   | #######6   |  77% librsvg-2.49.3       | 16.6 MB   | ########1  |  82% librsvg-2.49.3       | 16.6 MB   | ########6  |  86% librsvg-2.49.3       | 16.6 MB   | #########2 |  92% librsvg-2.49.3       | 16.6 MB   | #########6 |  96% librsvg-2.49.3       | 16.6 MB   | ########## | 100% 
+kernel-headers_linux | 707 KB    |            |   0% kernel-headers_linux | 707 KB    | 2          |   2% kernel-headers_linux | 707 KB    | ######1    |  61% kernel-headers_linux | 707 KB    | ########## | 100% 
+tbb-2020.1           | 1.4 MB    |            |   0% tbb-2020.1           | 1.4 MB    | 1          |   1% tbb-2020.1           | 1.4 MB    | 5          |   5% tbb-2020.1           | 1.4 MB    | ####6      |  47% tbb-2020.1           | 1.4 MB    | ########## | 100% 
+r-patchwork-1.1.0    | 3.1 MB    |            |   0% r-patchwork-1.1.0    | 3.1 MB    |            |   1% r-patchwork-1.1.0    | 3.1 MB    | #9         |  20% r-patchwork-1.1.0    | 3.1 MB    | ###7       |  38% r-patchwork-1.1.0    | 3.1 MB    | ####7      |  47% r-patchwork-1.1.0    | 3.1 MB    | ######2    |  62% r-patchwork-1.1.0    | 3.1 MB    | #######8   |  79% r-patchwork-1.1.0    | 3.1 MB    | ########## | 100% 
+ftputil-4.0.0        | 74 KB     |            |   0% ftputil-4.0.0        | 74 KB     | ##1        |  21% ftputil-4.0.0        | 74 KB     | ########## | 100% 
+r-haven-2.3.1        | 374 KB    |            |   0% r-haven-2.3.1        | 374 KB    | ###8       |  39% r-haven-2.3.1        | 374 KB    | ########## | 100% 
+r-markdown-1.1       | 144 KB    |            |   0% r-markdown-1.1       | 144 KB    | ########## | 100% 
+bioconductor-biostri | 13.8 MB   |            |   0% bioconductor-biostri | 13.8 MB   |            |   0% bioconductor-biostri | 13.8 MB   | 1          |   1% bioconductor-biostri | 13.8 MB   | 4          |   4% bioconductor-biostri | 13.8 MB   | 7          |   7% bioconductor-biostri | 13.8 MB   | 9          |  10% bioconductor-biostri | 13.8 MB   | #5         |  16% bioconductor-biostri | 13.8 MB   | #9         |  19% bioconductor-biostri | 13.8 MB   | ##3        |  23% bioconductor-biostri | 13.8 MB   | ##9        |  29% bioconductor-biostri | 13.8 MB   | ###2       |  33% bioconductor-biostri | 13.8 MB   | ####       |  40% bioconductor-biostri | 13.8 MB   | ####4      |  45% bioconductor-biostri | 13.8 MB   | ####9      |  49% bioconductor-biostri | 13.8 MB   | #####3     |  53% bioconductor-biostri | 13.8 MB   | #####7     |  57% bioconductor-biostri | 13.8 MB   | ######     |  61% bioconductor-biostri | 13.8 MB   | ######7    |  68% bioconductor-biostri | 13.8 MB   | #######2   |  72% bioconductor-biostri | 13.8 MB   | #######6   |  77% bioconductor-biostri | 13.8 MB   | ########3  |  83% bioconductor-biostri | 13.8 MB   | ########7  |  88% bioconductor-biostri | 13.8 MB   | #########1 |  92% bioconductor-biostri | 13.8 MB   | #########7 |  97% bioconductor-biostri | 13.8 MB   | ########## | 100% 
+pixman-0.38.0        | 618 KB    |            |   0% pixman-0.38.0        | 618 KB    | 2          |   3% pixman-0.38.0        | 618 KB    | ########8  |  88% pixman-0.38.0        | 618 KB    | ########## | 100% 
+r-evaluate-0.14      | 81 KB     |            |   0% r-evaluate-0.14      | 81 KB     | #9         |  20% r-evaluate-0.14      | 81 KB     | ########## | 100% 
+r-htmltools-0.5.0    | 235 KB    |            |   0% r-htmltools-0.5.0    | 235 KB    | 6          |   7% r-htmltools-0.5.0    | 235 KB    | ########## | 100% 
+r-cluster-2.1.0      | 554 KB    |            |   0% r-cluster-2.1.0      | 554 KB    | 2          |   3% r-cluster-2.1.0      | 554 KB    | ########## | 100% 
+imagemagick-7.0.10_2 | 2.5 MB    |            |   0% imagemagick-7.0.10_2 | 2.5 MB    |            |   1% imagemagick-7.0.10_2 | 2.5 MB    | ########## | 100% 
+r-mass-7.3_51.6      | 1.1 MB    |            |   0% r-mass-7.3_51.6      | 1.1 MB    | 1          |   1% r-mass-7.3_51.6      | 1.1 MB    | #####6     |  57% r-mass-7.3_51.6      | 1.1 MB    | ########## | 100% 
+r-rcurl-1.98_1.2     | 921 KB    |            |   0% r-rcurl-1.98_1.2     | 921 KB    | 1          |   2% r-rcurl-1.98_1.2     | 921 KB    | ########## | 100% 
+_r-mutex-1.0.1       | 3 KB      |            |   0% _r-mutex-1.0.1       | 3 KB      | ########## | 100% 
+bioconductor-hdf5arr | 9.5 MB    |            |   0% bioconductor-hdf5arr | 9.5 MB    |            |   0% bioconductor-hdf5arr | 9.5 MB    | 3          |   4% bioconductor-hdf5arr | 9.5 MB    | #          |  10% bioconductor-hdf5arr | 9.5 MB    | #5         |  16% bioconductor-hdf5arr | 9.5 MB    | ##         |  21% bioconductor-hdf5arr | 9.5 MB    | ##7        |  27% bioconductor-hdf5arr | 9.5 MB    | ###4       |  34% bioconductor-hdf5arr | 9.5 MB    | ####       |  40% bioconductor-hdf5arr | 9.5 MB    | ####8      |  48% bioconductor-hdf5arr | 9.5 MB    | #####4     |  54% bioconductor-hdf5arr | 9.5 MB    | ######     |  61% bioconductor-hdf5arr | 9.5 MB    | #######    |  70% bioconductor-hdf5arr | 9.5 MB    | #######7   |  77% bioconductor-hdf5arr | 9.5 MB    | ########7  |  87% bioconductor-hdf5arr | 9.5 MB    | #########4 |  94% bioconductor-hdf5arr | 9.5 MB    | ########## | 100% 
+r-tsne-0.1_3         | 38 KB     |            |   0% r-tsne-0.1_3         | 38 KB     | ########## | 100% 
+r-clipr-0.7.0        | 64 KB     |            |   0% r-clipr-0.7.0        | 64 KB     | ##4        |  25% r-clipr-0.7.0        | 64 KB     | ########## | 100% 
+atk-1.0-2.36.0       | 523 KB    |            |   0% atk-1.0-2.36.0       | 523 KB    | ##4        |  24% atk-1.0-2.36.0       | 523 KB    | ########## | 100% 
+r-blob-1.2.1         | 63 KB     |            |   0% r-blob-1.2.1         | 63 KB     | ##5        |  25% r-blob-1.2.1         | 63 KB     | ########## | 100% 
+colormath-3.0.0      | 34 KB     |            |   0% colormath-3.0.0      | 34 KB     | ####6      |  46% colormath-3.0.0      | 34 KB     | ########## | 100% 
+aiohttp-3.6.2        | 622 KB    |            |   0% aiohttp-3.6.2        | 622 KB    | ##3        |  23% aiohttp-3.6.2        | 622 KB    | ########## | 100% 
+ld_impl_linux-64-2.3 | 612 KB    |            |   0% ld_impl_linux-64-2.3 | 612 KB    | 2          |   3% ld_impl_linux-64-2.3 | 612 KB    | ########## | 100% 
+r-xml-3.99_0.3       | 1.7 MB    |            |   0% r-xml-3.99_0.3       | 1.7 MB    |            |   1% r-xml-3.99_0.3       | 1.7 MB    | ###6       |  37% r-xml-3.99_0.3       | 1.7 MB    | #######1   |  71% r-xml-3.99_0.3       | 1.7 MB    | ########## | 100% 
+r-cowplot-1.0.0      | 1.3 MB    |            |   0% r-cowplot-1.0.0      | 1.3 MB    | 1          |   1% r-cowplot-1.0.0      | 1.3 MB    | ########## | 100% 
+r-zeallot-0.1.0      | 66 KB     |            |   0% r-zeallot-0.1.0      | 66 KB     | ##4        |  24% r-zeallot-0.1.0      | 66 KB     | ########## | 100% 
+r-metap-1.1          | 490 KB    |            |   0% r-metap-1.1          | 490 KB    | 3          |   3% r-metap-1.1          | 490 KB    | ########## | 100% 
+bioconductor-limma-3 | 2.7 MB    |            |   0% bioconductor-limma-3 | 2.7 MB    |            |   1% bioconductor-limma-3 | 2.7 MB    | ##4        |  24% bioconductor-limma-3 | 2.7 MB    | ####3      |  44% bioconductor-limma-3 | 2.7 MB    | #######7   |  77% bioconductor-limma-3 | 2.7 MB    | ########## | 100% 
+r-plotly-4.9.2.1     | 2.7 MB    |            |   0% r-plotly-4.9.2.1     | 2.7 MB    |            |   1% r-plotly-4.9.2.1     | 2.7 MB    | #6         |  16% r-plotly-4.9.2.1     | 2.7 MB    | #####1     |  51% r-plotly-4.9.2.1     | 2.7 MB    | #######5   |  76% r-plotly-4.9.2.1     | 2.7 MB    | ########## | 100% 
+r-base64enc-0.1_3    | 32 KB     |            |   0% r-base64enc-0.1_3    | 32 KB     | ####9      |  50% r-base64enc-0.1_3    | 32 KB     | ########## | 100% 
+r-lmtest-0.9_37      | 360 KB    |            |   0% r-lmtest-0.9_37      | 360 KB    | 4          |   4% r-lmtest-0.9_37      | 360 KB    | ########## | 100% 
+pandas-1.0.5         | 10.1 MB   |            |   0% pandas-1.0.5         | 10.1 MB   |            |   0% pandas-1.0.5         | 10.1 MB   | 7          |   8% pandas-1.0.5         | 10.1 MB   | #          |  11% pandas-1.0.5         | 10.1 MB   | #6         |  16% pandas-1.0.5         | 10.1 MB   | ##         |  20% pandas-1.0.5         | 10.1 MB   | ##7        |  27% pandas-1.0.5         | 10.1 MB   | ###4       |  34% pandas-1.0.5         | 10.1 MB   | ####4      |  44% pandas-1.0.5         | 10.1 MB   | #####2     |  52% pandas-1.0.5         | 10.1 MB   | #####9     |  59% pandas-1.0.5         | 10.1 MB   | ######5    |  66% pandas-1.0.5         | 10.1 MB   | #######2   |  72% pandas-1.0.5         | 10.1 MB   | ########2  |  83% pandas-1.0.5         | 10.1 MB   | #########2 |  93% pandas-1.0.5         | 10.1 MB   | ########## | 100% 
+r-future-1.18.0      | 673 KB    |            |   0% r-future-1.18.0      | 673 KB    | 2          |   2% r-future-1.18.0      | 673 KB    | ########## | 100% 
+bioconductor-s4vecto | 2.1 MB    |            |   0% bioconductor-s4vecto | 2.1 MB    |            |   1% bioconductor-s4vecto | 2.1 MB    | ####       |  41% bioconductor-s4vecto | 2.1 MB    | #######5   |  75% bioconductor-s4vecto | 2.1 MB    | ########## | 100% 
+ncurses-6.2          | 1.1 MB    |            |   0% ncurses-6.2          | 1.1 MB    | 1          |   1% ncurses-6.2          | 1.1 MB    | #####1     |  51% ncurses-6.2          | 1.1 MB    | ########## | 100% 
+libseccomp-2.4.1     | 179 KB    |            |   0% libseccomp-2.4.1     | 179 KB    | 8          |   9% libseccomp-2.4.1     | 179 KB    | ########## | 100% 
+h5py-2.10.0          | 1.2 MB    |            |   0% h5py-2.10.0          | 1.2 MB    | 1          |   1% h5py-2.10.0          | 1.2 MB    | #####1     |  51% h5py-2.10.0          | 1.2 MB    | ########## | 100% 
+atk-2.36.0           | 17 KB     |            |   0% atk-2.36.0           | 17 KB     | #########5 |  96% atk-2.36.0           | 17 KB     | ########## | 100% 
+r-ape-5.4_1          | 2.2 MB    |            |   0% r-ape-5.4_1          | 2.2 MB    |            |   1% r-ape-5.4_1          | 2.2 MB    | ###5       |  35% r-ape-5.4_1          | 2.2 MB    | #####7     |  57% r-ape-5.4_1          | 2.2 MB    | ########## | 100% 
+r-pillar-1.4.6       | 194 KB    |            |   0% r-pillar-1.4.6       | 194 KB    | 8          |   8% r-pillar-1.4.6       | 194 KB    | ########## | 100% 
+libnghttp2-1.41.0    | 774 KB    |            |   0% libnghttp2-1.41.0    | 774 KB    | #8         |  19% libnghttp2-1.41.0    | 774 KB    | #######6   |  76% libnghttp2-1.41.0    | 774 KB    | ########## | 100% 
+curl-7.71.1          | 139 KB    |            |   0% curl-7.71.1          | 139 KB    | #1         |  12% curl-7.71.1          | 139 KB    | ########## | 100% 
+s3transfer-0.3.3     | 90 KB     |            |   0% s3transfer-0.3.3     | 90 KB     | #7         |  18% s3transfer-0.3.3     | 90 KB     | ########## | 100% 
+bioconductor-biobase | 2.3 MB    |            |   0% bioconductor-biobase | 2.3 MB    | 5          |   5% bioconductor-biobase | 2.3 MB    | #3         |  14% bioconductor-biobase | 2.3 MB    | ###3       |  34% bioconductor-biobase | 2.3 MB    | #######2   |  72% bioconductor-biobase | 2.3 MB    | #########6 |  97% bioconductor-biobase | 2.3 MB    | ########## | 100% 
+r-fansi-0.4.1        | 196 KB    |            |   0% r-fansi-0.4.1        | 196 KB    | 8          |   8% r-fansi-0.4.1        | 196 KB    | ########## | 100% 
+yarl-1.3.0           | 133 KB    |            |   0% yarl-1.3.0           | 133 KB    | ########## | 100% 
+pango-1.42.4         | 521 KB    |            |   0% pango-1.42.4         | 521 KB    | 3          |   3% pango-1.42.4         | 521 KB    | ########2  |  83% pango-1.42.4         | 521 KB    | ########## | 100% 
+gfortran_linux-64-7. | 22 KB     |            |   0% gfortran_linux-64-7. | 22 KB     | #######1   |  72% gfortran_linux-64-7. | 22 KB     | ########## | 100% 
+ninja-1.10.1         | 1.9 MB    |            |   0% ninja-1.10.1         | 1.9 MB    | 7          |   7% ninja-1.10.1         | 1.9 MB    | ###3       |  33% ninja-1.10.1         | 1.9 MB    | ######2    |  63% ninja-1.10.1         | 1.9 MB    | ########9  |  89% ninja-1.10.1         | 1.9 MB    | ########## | 100% 
+cryptography-2.8     | 612 KB    |            |   0% cryptography-2.8     | 612 KB    | #8         |  18% cryptography-2.8     | 612 KB    | #########6 |  97% cryptography-2.8     | 612 KB    | ########## | 100% 
+protobuf-3.12.4      | 723 KB    |            |   0% protobuf-3.12.4      | 723 KB    | 2          |   2% protobuf-3.12.4      | 723 KB    | #########5 |  95% protobuf-3.12.4      | 723 KB    | ########## | 100% 
+r-readr-1.3.1        | 814 KB    |            |   0% r-readr-1.3.1        | 814 KB    | 1          |   2% r-readr-1.3.1        | 814 KB    | #####8     |  59% r-readr-1.3.1        | 814 KB    | ########## | 100% 
+r-yaml-2.2.1         | 117 KB    |            |   0% r-yaml-2.2.1         | 117 KB    | #3         |  14% r-yaml-2.2.1         | 117 KB    | ########## | 100% 
+r-r.oo-1.23.0        | 965 KB    |            |   0% r-r.oo-1.23.0        | 965 KB    | 1          |   2% r-r.oo-1.23.0        | 965 KB    | ########## | 100% 
+r-fitdistrplus-1.1_1 | 2.7 MB    |            |   0% r-fitdistrplus-1.1_1 | 2.7 MB    |            |   1% r-fitdistrplus-1.1_1 | 2.7 MB    | ##3        |  24% r-fitdistrplus-1.1_1 | 2.7 MB    | ####       |  41% r-fitdistrplus-1.1_1 | 2.7 MB    | ######     |  60% r-fitdistrplus-1.1_1 | 2.7 MB    | #######3   |  74% r-fitdistrplus-1.1_1 | 2.7 MB    | ########## | 100% 
+jpeg-9d              | 264 KB    |            |   0% jpeg-9d              | 264 KB    | 6          |   6% jpeg-9d              | 264 KB    | ########## | 100% 
+matplotlib-base-3.3. | 6.7 MB    |            |   0% matplotlib-base-3.3. | 6.7 MB    |            |   0% matplotlib-base-3.3. | 6.7 MB    | ###1       |  32% matplotlib-base-3.3. | 6.7 MB    | ####       |  41% matplotlib-base-3.3. | 6.7 MB    | #####      |  50% matplotlib-base-3.3. | 6.7 MB    | #####8     |  59% matplotlib-base-3.3. | 6.7 MB    | ######6    |  67% matplotlib-base-3.3. | 6.7 MB    | #######5   |  76% matplotlib-base-3.3. | 6.7 MB    | ########3  |  84% matplotlib-base-3.3. | 6.7 MB    | #########4 |  95% matplotlib-base-3.3. | 6.7 MB    | ########## | 100% 
+tktable-2.10         | 88 KB     |            |   0% tktable-2.10         | 88 KB     | #8         |  18% tktable-2.10         | 88 KB     | ########## | 100% 
+crc32c-2.0           | 31 KB     |            |   0% crc32c-2.0           | 31 KB     | #####1     |  51% crc32c-2.0           | 31 KB     | ########## | 100% 
+krb5-1.17.1          | 1.5 MB    |            |   0% krb5-1.17.1          | 1.5 MB    | 1          |   1% krb5-1.17.1          | 1.5 MB    | ##7        |  28% krb5-1.17.1          | 1.5 MB    | #####4     |  54% krb5-1.17.1          | 1.5 MB    | ########## | 100% 
+wrapt-1.12.1         | 50 KB     |            |   0% wrapt-1.12.1         | 50 KB     | ###2       |  32% wrapt-1.12.1         | 50 KB     | ########## | 100% 
+pthread-stubs-0.4    | 5 KB      |            |   0% pthread-stubs-0.4    | 5 KB      | ########## | 100% 
+pytz-2020.1          | 239 KB    |            |   0% pytz-2020.1          | 239 KB    | 6          |   7% pytz-2020.1          | 239 KB    | ########## | 100% 
+r-digest-0.6.25      | 199 KB    |            |   0% r-digest-0.6.25      | 199 KB    | 8          |   8% r-digest-0.6.25      | 199 KB    | ########## | 100% 
+r-later-1.1.0.1      | 156 KB    |            |   0% r-later-1.1.0.1      | 156 KB    | #          |  10% r-later-1.1.0.1      | 156 KB    | ########## | 100% 
+bzip2-1.0.8          | 105 KB    |            |   0% bzip2-1.0.8          | 105 KB    | #5         |  15% bzip2-1.0.8          | 105 KB    | ########## | 100% 
+scikit-learn-0.23.1  | 6.8 MB    |            |   0% scikit-learn-0.23.1  | 6.8 MB    |            |   0% scikit-learn-0.23.1  | 6.8 MB    | 5          |   6% scikit-learn-0.23.1  | 6.8 MB    | #6         |  16% scikit-learn-0.23.1  | 6.8 MB    | ##4        |  25% scikit-learn-0.23.1  | 6.8 MB    | ###3       |  34% scikit-learn-0.23.1  | 6.8 MB    | ####1      |  41% scikit-learn-0.23.1  | 6.8 MB    | ####7      |  48% scikit-learn-0.23.1  | 6.8 MB    | ######     |  61% scikit-learn-0.23.1  | 6.8 MB    | #######3   |  73% scikit-learn-0.23.1  | 6.8 MB    | ########2  |  83% scikit-learn-0.23.1  | 6.8 MB    | #########4 |  94% scikit-learn-0.23.1  | 6.8 MB    | ########## | 100% 
+r-igraph-1.2.5       | 3.8 MB    |            |   0% r-igraph-1.2.5       | 3.8 MB    |            |   0% r-igraph-1.2.5       | 3.8 MB    | #8         |  18% r-igraph-1.2.5       | 3.8 MB    | ##4        |  24% r-igraph-1.2.5       | 3.8 MB    | ###8       |  39% r-igraph-1.2.5       | 3.8 MB    | #####2     |  53% r-igraph-1.2.5       | 3.8 MB    | ######2    |  63% r-igraph-1.2.5       | 3.8 MB    | #########3 |  94% r-igraph-1.2.5       | 3.8 MB    | ########## | 100% 
+olefile-0.46         | 48 KB     |            |   0% olefile-0.46         | 48 KB     | ###3       |  33% olefile-0.46         | 48 KB     | ########## | 100% 
+r-lazyeval-0.2.2     | 164 KB    |            |   0% r-lazyeval-0.2.2     | 164 KB    | 9          |  10% r-lazyeval-0.2.2     | 164 KB    | ########## | 100% 
+r-bh-1.72.0_3        | 10.5 MB   |            |   0% r-bh-1.72.0_3        | 10.5 MB   |            |   0% r-bh-1.72.0_3        | 10.5 MB   | 3          |   3% r-bh-1.72.0_3        | 10.5 MB   | 8          |   9% r-bh-1.72.0_3        | 10.5 MB   | #4         |  14% r-bh-1.72.0_3        | 10.5 MB   | #9         |  20% r-bh-1.72.0_3        | 10.5 MB   | ##7        |  27% r-bh-1.72.0_3        | 10.5 MB   | ###2       |  32% r-bh-1.72.0_3        | 10.5 MB   | ###7       |  37% r-bh-1.72.0_3        | 10.5 MB   | ####1      |  42% r-bh-1.72.0_3        | 10.5 MB   | ####7      |  48% r-bh-1.72.0_3        | 10.5 MB   | #####4     |  55% r-bh-1.72.0_3        | 10.5 MB   | ######3    |  63% r-bh-1.72.0_3        | 10.5 MB   | ######9    |  69% r-bh-1.72.0_3        | 10.5 MB   | #######5   |  75% r-bh-1.72.0_3        | 10.5 MB   | ########   |  81% r-bh-1.72.0_3        | 10.5 MB   | ########6  |  86% r-bh-1.72.0_3        | 10.5 MB   | #########5 |  96% r-bh-1.72.0_3        | 10.5 MB   | ########## | 100% 
+r-sitmo-2.0.1        | 152 KB    |            |   0% r-sitmo-2.0.1        | 152 KB    | #          |  11% r-sitmo-2.0.1        | 152 KB    | ########## | 100% 
+r-bitops-1.0_6       | 34 KB     |            |   0% r-bitops-1.0_6       | 34 KB     | ########## | 100% 
+r-tidyverse-1.3.0    | 452 KB    |            |   0% r-tidyverse-1.3.0    | 452 KB    | 3          |   4% r-tidyverse-1.3.0    | 452 KB    | ########## | 100% 
+r-rdpack-1.0.0       | 919 KB    |            |   0% r-rdpack-1.0.0       | 919 KB    | 1          |   2% r-rdpack-1.0.0       | 919 KB    | ###1       |  31% r-rdpack-1.0.0       | 919 KB    | ########## | 100% 
+numexpr-2.7.1        | 198 KB    |            |   0% numexpr-2.7.1        | 198 KB    | 8          |   8% numexpr-2.7.1        | 198 KB    | ########## | 100% 
+yaml-0.1.7           | 84 KB     |            |   0% yaml-0.1.7           | 84 KB     | #8         |  19% yaml-0.1.7           | 84 KB     | ########## | 100% 
+r-processx-3.4.3     | 297 KB    |            |   0% r-processx-3.4.3     | 297 KB    | 5          |   5% r-processx-3.4.3     | 297 KB    | ########## | 100% 
+gettext-0.19.8.1     | 3.7 MB    |            |   0% gettext-0.19.8.1     | 3.7 MB    | 5          |   6% gettext-0.19.8.1     | 3.7 MB    | #4         |  14% gettext-0.19.8.1     | 3.7 MB    | #7         |  18% gettext-0.19.8.1     | 3.7 MB    | ##1        |  21% gettext-0.19.8.1     | 3.7 MB    | #######2   |  73% gettext-0.19.8.1     | 3.7 MB    | ########## | 100% 
+r-catools-1.18.0     | 223 KB    |            |   0% r-catools-1.18.0     | 223 KB    | 7          |   7% r-catools-1.18.0     | 223 KB    | ########## | 100% 
+setuptools-49.2.0    | 944 KB    |            |   0% setuptools-49.2.0    | 944 KB    | ##         |  20% setuptools-49.2.0    | 944 KB    | ######4    |  64% setuptools-49.2.0    | 944 KB    | ########## | 100% 
+r-modelr-0.1.8       | 218 KB    |            |   0% r-modelr-0.1.8       | 218 KB    | 7          |   7% r-modelr-0.1.8       | 218 KB    | ########## | 100% 
+r-dplyr-1.0.0        | 1.0 MB    |            |   0% r-dplyr-1.0.0        | 1.0 MB    | 1          |   1% r-dplyr-1.0.0        | 1.0 MB    | #######6   |  76% r-dplyr-1.0.0        | 1.0 MB    | ########## | 100% 
+bcrypt-3.1.7         | 45 KB     |            |   0% bcrypt-3.1.7         | 45 KB     | ########## | 100% 
+seaborn-0.10.1       | 160 KB    |            |   0% seaborn-0.10.1       | 160 KB    | 9          |  10% seaborn-0.10.1       | 160 KB    | ########## | 100% 
+llvmdev-9.0.1        | 37.9 MB   |            |   0% llvmdev-9.0.1        | 37.9 MB   |            |   0% llvmdev-9.0.1        | 37.9 MB   |            |   1% llvmdev-9.0.1        | 37.9 MB   | 3          |   3% llvmdev-9.0.1        | 37.9 MB   | 5          |   5% llvmdev-9.0.1        | 37.9 MB   | 6          |   7% llvmdev-9.0.1        | 37.9 MB   | 7          |   8% llvmdev-9.0.1        | 37.9 MB   | #          |  11% llvmdev-9.0.1        | 37.9 MB   | #1         |  12% llvmdev-9.0.1        | 37.9 MB   | #3         |  13% llvmdev-9.0.1        | 37.9 MB   | #4         |  15% llvmdev-9.0.1        | 37.9 MB   | #6         |  17% llvmdev-9.0.1        | 37.9 MB   | #8         |  19% llvmdev-9.0.1        | 37.9 MB   | ##         |  21% llvmdev-9.0.1        | 37.9 MB   | ##2        |  22% llvmdev-9.0.1        | 37.9 MB   | ##4        |  25% llvmdev-9.0.1        | 37.9 MB   | ##6        |  26% llvmdev-9.0.1        | 37.9 MB   | ##8        |  28% llvmdev-9.0.1        | 37.9 MB   | ###        |  30% llvmdev-9.0.1        | 37.9 MB   | ###2       |  32% llvmdev-9.0.1        | 37.9 MB   | ###3       |  34% llvmdev-9.0.1        | 37.9 MB   | ###5       |  35% llvmdev-9.0.1        | 37.9 MB   | ###7       |  37% llvmdev-9.0.1        | 37.9 MB   | ###9       |  39% llvmdev-9.0.1        | 37.9 MB   | ####1      |  41% llvmdev-9.0.1        | 37.9 MB   | ####2      |  43% llvmdev-9.0.1        | 37.9 MB   | ####5      |  46% llvmdev-9.0.1        | 37.9 MB   | ####7      |  48% llvmdev-9.0.1        | 37.9 MB   | ####9      |  49% llvmdev-9.0.1        | 37.9 MB   | #####1     |  52% llvmdev-9.0.1        | 37.9 MB   | #####4     |  55% llvmdev-9.0.1        | 37.9 MB   | #####6     |  56% llvmdev-9.0.1        | 37.9 MB   | #####9     |  59% llvmdev-9.0.1        | 37.9 MB   | ######1    |  62% llvmdev-9.0.1        | 37.9 MB   | ######3    |  64% llvmdev-9.0.1        | 37.9 MB   | ######5    |  65% llvmdev-9.0.1        | 37.9 MB   | ######7    |  68% llvmdev-9.0.1        | 37.9 MB   | #######    |  70% llvmdev-9.0.1        | 37.9 MB   | #######2   |  73% llvmdev-9.0.1        | 37.9 MB   | #######4   |  75% llvmdev-9.0.1        | 37.9 MB   | #######7   |  77% llvmdev-9.0.1        | 37.9 MB   | #######9   |  79% llvmdev-9.0.1        | 37.9 MB   | ########1  |  82% llvmdev-9.0.1        | 37.9 MB   | ########3  |  83% llvmdev-9.0.1        | 37.9 MB   | ########5  |  86% llvmdev-9.0.1        | 37.9 MB   | ########7  |  87% llvmdev-9.0.1        | 37.9 MB   | ########9  |  89% llvmdev-9.0.1        | 37.9 MB   | #########2 |  92% llvmdev-9.0.1        | 37.9 MB   | #########4 |  94% llvmdev-9.0.1        | 37.9 MB   | #########6 |  97% llvmdev-9.0.1        | 37.9 MB   | #########8 |  99% llvmdev-9.0.1        | 37.9 MB   | ########## | 100% 
+numba-0.50.1         | 3.5 MB    |            |   0% numba-0.50.1         | 3.5 MB    |            |   0% numba-0.50.1         | 3.5 MB    | ##1        |  22% numba-0.50.1         | 3.5 MB    | ###7       |  37% numba-0.50.1         | 3.5 MB    | ####6      |  47% numba-0.50.1         | 3.5 MB    | ######4    |  64% numba-0.50.1         | 3.5 MB    | #######6   |  76% numba-0.50.1         | 3.5 MB    | ########## | 100% 
+libffi-3.2.1         | 52 KB     |            |   0% libffi-3.2.1         | 52 KB     | ###        |  31% libffi-3.2.1         | 52 KB     | ########## | 100% 
+pillow-7.2.0         | 675 KB    |            |   0% pillow-7.2.0         | 675 KB    | ##1        |  21% pillow-7.2.0         | 675 KB    | #####6     |  57% pillow-7.2.0         | 675 KB    | ########## | 100% 
+r-utf8-1.1.4         | 159 KB    |            |   0% r-utf8-1.1.4         | 159 KB    | #          |  10% r-utf8-1.1.4         | 159 KB    | ########## | 100% 
+font-ttf-inconsolata | 95 KB     |            |   0% font-ttf-inconsolata | 95 KB     | ########## | 100% 
+tk-8.6.10            | 3.2 MB    |            |   0% tk-8.6.10            | 3.2 MB    |            |   0% tk-8.6.10            | 3.2 MB    | ########## | 100% 
+statsmodels-0.11.1   | 10.2 MB   |            |   0% statsmodels-0.11.1   | 10.2 MB   |            |   0% statsmodels-0.11.1   | 10.2 MB   | 5          |   5% statsmodels-0.11.1   | 10.2 MB   | 7          |   7% statsmodels-0.11.1   | 10.2 MB   | #6         |  17% statsmodels-0.11.1   | 10.2 MB   | ##         |  21% statsmodels-0.11.1   | 10.2 MB   | ##9        |  29% statsmodels-0.11.1   | 10.2 MB   | ###4       |  34% statsmodels-0.11.1   | 10.2 MB   | ####6      |  46% statsmodels-0.11.1   | 10.2 MB   | #####2     |  52% statsmodels-0.11.1   | 10.2 MB   | #####8     |  58% statsmodels-0.11.1   | 10.2 MB   | ######4    |  64% statsmodels-0.11.1   | 10.2 MB   | #######3   |  73% statsmodels-0.11.1   | 10.2 MB   | #######9   |  80% statsmodels-0.11.1   | 10.2 MB   | ########7  |  87% statsmodels-0.11.1   | 10.2 MB   | #########9 | 100% statsmodels-0.11.1   | 10.2 MB   | ########## | 100% 
+bioconductor-edger-3 | 2.2 MB    |            |   0% bioconductor-edger-3 | 2.2 MB    |            |   1% bioconductor-edger-3 | 2.2 MB    | ####5      |  45% bioconductor-edger-3 | 2.2 MB    | #####8     |  58% bioconductor-edger-3 | 2.2 MB    | ########4  |  85% bioconductor-edger-3 | 2.2 MB    | ########## | 100% 
+r-reprex-0.3.0       | 429 KB    |            |   0% r-reprex-0.3.0       | 429 KB    | ###7       |  37% r-reprex-0.3.0       | 429 KB    | ########## | 100% 
+google-api-core-1.22 | 95 KB     |            |   0% google-api-core-1.22 | 95 KB     | #6         |  17% google-api-core-1.22 | 95 KB     | ########## | 100% 
+bioconductor-genomei | 3.8 MB    |            |   0% bioconductor-genomei | 3.8 MB    |            |   0% bioconductor-genomei | 3.8 MB    | ###1       |  31% bioconductor-genomei | 3.8 MB    | ####       |  41% bioconductor-genomei | 3.8 MB    | #####7     |  58% bioconductor-genomei | 3.8 MB    | #######2   |  72% bioconductor-genomei | 3.8 MB    | #########3 |  94% bioconductor-genomei | 3.8 MB    | ########## | 100% 
+python-dateutil-2.8. | 224 KB    |            |   0% python-dateutil-2.8. | 224 KB    | 7          |   7% python-dateutil-2.8. | 224 KB    | ########## | 100% 
+r-xml2-1.3.2         | 249 KB    |            |   0% r-xml2-1.3.2         | 249 KB    | 6          |   6% r-xml2-1.3.2         | 249 KB    | ########## | 100% 
+binutils_impl_linux- | 9.2 MB    |            |   0% binutils_impl_linux- | 9.2 MB    | 1          |   2% binutils_impl_linux- | 9.2 MB    | 7          |   8% binutils_impl_linux- | 9.2 MB    | #          |  11% binutils_impl_linux- | 9.2 MB    | #5         |  15% binutils_impl_linux- | 9.2 MB    | #7         |  18% binutils_impl_linux- | 9.2 MB    | ###1       |  32% binutils_impl_linux- | 9.2 MB    | ####3      |  44% binutils_impl_linux- | 9.2 MB    | #####5     |  55% binutils_impl_linux- | 9.2 MB    | ######3    |  63% binutils_impl_linux- | 9.2 MB    | #######    |  71% binutils_impl_linux- | 9.2 MB    | #######9   |  80% binutils_impl_linux- | 9.2 MB    | ########8  |  88% binutils_impl_linux- | 9.2 MB    | ########## | 100% 
+r-xfun-0.15          | 221 KB    |            |   0% r-xfun-0.15          | 221 KB    | 7          |   7% r-xfun-0.15          | 221 KB    | ########## | 100% 
+r-sceasy-0.0.5       | 59 KB     |            |   0% r-sceasy-0.0.5       | 59 KB     | ##6        |  27% r-sceasy-0.0.5       | 59 KB     | ########## | 100% 
+smmap-3.0.4          | 22 KB     |            |   0% smmap-3.0.4          | 22 KB     | #######3   |  73% smmap-3.0.4          | 22 KB     | ########## | 100% 
+r-dbi-1.1.0          | 625 KB    |            |   0% r-dbi-1.1.0          | 625 KB    | 2          |   3% r-dbi-1.1.0          | 625 KB    | ########## | 100% 
+r-mgcv-1.8_31        | 2.7 MB    |            |   0% r-mgcv-1.8_31        | 2.7 MB    |            |   1% r-mgcv-1.8_31        | 2.7 MB    | ##9        |  30% r-mgcv-1.8_31        | 2.7 MB    | #####6     |  56% r-mgcv-1.8_31        | 2.7 MB    | #######6   |  76% r-mgcv-1.8_31        | 2.7 MB    | ########## | 100% 
+zlib-1.2.11          | 120 KB    |            |   0% zlib-1.2.11          | 120 KB    | #3         |  13% zlib-1.2.11          | 120 KB    | ########## | 100% 
+r-munsell-0.5.0      | 254 KB    |            |   0% r-munsell-0.5.0      | 254 KB    | ######9    |  69% r-munsell-0.5.0      | 254 KB    | ########## | 100% 
+singularity-3.6.1    | 17.4 MB   |            |   0% singularity-3.6.1    | 17.4 MB   |            |   1% singularity-3.6.1    | 17.4 MB   | 4          |   4% singularity-3.6.1    | 17.4 MB   | 5          |   6% singularity-3.6.1    | 17.4 MB   | 8          |   8% singularity-3.6.1    | 17.4 MB   | #          |  10% singularity-3.6.1    | 17.4 MB   | #6         |  16% singularity-3.6.1    | 17.4 MB   | ##2        |  23% singularity-3.6.1    | 17.4 MB   | ##6        |  26% singularity-3.6.1    | 17.4 MB   | ##9        |  30% singularity-3.6.1    | 17.4 MB   | ###3       |  33% singularity-3.6.1    | 17.4 MB   | ###6       |  36% singularity-3.6.1    | 17.4 MB   | ###8       |  39% singularity-3.6.1    | 17.4 MB   | ####2      |  42% singularity-3.6.1    | 17.4 MB   | ####4      |  45% singularity-3.6.1    | 17.4 MB   | ####9      |  49% singularity-3.6.1    | 17.4 MB   | #####2     |  53% singularity-3.6.1    | 17.4 MB   | #####6     |  56% singularity-3.6.1    | 17.4 MB   | ######1    |  61% singularity-3.6.1    | 17.4 MB   | ######4    |  65% singularity-3.6.1    | 17.4 MB   | #######    |  70% singularity-3.6.1    | 17.4 MB   | #######3   |  74% singularity-3.6.1    | 17.4 MB   | #######7   |  77% singularity-3.6.1    | 17.4 MB   | ########2  |  82% singularity-3.6.1    | 17.4 MB   | ########6  |  86% singularity-3.6.1    | 17.4 MB   | #########  |  90% singularity-3.6.1    | 17.4 MB   | #########3 |  94% singularity-3.6.1    | 17.4 MB   | #########7 |  98% singularity-3.6.1    | 17.4 MB   | ########## | 100% 
+r-bibtex-0.4.2.2     | 103 KB    |            |   0% r-bibtex-0.4.2.2     | 103 KB    | #5         |  16% r-bibtex-0.4.2.2     | 103 KB    | ########## | 100% 
+blosc-1.19.0         | 887 KB    |            |   0% blosc-1.19.0         | 887 KB    | 1          |   2% blosc-1.19.0         | 887 KB    | ########## | 100% 
+snakemake-5.14.0     | 6 KB      |            |   0% snakemake-5.14.0     | 6 KB      | ########## | 100% 
+r-rematch-1.0.1      | 19 KB     |            |   0% r-rematch-1.0.1      | 19 KB     | ########## | 100% 
+gobject-introspectio | 1.4 MB    |            |   0% gobject-introspectio | 1.4 MB    | 1          |   1% gobject-introspectio | 1.4 MB    | ######1    |  62% gobject-introspectio | 1.4 MB    | ########## | 100% 
+Preparing transaction: ...working... done
+Verifying transaction: ...working... 
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.8.3
+  latest version: 4.9.2
+
+Please update conda by running
+
+    $ conda update -n base conda
+
+
+
+SafetyError: The package for snakemake-minimal located at /nfs/home/mfiruleva/anaconda3/pkgs/snakemake-minimal-5.14.0-py_1
+appears to be corrupted. The path 'site-packages/snakemake/deployment/conda.py'
+has an incorrect size.
+  reported size: 16269 bytes
+  actual size: 16285 bytes
+
+SafetyError: The package for snakemake-minimal located at /nfs/home/mfiruleva/anaconda3/pkgs/snakemake-minimal-5.14.0-py_1
+appears to be corrupted. The path 'site-packages/snakemake/deployment/singularity.py'
+has an incorrect size.
+  reported size: 4325 bytes
+  actual size: 4335 bytes
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: anaconda/linux-64::libopenblas-0.3.10-h5a2b251_0, conda-forge/linux-64::libblas-3.8.0-17_openblas
+  path: 'lib/libblas.so'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: anaconda/linux-64::libopenblas-0.3.10-h5a2b251_0, conda-forge/linux-64::libcblas-3.8.0-17_openblas
+  path: 'lib/libcblas.so'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: anaconda/linux-64::libopenblas-0.3.10-h5a2b251_0, conda-forge/linux-64::liblapack-3.8.0-17_openblas
+  path: 'lib/liblapack.so'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/linux-64::libuuid-2.32.1-h14c3975_1000, conda-forge/linux-64::ossuuid-1.6.2-hf484d3e_1000
+  path: 'lib/libuuid.a'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/linux-64::libuuid-2.32.1-h14c3975_1000, conda-forge/linux-64::ossuuid-1.6.2-hf484d3e_1000
+  path: 'lib/libuuid.la'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/linux-64::libuuid-2.32.1-h14c3975_1000, conda-forge/linux-64::ossuuid-1.6.2-hf484d3e_1000
+  path: 'lib/libuuid.so'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/linux-64::libuuid-2.32.1-h14c3975_1000, conda-forge/linux-64::ossuuid-1.6.2-hf484d3e_1000
+  path: 'lib/pkgconfig/uuid.pc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: bioconda/linux-64::perl-digest-hmac-1.03-pl526_3, bioconda/linux-64::perl-digest-md5-2.55-pl526_0, bioconda/linux-64::perl-extutils-makemaker-7.36-pl526_1, bioconda/linux-64::perl-html-tagset-3.20-pl526_3, bioconda/linux-64::perl-io-html-1.001-pl526_2
+  path: 'lib/5.26.2/x86_64-linux-thread-multi/perllocal.pod'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn-0.10.1.dist-info/INSTALLER'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn-0.10.1.dist-info/LICENSE'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn-0.10.1.dist-info/METADATA'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn-0.10.1.dist-info/RECORD'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn-0.10.1.dist-info/WHEEL'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn-0.10.1.dist-info/top_level.txt'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__init__.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/algorithms.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/axisgrid.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/categorical.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/cm.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/colors/__init__.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/colors/crayons.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/colors/xkcd_rgb.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/conftest.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/distributions.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/external/__init__.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/external/husl.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/matrix.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/miscplot.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/palettes.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/rcmod.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/regression.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/relational.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__init__.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_algorithms.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_axisgrid.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_categorical.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_distributions.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_matrix.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_miscplot.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_palettes.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_rcmod.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_regression.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_relational.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/test_utils.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/utils.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/widgets.py'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/__init__.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/algorithms.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/axisgrid.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/categorical.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/cm.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/colors/__pycache__/__init__.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/colors/__pycache__/crayons.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/colors/__pycache__/xkcd_rgb.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/conftest.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/distributions.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/external/__pycache__/__init__.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/external/__pycache__/husl.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/matrix.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/miscplot.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/palettes.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/rcmod.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/regression.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/relational.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/__init__.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_algorithms.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_axisgrid.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_categorical.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_distributions.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_matrix.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_miscplot.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_palettes.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_rcmod.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_regression.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_relational.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/tests/__pycache__/test_utils.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/utils.cpython-37.pyc'
+
+
+ClobberError: This transaction has incompatible packages due to a shared path.
+  packages: conda-forge/noarch::seaborn-base-0.10.1-py_1, anaconda/noarch::seaborn-0.10.1-py_0
+  path: 'lib/python3.7/site-packages/seaborn/__pycache__/widgets.cpython-37.pyc'
+
+
+
+done
+Executing transaction: ...working... done
+#
+# To activate this environment, use
+#
+#     $ conda activate /mnt/tank/scratch/mfiruleva/scn/config/c58701e4
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+Environment for ../../../config/5d179225.yaml created (location: ../../../config/c58701e4)
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	all
+	1	run_analysis
+	3
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	run_analysis
+Selected jobs (1):
+	run_analysis
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Sat Nov 14 14:25:32 2020]
+rule run_analysis:
+    input: /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824181/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824182/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824183/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824184/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824185/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824186/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824187/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824188/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824189/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824190/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824191/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824192/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824193/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824194/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824195/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824196/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824197/counts.RData, /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198/counts.RData
+    output: GSE131776.h5ad, GSE131776.RData
+    log: logs/seurat.log
+    jobid: 2
+    benchmark: benchmarks/analysis.txt
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged --bind /mnt/tank/scratch/mfiruleva/scn/config/5d179225:/mnt/tank/scratch/mfiruleva/scn/config/5d179225 --bind /mnt/tank/scratch/mfiruleva/scn/data/GSE131776:/mnt/tank/scratch/mfiruleva/scn/data/GSE131776 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/5d179225'\''; set -euo pipefail;  Rscript scripts/analysis.R 2> logs/seurat.log'
+Activating singularity image /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/5d179225
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2078, in run_wrapper
+    run(
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged/rules/secondary_analysis.smk", line 29, in __rule_run_analysis
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 176, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command ' singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged --bind /mnt/tank/scratch/mfiruleva/scn/config/5d179225:/mnt/tank/scratch/mfiruleva/scn/config/5d179225 --bind /mnt/tank/scratch/mfiruleva/scn/data/GSE131776:/mnt/tank/scratch/mfiruleva/scn/data/GSE131776 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/5d179225'\''; set -euo pipefail;  Rscript scripts/analysis.R 2> logs/seurat.log'' returned non-zero exit status 137.
+
+[Sat Nov 14 17:12:38 2020]
+Error in rule run_analysis:
+    jobid: 2
+    output: GSE131776.h5ad, GSE131776.RData
+    log: logs/seurat.log (check log file(s) for error message)
+    conda-env: /mnt/tank/scratch/mfiruleva/scn/config/5d179225
+    shell:
+        Rscript scripts/analysis.R 2> logs/seurat.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2078, in run_wrapper
+    run(
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged/rules/secondary_analysis.smk", line 29, in __rule_run_analysis
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 176, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command ' singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged --bind /mnt/tank/scratch/mfiruleva/scn/config/5d179225:/mnt/tank/scratch/mfiruleva/scn/config/5d179225 --bind /mnt/tank/scratch/mfiruleva/scn/data/GSE131776:/mnt/tank/scratch/mfiruleva/scn/data/GSE131776 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/5d179225'\''; set -euo pipefail;  Rscript scripts/analysis.R 2> logs/seurat.log'' returned non-zero exit status 137.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 493, in _callback
+    raise ex
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 479, in cached_or_run
+    run_func(*args)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2160, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in line 12 of /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged/rules/secondary_analysis.smk:
+Command ' singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged --bind /mnt/tank/scratch/mfiruleva/scn/config/5d179225:/mnt/tank/scratch/mfiruleva/scn/config/5d179225 --bind /mnt/tank/scratch/mfiruleva/scn/data/GSE131776:/mnt/tank/scratch/mfiruleva/scn/data/GSE131776 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/5d179225'\''; set -euo pipefail;  Rscript scripts/analysis.R 2> logs/seurat.log'' returned non-zero exit status 137.
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged/rules/secondary_analysis.smk", line 12, in __rule_run_analysis
+
+RuleException:
+CalledProcessError in line 12 of /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged/rules/secondary_analysis.smk:
+Command ' singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged --bind /mnt/tank/scratch/mfiruleva/scn/config/5d179225:/mnt/tank/scratch/mfiruleva/scn/config/5d179225 --bind /mnt/tank/scratch/mfiruleva/scn/data/GSE131776:/mnt/tank/scratch/mfiruleva/scn/data/GSE131776 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/5d179225'\''; set -euo pipefail;  Rscript scripts/analysis.R 2> logs/seurat.log'' returned non-zero exit status 137.
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged/rules/secondary_analysis.smk", line 12, in __rule_run_analysis
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/merged/.snakemake/log/2020-11-14T112922.910938.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

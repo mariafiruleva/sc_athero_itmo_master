@@ -1,0 +1,3 @@
+,GSE,study_accession,secondary_sample_accession,sample_accession,experiment_accession,run_accession,tax_id,scientific_name,fastq_ftp,submitted_ftp,ftp,technology,fq_dump,bam
+1,GSE131776,PRJNA544955,SRS4824181,SAMN11867214,SRX5904073,SRR9130121,10090,Mus musculus,ftp.sra.ebi.ac.uk/vol1/fastq/SRR913/001/SRR9130121/SRR9130121_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR913/001/SRR9130121/SRR9130121_2.fastq.gz,NA,ftp.sra.ebi.ac.uk/vol1/srr/SRR913/001/SRR9130121,10x,no,no
+2,GSE131776,PRJNA544955,SRS4824181,SAMN11867214,SRX5904073,SRR9130122,10090,Mus musculus,ftp.sra.ebi.ac.uk/vol1/fastq/SRR913/002/SRR9130122/SRR9130122_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR913/002/SRR9130122/SRR9130122_2.fastq.gz,NA,ftp.sra.ebi.ac.uk/vol1/srr/SRR913/002/SRR9130122,10x,no,no

@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	all
+	2	define_version
+	2	fastq_dump
+	1	get_count_matrix
+	1	kallisto
+	1	run_analysis
+	9
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (2):
+	fastq_dump
+	fastq_dump
+Selected jobs (2):
+	fastq_dump
+	fastq_dump
+Resources after job selection: {'_cores': 2, '_nodes': 9223372036854775805}
+
+[Wed Oct 21 13:24:22 2020]
+rule fastq_dump:
+    output: SRR12265197_sra.txt
+    jobid: 8
+    wildcards: accession=SRR12265197
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE154692/SRS7041376  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+
+[Wed Oct 21 13:24:22 2020]
+rule fastq_dump:
+    output: SRR12265196_sra.txt
+    jobid: 7
+    wildcards: accession=SRR12265196
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE154692/SRS7041376  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE154692/SRS7041376  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE154692/SRS7041376  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'

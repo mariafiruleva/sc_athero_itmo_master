@@ -1,0 +1,2 @@
+,GSE,study_accession,secondary_sample_accession,sample_accession,experiment_accession,run_accession,tax_id,scientific_name,fastq_ftp,submitted_ftp,ftp,technology,fq_dump,bam
+1,GSE155513,PRJNA649970,SRS7124066,SAMN15690468,SRX8862343,SRR12363106,10090,Mus musculus,NA,NA,NA,10x,yes,no

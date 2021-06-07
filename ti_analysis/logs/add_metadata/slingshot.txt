@@ -1,0 +1,20 @@
+... storing 'orig.ident' as categorical
+... storing 'sample' as categorical
+... storing 'GSE' as categorical
+... storing 'GSM' as categorical
+... storing 'strain' as categorical
+... storing 'genotype' as categorical
+... storing 'tissue' as categorical
+... storing 'age' as categorical
+... storing 'condition' as categorical
+... storing 'Tcf21' as categorical
+... storing 'cells' as categorical
+... storing 'type' as categorical
+... storing 'smc_status' as categorical
+... storing 'diet' as categorical
+... storing 'timepoint' as categorical
+... storing 'ZsGreen1' as categorical
+... storing 'lineage' as categorical
+Предупреждение:
+В .regularise_df(obj@meta.data) :
+  Dropping single category variables:organism

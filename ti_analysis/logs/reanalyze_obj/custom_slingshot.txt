@@ -1,0 +1,99 @@
+Warning: The following arguments are not used: pca
+Warning: The default method for RunUMAP has changed from calling Python UMAP via reticulate to the R-native UWOT using the cosine metric
+To use Python UMAP via reticulate, set umap.method to 'umap-learn' and metric to 'correlation'
+This message will be shown once per session
+12:52:26 UMAP embedding parameters a = 0.9922 b = 1.112
+12:52:26 Read 11335 rows and found 20 numeric columns
+12:52:26 Using Annoy for neighbor search, n_neighbors = 30
+12:52:26 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+12:52:28 Writing NN index file to temp file /tmp/Rtmp2Z0IRI/file2588e4d8cd
+12:52:28 Searching Annoy index using 1 thread, search_k = 3000
+12:52:31 Annoy recall = 100%
+12:52:31 Commencing smooth kNN distance calibration using 1 thread
+12:52:32 Initializing from normalized Laplacian + noise
+12:52:32 Commencing optimization for 200 epochs, with 509632 positive edges
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+12:52:37 Optimization finished
+Computing nearest neighbor graph
+Computing SNN
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+/mnt/tank/scratch/mfiruleva/scn/config/5d179225/lib/python3.7/site-packages/anndata/base.py:17: FutureWarning: pandas.core.index is deprecated and will be removed in a future version.  The public classes are available in the top-level namespace.
+  from pandas.core.index import RangeIndex
+... storing 'orig.ident' as categorical
+... storing 'sample' as categorical
+... storing 'GSE' as categorical
+... storing 'GSM' as categorical
+... storing 'strain' as categorical
+... storing 'genotype' as categorical
+... storing 'tissue' as categorical
+... storing 'age' as categorical
+... storing 'condition' as categorical
+... storing 'Tcf21' as categorical
+... storing 'cells' as categorical
+... storing 'type' as categorical
+... storing 'smc_status' as categorical
+... storing 'diet' as categorical
+... storing 'timepoint' as categorical
+... storing 'ZsGreen1' as categorical
+... storing 'lineage' as categorical
+Warning message:
+In .regularise_df(obj@meta.data) :
+  Dropping single category variables:organism
+Warning message:
+In dir.create("markers") : 'markers' already exists
+Finished averaging SCT for cluster 0
+Finished averaging SCT for cluster 1
+Finished averaging SCT for cluster 2
+Finished averaging SCT for cluster 3
+Finished averaging SCT for cluster 4
+Finished averaging SCT for cluster 5
+Calculating cluster 0
+Assuming data assay in position 1, with name et is log-transformed.
+
+Done!
+Combining coefficients and standard errors
+Calculating log-fold changes
+Calculating likelihood ratio tests
+Refitting on reduced model...
+
+Done!
+Calculating cluster 1
+Assuming data assay in position 1, with name et is log-transformed.
+
+Done!
+Combining coefficients and standard errors
+Calculating log-fold changes
+Calculating likelihood ratio tests
+Refitting on reduced model...
+
+Done!
+Calculating cluster 2
+Assuming data assay in position 1, with name et is log-transformed.
+
+Done!
+Combining coefficients and standard errors
+Calculating log-fold changes
+Calculating likelihood ratio tests
+Refitting on reduced model...
+
+Done!
+Calculating cluster 3

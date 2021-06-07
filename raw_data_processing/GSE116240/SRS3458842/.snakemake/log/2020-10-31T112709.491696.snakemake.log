@@ -1,0 +1,105 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	all
+	1	define_version
+	1	get_bam_header
+	1	get_count_matrix
+	1	kallisto
+	1	run_analysis
+	7
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	get_bam_header
+Selected jobs (1):
+	get_bam_header
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Sat Oct 31 11:27:10 2020]
+rule get_bam_header:
+    output: SRR7425023_tmp.bam
+    log: logs/get_bam_SRR7425023.log
+    jobid: 6
+    benchmark: benchmarks/get_bam_SRR7425023.txt
+    wildcards: accession=SRR7425023
+
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/7c2bd866
+[Sat Oct 31 11:27:26 2020]
+Finished job 6.
+1 of 7 steps (14%) done
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	define_version
+Selected jobs (1):
+	define_version
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Sat Oct 31 11:27:26 2020]
+rule define_version:
+    input: SRR7425023_tmp.bam, sample_description.csv
+    output: kallisto.sh
+    log: logs/define_version.log
+    jobid: 5
+    benchmark: benchmarks/define_version.txt
+
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/7c2bd866
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2078, in run_wrapper
+    run(
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/define_version.smk", line 50, in __rule_define_version
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 176, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  python scripts/define_version.py --s_d sample_description.csv --tmp_bam SRR7425023_tmp.bam         --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt         --white_10xv1 /files/10xv1_whitelist.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt' returned non-zero exit status 1.
+
+[Sat Oct 31 11:27:33 2020]
+Error in rule define_version:
+    jobid: 5
+    output: kallisto.sh
+    log: logs/define_version.log (check log file(s) for error message)
+    conda-env: /mnt/tank/scratch/mfiruleva/scn/config/7c2bd866
+    shell:
+        
+        python scripts/define_version.py --s_d sample_description.csv --tmp_bam SRR7425023_tmp.bam         --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt         --white_10xv1 /files/10xv1_whitelist.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2078, in run_wrapper
+    run(
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/define_version.smk", line 50, in __rule_define_version
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 176, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  python scripts/define_version.py --s_d sample_description.csv --tmp_bam SRR7425023_tmp.bam         --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt         --white_10xv1 /files/10xv1_whitelist.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 493, in _callback
+    raise ex
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 479, in cached_or_run
+    run_func(*args)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2160, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in line 26 of /mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/define_version.smk:
+Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  python scripts/define_version.py --s_d sample_description.csv --tmp_bam SRR7425023_tmp.bam         --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt         --white_10xv1 /files/10xv1_whitelist.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt' returned non-zero exit status 1.
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/define_version.smk", line 26, in __rule_define_version
+
+RuleException:
+CalledProcessError in line 26 of /mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/define_version.smk:
+Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  python scripts/define_version.py --s_d sample_description.csv --tmp_bam SRR7425023_tmp.bam         --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt         --white_10xv1 /files/10xv1_whitelist.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt' returned non-zero exit status 1.
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/define_version.smk", line 26, in __rule_define_version
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/.snakemake/log/2020-10-31T112709.491696.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

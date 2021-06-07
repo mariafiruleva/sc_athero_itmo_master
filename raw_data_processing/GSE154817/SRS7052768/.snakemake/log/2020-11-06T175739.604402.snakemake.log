@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	all
+	1	get_count_matrix
+	1	kallisto
+	1	run_analysis
+	5
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	kallisto
+Selected jobs (1):
+	kallisto
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775806}
+
+[Fri Nov  6 17:57:40 2020]
+rule kallisto:
+    input: kallisto.sh
+    output: R1.gz, R2.gz, bus_out/correct_output.bus, bus_out/output.bus
+    log: logs/kallisto.log
+    jobid: 4
+    benchmark: benchmarks/kallisto.txt
+    threads: 4
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052768  --bind /nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052768  --bind /nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052768  --bind /nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'

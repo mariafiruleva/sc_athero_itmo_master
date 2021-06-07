@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/__init__.py", line 580, in snakemake
+    success = workflow.execute(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/workflow.py", line 784, in execute
+    dag.pull_container_imgs(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 273, in pull_container_imgs
+    img = singularity.Image(img_url, self)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/singularity.py", line 37, in __init__
+    v = subprocess.check_output(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 411, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 491, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 1024, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 1866, in _communicate
+    ready = selector.select(timeout)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+Cancelling snakemake on user request.
+unlocking
+removing lock
+removing lock
+removed all locks

@@ -1,0 +1,237 @@
+configfile: "/scratch/mfiruleva/winter/envs/config_mus.yaml"
+
+index = config['index']
+transcripts_to_genes = config['transcripts_to_genes']
+thread = config['thread']
+kallisto = config['kallisto']
+
+import pandas as pd
+
+description = pd.read_csv('sample_description.csv').reset_index().to_dict("records")
+sample_id = description[0]['secondary_sample_accession']
+
+rule add_uns_to_h5ad:
+    """
+    Run Seurat processing using count matrix from the get_count_matrix rule.
+    """
+    input: [f"{sample_id}.h5ad"]
+    output: [f"{sample_id}_with_uns.h5ad"]
+    run:
+        import re
+        import glob
+        import numpy as np
+        import pandas as pd
+        import scanpy
+        import os.path
+
+        for f in glob.glob("*gz"):
+            os.remove(f)
+
+        description = pd.read_csv('sample_description.csv').reset_index().to_dict("records")[0]
+
+        file = scanpy.read_h5ad(f'{description["secondary_sample_accession"]}.h5ad')
+
+        file.uns["expType"] = "counts"
+        file.uns["public"] = True
+        file.uns["curated"] = False
+        file.uns["gse"] = description['GSE']
+        file.uns["token"] = description['secondary_sample_accession']
+        file.uns["geo"] = f"https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={description['GSE']}"
+        file.uns["sra"] = f"https://www.ncbi.nlm.nih.gov/sra/{description['secondary_sample_accession']}"
+        file.uns["study_accession"] = description['study_accession']
+        file.uns["species"] = description['scientific_name']
+        if description['technology'] != "10x":
+            file.uns["technology"] = description['technology']
+        else:
+            with open('kallisto.sh', 'r') as run_file:
+                data = run_file.read().replace('\n', '')
+            file.uns["technology"] = re.findall('10xv[0-9]*', data)
+
+        if len(file.uns["gse"]) == 9:
+            brief = pd.read_csv(
+                f"/scratch/mfiruleva/autumn/find_scRNAseqs_brief/series/{file.uns['gse'][0:6]}nnn/{file.uns['gse']}/matrix/brief",
+                sep='=', error_bad_lines=False, names=['annot', 'data'])
+        else:
+            brief = pd.read_csv(
+                f"/scratch/mfiruleva/autumn/find_scRNAseqs_brief/series/{file.uns['gse'][0:5]}nnn/{file.uns['gse']}/matrix/brief",
+                sep='=', error_bad_lines=False, names=['annot', 'data'])
+
+        brief = brief.set_index('annot').to_dict()['data']
+
+        file.uns["title"] = brief['!Series_title ']
+        file.uns["description"] = brief['!Series_summary ']
+        file.uns["design"] = brief['!Series_overall_design ']
+        file.uns['status'] = brief['!Series_status ']
+        markers = pd.read_csv('markers.tsv', sep='\t')
+        res = {}
+        for k, v in markers.to_dict().items():
+            res[k] = np.array(list(v.values()))
+
+        file.uns["markers"] = {'markers0.6': res}
+        file.write_h5ad(f'{description["secondary_sample_accession"]}_with_uns.h5ad', compression='gzip')
+
+rule run_analysis:
+    """
+    Run Seurat processing using count matrix from the get_count_matrix rule.
+    """
+    input: ["counts.RData"]
+    benchmark: "benchmarks/analysis.txt"
+    output: [f"{sample_id}.h5ad", f"{sample_id}.RData"]
+    shell: "/scratch/opt/R/3.6.0/bin/Rscript analysis.R"
+
+rule get_count_matrix:
+    """
+    Extract count matrix which will be used in Seurat analysis.
+    """
+    input: ["bus_out"]
+    benchmark: "benchmarks/get_count_matrix.txt"
+    output: ["counts.RData"]
+    shell: "/scratch/opt/R/3.6.0/bin/Rscript get_count_matrix.R"
+
+rule prepare_loading:
+    """
+    Download the first read for forward fastq file
+    and gzipped it in to R1.gz file. Pipeline uses this file for definition of 10x version:
+    """
+    input: ["sample_description.csv"]
+    output: ["download_the_beginning_of_fqs.sh"]
+    run:
+        import pandas as pd
+
+        with open('download_the_beginning_of_fqs.sh', 'w') as out_file:
+            description = pd.read_csv('sample_description.csv').reset_index().to_dict("records")
+
+            runs = [x['run_accession'] for x in description]
+            if len([description[0]['fastq_ftp']]) > 1:
+                out_file.write(f"wget -q -O - {description[0]['fastq_ftp']} | zcat | head -400000 | gzip > R1.gz\n")
+            else:
+                for run_id in runs:
+                    out_file.write(f"timeout 300s fastq-dump --split-files --gzip {run_id}\n")
+                out_file.write("touch R1.gz")
+
+rule download_the_beginning_of_fastqs:
+    """
+    Run script generated in the previous step.
+    """
+    input: ["download_the_beginning_of_fqs.sh"]
+    benchmark: "benchmarks/download_the_beginning_of_fqs.txt"
+    output: ["R1.gz"]
+    run: shell("""
+        set +o pipefail
+        chmod +x  download_the_beginning_of_fqs.sh
+        ./download_the_beginning_of_fqs.sh || true""")
+
+rule define_version:
+    """
+    Define version of 10x chemistry used for particular dataset. If dataset corresponds
+    to 10xv1, then downstream analysis won't be started because kallisto needs
+    index file for 10xv1 platform.
+    If length of the reads doesn't correspond to any 10x versions, then analysis also
+    won't be pushed, and dataset must be validated manually.
+    If length of the reads corresponds to particular 10x version, then defined version (and
+    its whitelist) will be used in pseudoalignment step.
+    """
+    input: ["R1.gz", "sample_description.csv"]
+    output: ["kallisto.sh"]
+    run:
+        import gzip
+        import re
+        import sys
+        import os.path
+        import pandas as pd
+
+
+        def define_read_type(run_id):
+            res = dict()
+            res['technology'] = "NA"
+            for postfix in range(1, 4):
+                if os.path.isfile(f"{run_id}_{postfix}.fastq.gz"):
+                    with gzip.open(f"{run_id}_{postfix}.fastq.gz", 'r') as in_file:
+                        for idx, line in enumerate(in_file, start=1):
+                            if idx == 2:
+                                barcode_len = len(line.decode('ascii').strip())
+                                if barcode_len < 12:
+                                    index = f"{run_id}_{postfix}.fastq.gz"
+                                    res['index'] = re.sub('.fastq.gz', '', re.sub('SRR.*_', '', index))
+                                if barcode_len == 26:
+                                    barcode = f"{run_id}_{postfix}.fastq.gz"
+                                    res['barcode_len'] = barcode_len
+                                    res['barcode'] = re.sub('.fastq.gz', '', re.sub('SRR.*_', '', barcode))
+                                    res['technology'] = '10xv2'
+                                    res[
+                                        'whitelist'] = "/scratch/mfiruleva/GSEs_processing/wget_and_process/10xv2_whitelist.txt"
+                                if barcode_len == 28:
+                                    barcode = f"{run_id}_{postfix}.fastq.gz"
+                                    res['barcode_len'] = barcode_len
+                                    res['barcode'] = re.sub('.fastq.gz', '', re.sub('SRR.*_', '', barcode))
+                                    res['whitelist'] = "/scratch/mfiruleva/GSEs_processing/wget_and_process/10xv3_whitelist.txt"
+                                    res['technology'] = '10xv3'
+                                if barcode_len > 50:
+                                    bio = f"{run_id}_{postfix}.fastq.gz"
+                                    res['bio'] = re.sub('.fastq.gz', '', re.sub('SRR.*_', '', bio))
+            return res
+
+
+        def print_log(run_id):
+            with open('fastq-dump.log', 'a+') as out_file:
+                for postfix in range(1, 4):
+                    if os.path.isfile(f"{run_id}_{postfix}.fastq.gz"):
+                        with gzip.open(f"{run_id}_{postfix}.fastq.gz", 'r') as in_file:
+                            out_file.write(f"The first read for {run_id}_{postfix}.fastq.gz:\n")
+                            for idx, line in enumerate(in_file, start=1):
+                                if idx <= 4:
+                                    out_file.write(line.decode('ascii'))
+                                else:
+                                    break
+
+
+        description = pd.read_csv('sample_description.csv').reset_index().to_dict("records")
+        runs = [x['run_accession'] for x in description]
+        for run_id in runs:
+            print_log(run_id)
+
+        read_types = define_read_type(runs[0])
+        print(read_types)
+        with open('kallisto.sh', 'w') as out_file, \
+                open('/scratch/mfiruleva/winter/logs/10x_define_tech.csv', 'a+') as stats_file:
+            stats = list(description[0].values())[2:]
+            stats.append(read_types['barcode_len'])
+            stats.append(read_types['technology'])
+            stats_file.write(','.join(list(map(str, stats))) + '\n')
+            if len([x['fastq_ftp'] for x in description]) > 1:  # add merging
+                fastq = [x['fastq_ftp'] for x in description]
+            else:
+                runs = [x['run_accession'] for x in description]
+            if read_types['technology'] == 'NA':
+                sys.exit(0)
+            out_file.write("rm *.gz\n")
+            if len(runs) == 1:
+                out_file.write(f"fastq-dump --split-files --gzip {runs[0]}\n")
+                out_file.write(
+                    f'kallisto bus -i {index} -x {read_types["technology"]} -t {thread} -o bus_out/ {runs[0]}_{read_types["barcode"]}.fastq.gz {runs[0]}_{read_types["bio"]}.fastq.gz\n')
+            else:
+                out_file.write("mkfifo barcode.gz bio.gz\n")
+                for run in runs:
+                    out_file.write(f"fastq-dump --split-files --gzip {run}\n")
+                out_file.write(f"cat *{read_types['barcode']}.fastq.gz > barcode.gz &\n")
+                out_file.write(f"cat *{read_types['bio']}.fastq.gz > bio.gz &\n")
+                out_file.write(
+                    f'kallisto bus -i {index} -x {read_types["technology"]} -t {thread} -o bus_out/ barcode.gz bio.gz\n')
+            out_file.write('mkdir bus_out/tmp\n')
+            out_file.write(
+                f'bustools correct -w {read_types["whitelist"]} -o bus_out/correct_output.bus bus_out/output.bus\n')
+            out_file.write('rm bus_out/output.bus\n')
+            out_file.write(
+                f'bustools sort -t {thread} -T bus_out/tmp/ -p bus_out/correct_output.bus | bustools count -o bus_out/genes -g {transcripts_to_genes} -e bus_out/matrix.ec -t bus_out/transcripts.txt --genecounts -')
+
+rule kallisto:
+    """
+    Run script generated in the previous step.
+    """
+    input: ["kallisto.sh"]
+    benchmark: "benchmarks/kallisto.txt"
+    output: directory("bus_out")
+    run: shell("""
+        set +o pipefail
+        chmod +x  kallisto.sh
+        ./kallisto.sh""")

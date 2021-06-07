@@ -1,0 +1,253 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Creating conda environment /mnt/tank/scratch/mfiruleva/scn/config/5d179225.yaml...
+Downloading and installing remote packages.
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 299, in create
+    out = shell.check_output(cmd, stderr=subprocess.STDOUT)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 44, in check_output
+    return sp.check_output(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 411, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 512, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'conda env create --file '/mnt/tank/scratch/mfiruleva/scn/config/c58701e4.yaml' --prefix '/mnt/tank/scratch/mfiruleva/scn/config/c58701e4'' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/__init__.py", line 580, in snakemake
+    success = workflow.execute(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/workflow.py", line 789, in execute
+    dag.create_conda_envs(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 265, in create_conda_envs
+    env.create(dryrun)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 318, in create
+    raise CreateCondaEnvironmentException(
+snakemake.exceptions.CreateCondaEnvironmentException: Could not create conda environment from /mnt/tank/scratch/mfiruleva/scn/config/5d179225.yaml:
+Collecting package metadata (repodata.json): ...working... failed
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/exceptions.py", line 1079, in __call__
+        return func(*args, **kwargs)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda_env/cli/main.py", line 80, in do_call
+        exit_code = getattr(module, func_name)(args, parser)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda_env/cli/main_create.py", line 111, in execute
+        result[installer_type] = installer.install(prefix, pkg_specs, args, env)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda_env/installers/conda.py", line 32, in install
+        prune=getattr(args, 'prune', False), update_modifier=UpdateModifier.FREEZE_INSTALLED)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/solve.py", line 117, in solve_for_transaction
+        should_retry_solve)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/solve.py", line 158, in solve_for_diff
+        force_remove, should_retry_solve)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/solve.py", line 262, in solve_final_state
+        ssc = self._collect_all_metadata(ssc)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/common/io.py", line 88, in decorated
+        return f(*args, **kwds)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/solve.py", line 415, in _collect_all_metadata
+        index, r = self._prepare(prepared_specs)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/solve.py", line 1011, in _prepare
+        self.subdirs, prepared_specs, self._repodata_fn)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/index.py", line 228, in get_reduced_index
+        repodata_fn=repodata_fn)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/subdir_data.py", line 105, in query_all
+        result = tuple(concat(executor.map(subdir_query, channel_urls)))
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/concurrent/futures/_base.py", line 586, in result_iterator
+        yield fs.pop().result()
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/concurrent/futures/_base.py", line 432, in result
+        return self.__get_result()
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/subdir_data.py", line 98, in <lambda>
+        package_ref_or_match_spec))
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/subdir_data.py", line 110, in query
+        self.load()
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/subdir_data.py", line 174, in load
+        _internal_state = self._load()
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/subdir_data.py", line 270, in _load
+        fh.write(raw_repodata_str or '{}')
+    OSError: [Errno 122] Disk quota exceeded
+
+`$ /nfs/home/mfiruleva/anaconda3/bin/conda-env create --file /mnt/tank/scratch/mfiruleva/scn/config/c58701e4.yaml --prefix /mnt/tank/scratch/mfiruleva/scn/config/c58701e4`
+
+  environment variables:
+                 CIO_TEST=<not set>
+                 CNI_PATH=/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/cni
+  CONDA_AUTO_UPDATE_CONDA=false
+        CONDA_DEFAULT_ENV=scn_cor
+                CONDA_EXE=/nfs/home/mfiruleva/anaconda3/bin/conda
+             CONDA_PREFIX=/nfs/home/mfiruleva/anaconda3/envs/scn_cor
+           CONDA_PREFIX_1=/nfs/home/mfiruleva/anaconda3
+    CONDA_PROMPT_MODIFIER=(scn_cor)
+         CONDA_PYTHON_EXE=/nfs/home/mfiruleva/anaconda3/bin/python
+               CONDA_ROOT=/nfs/home/mfiruleva/anaconda3
+              CONDA_SHLVL=2
+                     PATH=/nfs/home/mfiruleva/anaconda3/envs/scn_cor/bin:/nfs/home/mfiruleva/ana
+                          conda3/bin:/nfs/home/mfiruleva/anaconda3/condabin:/usr/local/sbin:/usr
+                          /local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/
+                          snap/bin:/nfs/home/mfiruleva/anaconda3/bin
+       REQUESTS_CA_BUNDLE=<not set>
+            SSL_CERT_FILE=<not set>
+
+     active environment : scn_cor
+    active env location : /nfs/home/mfiruleva/anaconda3/envs/scn_cor
+            shell level : 2
+       user config file : /nfs/home/mfiruleva/.condarc
+ populated config files : /nfs/home/mfiruleva/.condarc
+          conda version : 4.8.3
+    conda-build version : 3.17.8
+         python version : 3.7.3.final.0
+       virtual packages : __glibc=2.31
+       base environment : /nfs/home/mfiruleva/anaconda3  (writable)
+           channel URLs : https://conda.anaconda.org/conda-canary/linux-64
+                          https://conda.anaconda.org/conda-canary/noarch
+                          https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+                          https://conda.anaconda.org/bioconda/linux-64
+                          https://conda.anaconda.org/bioconda/noarch
+                          https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /nfs/home/mfiruleva/anaconda3/pkgs
+                          /nfs/home/mfiruleva/.conda/pkgs
+       envs directories : /nfs/home/mfiruleva/anaconda3/envs
+                          /nfs/home/mfiruleva/.conda/envs
+               platform : linux-64
+             user-agent : conda/4.8.3 requests/2.22.0 CPython/3.7.3 Linux/5.4.0-47-generic ubuntu/20.04.1 glibc/2.31
+                UID:GID : 2178:1901
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+
+If submitted, this report will be used by core maintainers to improve
+future releases of conda.
+Would you like conda to send this report to the core maintainers?
+
+[y/N]: 
+Timeout reached. No report sent.
+
+
+
+CreateCondaEnvironmentException:
+Could not create conda environment from /mnt/tank/scratch/mfiruleva/scn/config/5d179225.yaml:
+Collecting package metadata (repodata.json): ...working... failed
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/exceptions.py", line 1079, in __call__
+        return func(*args, **kwargs)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda_env/cli/main.py", line 80, in do_call
+        exit_code = getattr(module, func_name)(args, parser)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda_env/cli/main_create.py", line 111, in execute
+        result[installer_type] = installer.install(prefix, pkg_specs, args, env)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda_env/installers/conda.py", line 32, in install
+        prune=getattr(args, 'prune', False), update_modifier=UpdateModifier.FREEZE_INSTALLED)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/solve.py", line 117, in solve_for_transaction
+        should_retry_solve)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/solve.py", line 158, in solve_for_diff
+        force_remove, should_retry_solve)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/solve.py", line 262, in solve_final_state
+        ssc = self._collect_all_metadata(ssc)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/common/io.py", line 88, in decorated
+        return f(*args, **kwds)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/solve.py", line 415, in _collect_all_metadata
+        index, r = self._prepare(prepared_specs)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/solve.py", line 1011, in _prepare
+        self.subdirs, prepared_specs, self._repodata_fn)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/index.py", line 228, in get_reduced_index
+        repodata_fn=repodata_fn)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/subdir_data.py", line 105, in query_all
+        result = tuple(concat(executor.map(subdir_query, channel_urls)))
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/concurrent/futures/_base.py", line 586, in result_iterator
+        yield fs.pop().result()
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/concurrent/futures/_base.py", line 432, in result
+        return self.__get_result()
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/subdir_data.py", line 98, in <lambda>
+        package_ref_or_match_spec))
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/subdir_data.py", line 110, in query
+        self.load()
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/subdir_data.py", line 174, in load
+        _internal_state = self._load()
+      File "/nfs/home/mfiruleva/anaconda3/lib/python3.7/site-packages/conda/core/subdir_data.py", line 270, in _load
+        fh.write(raw_repodata_str or '{}')
+    OSError: [Errno 122] Disk quota exceeded
+
+`$ /nfs/home/mfiruleva/anaconda3/bin/conda-env create --file /mnt/tank/scratch/mfiruleva/scn/config/c58701e4.yaml --prefix /mnt/tank/scratch/mfiruleva/scn/config/c58701e4`
+
+  environment variables:
+                 CIO_TEST=<not set>
+                 CNI_PATH=/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/cni
+  CONDA_AUTO_UPDATE_CONDA=false
+        CONDA_DEFAULT_ENV=scn_cor
+                CONDA_EXE=/nfs/home/mfiruleva/anaconda3/bin/conda
+             CONDA_PREFIX=/nfs/home/mfiruleva/anaconda3/envs/scn_cor
+           CONDA_PREFIX_1=/nfs/home/mfiruleva/anaconda3
+    CONDA_PROMPT_MODIFIER=(scn_cor)
+         CONDA_PYTHON_EXE=/nfs/home/mfiruleva/anaconda3/bin/python
+               CONDA_ROOT=/nfs/home/mfiruleva/anaconda3
+              CONDA_SHLVL=2
+                     PATH=/nfs/home/mfiruleva/anaconda3/envs/scn_cor/bin:/nfs/home/mfiruleva/ana
+                          conda3/bin:/nfs/home/mfiruleva/anaconda3/condabin:/usr/local/sbin:/usr
+                          /local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/
+                          snap/bin:/nfs/home/mfiruleva/anaconda3/bin
+       REQUESTS_CA_BUNDLE=<not set>
+            SSL_CERT_FILE=<not set>
+
+     active environment : scn_cor
+    active env location : /nfs/home/mfiruleva/anaconda3/envs/scn_cor
+            shell level : 2
+       user config file : /nfs/home/mfiruleva/.condarc
+ populated config files : /nfs/home/mfiruleva/.condarc
+          conda version : 4.8.3
+    conda-build version : 3.17.8
+         python version : 3.7.3.final.0
+       virtual packages : __glibc=2.31
+       base environment : /nfs/home/mfiruleva/anaconda3  (writable)
+           channel URLs : https://conda.anaconda.org/conda-canary/linux-64
+                          https://conda.anaconda.org/conda-canary/noarch
+                          https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+                          https://conda.anaconda.org/bioconda/linux-64
+                          https://conda.anaconda.org/bioconda/noarch
+                          https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /nfs/home/mfiruleva/anaconda3/pkgs
+                          /nfs/home/mfiruleva/.conda/pkgs
+       envs directories : /nfs/home/mfiruleva/anaconda3/envs
+                          /nfs/home/mfiruleva/.conda/envs
+               platform : linux-64
+             user-agent : conda/4.8.3 requests/2.22.0 CPython/3.7.3 Linux/5.4.0-47-generic ubuntu/20.04.1 glibc/2.31
+                UID:GID : 2178:1901
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+
+If submitted, this report will be used by core maintainers to improve
+future releases of conda.
+Would you like conda to send this report to the core maintainers?
+
+[y/N]: 
+Timeout reached. No report sent.
+
+
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 318, in create
+unlocking
+removing lock
+removing lock
+removed all locks

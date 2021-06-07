@@ -1,0 +1,5 @@
+Ошибка: all(method_ids %in% ti_methods$id | grepl("/", method_ids)) is not TRUE
+
+`actual`:   [32mFALSE[39m
+`expected`: [32mTRUE[39m 
+Выполнение остановлено

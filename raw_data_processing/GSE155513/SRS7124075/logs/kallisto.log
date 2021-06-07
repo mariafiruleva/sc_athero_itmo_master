@@ -1,0 +1,15 @@
+
+[index] k-mer length: 31
+[index] number of targets: 118,489
+[index] number of k-mers: 100,614,952
+[index] number of equivalence classes: 433,624
+[quant] will process sample 1: R1.gz
+                               R2.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 270,333,600 reads, 233,668,235 reads pseudoaligned
+Found 6794880 barcodes in the whitelist
+Processed 233668235 BUS records
+In whitelist = 24375129
+Corrected = 7752349
+Uncorrected = 201540757
+Read in 32127478 BUS records

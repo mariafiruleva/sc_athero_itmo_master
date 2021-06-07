@@ -1,0 +1,44 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE failed, using "C" 
+2: Setting LC_TIME failed, using "C" 
+3: Setting LC_MESSAGES failed, using "C" 
+4: Setting LC_MONETARY failed, using "C" 
+5: Setting LC_PAPER failed, using "C" 
+6: Setting LC_MEASUREMENT failed, using "C" 
+Loading required namespace: hdf5r
+Warning messages:
+1: `as_data_frame()` is deprecated as of tibble 2.0.0.
+Please use `as_tibble()` instead.
+The signature and semantics have changed, see `?as_tibble`.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated. 
+2: `data_frame()` is deprecated as of tibble 1.1.0.
+Please use `tibble()` instead.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated. 
+Coloring by grouping
+Warning message:
+All elements of `...` must be named.
+Did you want `positions = c(comp_1, comp_2)`? 
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone

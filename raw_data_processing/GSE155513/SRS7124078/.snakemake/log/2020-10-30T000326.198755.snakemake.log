@@ -1,0 +1,96 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	all
+	1	define_version
+	1	get_count_matrix
+	1	kallisto
+	1	run_analysis
+	6
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	define_version
+Selected jobs (1):
+	define_version
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775806}
+
+[Fri Oct 30 00:03:26 2020]
+rule define_version:
+    input: SRR12363118_sra.txt
+    output: SRR12363118_1.fastq.gz, SRR12363118_2.fastq.gz, sra/SRR12363118.sra
+    log: logs/fq_dump/SRR12363118_dump.log
+    jobid: 5
+    wildcards: accession=SRR12363118
+    threads: 4
+
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/7c2bd866
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2130, in run_wrapper
+    run(
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124078/rules/define_version.smk", line 40, in __rule_define_version
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 176, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  python scripts/define_version.py --sra_file SRR12363118_sra.txt --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt
+         prefetch SRR12363118 -o sra/SRR12363118.sra --max-size 50G
+         parallel-fastq-dump -s sra/SRR12363118.sra --split-files --threads 4 -O . --tmpdir . --gzip' returned non-zero exit status 1.
+
+[Fri Oct 30 00:03:42 2020]
+Error in rule define_version:
+    jobid: 5
+    output: SRR12363118_1.fastq.gz, SRR12363118_2.fastq.gz, sra/SRR12363118.sra
+    log: logs/fq_dump/SRR12363118_dump.log (check log file(s) for error message)
+    conda-env: /mnt/tank/scratch/mfiruleva/scn/config/7c2bd866
+    shell:
+        
+         python scripts/define_version.py --sra_file SRR12363118_sra.txt --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt
+         prefetch SRR12363118 -o sra/SRR12363118.sra --max-size 50G
+         parallel-fastq-dump -s sra/SRR12363118.sra --split-files --threads 4 -O . --tmpdir . --gzip
+         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2130, in run_wrapper
+    run(
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124078/rules/define_version.smk", line 40, in __rule_define_version
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 176, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  python scripts/define_version.py --sra_file SRR12363118_sra.txt --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt
+         prefetch SRR12363118 -o sra/SRR12363118.sra --max-size 50G
+         parallel-fastq-dump -s sra/SRR12363118.sra --split-files --threads 4 -O . --tmpdir . --gzip' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 493, in _callback
+    raise ex
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 479, in cached_or_run
+    run_func(*args)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2160, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in line 17 of /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124078/rules/define_version.smk:
+Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  python scripts/define_version.py --sra_file SRR12363118_sra.txt --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt
+         prefetch SRR12363118 -o sra/SRR12363118.sra --max-size 50G
+         parallel-fastq-dump -s sra/SRR12363118.sra --split-files --threads 4 -O . --tmpdir . --gzip' returned non-zero exit status 1.
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124078/rules/define_version.smk", line 17, in __rule_define_version
+
+RuleException:
+CalledProcessError in line 17 of /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124078/rules/define_version.smk:
+Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  python scripts/define_version.py --sra_file SRR12363118_sra.txt --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt
+         prefetch SRR12363118 -o sra/SRR12363118.sra --max-size 50G
+         parallel-fastq-dump -s sra/SRR12363118.sra --split-files --threads 4 -O . --tmpdir . --gzip' returned non-zero exit status 1.
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124078/rules/define_version.smk", line 17, in __rule_define_version
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124078/.snakemake/log/2020-10-30T000326.198755.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

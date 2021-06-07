@@ -1,0 +1,2 @@
+,GSE,study_accession,secondary_sample_accession,sample_accession,experiment_accession,run_accession,tax_id,scientific_name,fastq_ftp,submitted_ftp,ftp,technology,fq_dump,bam
+1,GSE116240,PRJNA477843,SRS3458842,SAMN09483508,SRX4295849,SRR7425023,10090,Mus musculus,NA,ftp.sra.ebi.ac.uk/vol1/SRA728/SRA728071/bam/ldlr_ko_leukocytes.bam;ftp.sra.ebi.ac.uk/vol1/run/SRR742/SRR7425023/ldlr_ko_leukocytes.bam.bai,NA,10x,yes,yes

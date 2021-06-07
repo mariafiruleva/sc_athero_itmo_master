@@ -1,0 +1,211 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	all
+	1	define_version
+	2	download_fq_header
+	1	get_count_matrix
+	1	kallisto
+	1	run_analysis
+	8
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (2):
+	download_fq_header
+	download_fq_header
+Selected jobs (2):
+	download_fq_header
+	download_fq_header
+Resources after job selection: {'_cores': 2, '_nodes': 9223372036854775805}
+
+[Wed Oct 21 14:22:31 2020]
+rule download_fq_header:
+    output: SRR9130204_1.fastq.gz
+    log: logs/prepare_loading_SRR9130204.log
+    jobid: 7
+    benchmark: benchmarks/prepare_loading_SRR9130204.txt
+    wildcards: accession=SRR9130204
+
+
+[Wed Oct 21 14:22:31 2020]
+rule download_fq_header:
+    output: SRR9130203_1.fastq.gz
+    log: logs/prepare_loading_SRR9130203.log
+    jobid: 6
+    benchmark: benchmarks/prepare_loading_SRR9130203.txt
+    wildcards: accession=SRR9130203
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198 --bind /scratch/mfiruleva/winter/genomes/mus:/home --bind /scratch/mfiruleva/GSEs_processing/wget_and_process:/files --bind /mnt/tank/scratch/mfiruleva/scn/config/65ef9760:/mnt/tank/scratch/mfiruleva/scn/config/65ef9760 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/65ef9760'\''; set -euo pipefail;  wget -q -O - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR913/004/SRR9130204/SRR9130204_1.fastq.gz| zcat | head -400000 | gzip > SRR9130204_1.fastq.gz || true'
+Activating singularity image /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/65ef9760
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198 --bind /scratch/mfiruleva/winter/genomes/mus:/home --bind /scratch/mfiruleva/GSEs_processing/wget_and_process:/files --bind /mnt/tank/scratch/mfiruleva/scn/config/65ef9760:/mnt/tank/scratch/mfiruleva/scn/config/65ef9760 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/65ef9760'\''; set -euo pipefail;  wget -q -O - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR913/003/SRR9130203/SRR9130203_1.fastq.gz| zcat | head -400000 | gzip > SRR9130203_1.fastq.gz || true'
+Activating singularity image /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/65ef9760
+[Wed Oct 21 14:24:20 2020]
+Finished job 7.
+1 of 8 steps (12%) done
+[Wed Oct 21 14:25:17 2020]
+Finished job 6.
+2 of 8 steps (25%) done
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	define_version
+Selected jobs (1):
+	define_version
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775806}
+
+[Wed Oct 21 14:25:17 2020]
+rule define_version:
+    input: SRR9130203_1.fastq.gz, SRR9130204_1.fastq.gz
+    output: kallisto.sh
+    log: logs/define_version.log
+    jobid: 5
+    benchmark: benchmarks/define_version.txt
+    threads: 4
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198 --bind /scratch/mfiruleva/winter/genomes/mus:/home --bind /scratch/mfiruleva/GSEs_processing/wget_and_process:/files --bind /mnt/tank/scratch/mfiruleva/scn/config/65ef9760:/mnt/tank/scratch/mfiruleva/scn/config/65ef9760 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/65ef9760'\''; set -euo pipefail;  python scripts/define_version.py --fq_r1 SRR9130203_1.fastq.gz --threads 4 --index /home/Mus_musculus.GRCm38.cdna.all.idx --transcripts_to_genes /home/transcripts_to_genes_v2.txt --white_10xv2 /files/10xv2_whitelist.txt --white_10xv3 /files/10xv3_whitelist.txt'
+Activating singularity image /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/65ef9760
+Removing temporary output file SRR9130203_1.fastq.gz.
+Removing temporary output file SRR9130204_1.fastq.gz.
+[Wed Oct 21 14:25:43 2020]
+Finished job 5.
+3 of 8 steps (38%) done
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	kallisto
+Selected jobs (1):
+	kallisto
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Wed Oct 21 14:25:43 2020]
+rule kallisto:
+    input: kallisto.sh
+    output: R1.gz, R2.gz, bus_out/correct_output.bus, bus_out/output.bus
+    log: logs/kallisto.log
+    jobid: 4
+    benchmark: benchmarks/kallisto.txt
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198 --bind /scratch/mfiruleva/winter/genomes/mus:/home --bind /scratch/mfiruleva/GSEs_processing/wget_and_process:/files --bind /mnt/tank/scratch/mfiruleva/scn/config/65ef9760:/mnt/tank/scratch/mfiruleva/scn/config/65ef9760 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/65ef9760'\''; set -euo pipefail;  bash kallisto.sh 2> logs/kallisto.log'
+Activating singularity image /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/65ef9760
+Removing temporary output file R1.gz.
+Removing temporary output file R2.gz.
+Removing temporary output file bus_out/output.bus.
+[Wed Oct 21 21:04:06 2020]
+Finished job 4.
+4 of 8 steps (50%) done
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	get_count_matrix
+Selected jobs (1):
+	get_count_matrix
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Wed Oct 21 21:04:06 2020]
+rule get_count_matrix:
+    input: bus_out/correct_output.bus
+    output: counts.RData
+    log: logs/get_count_matrix.log
+    jobid: 3
+    benchmark: benchmarks/get_count_matrix.txt
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198 --bind /scratch/mfiruleva/winter/genomes/mus:/home --bind /scratch/mfiruleva/GSEs_processing/wget_and_process:/files --bind /mnt/tank/scratch/mfiruleva/scn/config/65ef9760:/mnt/tank/scratch/mfiruleva/scn/config/65ef9760 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/65ef9760'\''; set -euo pipefail;  Rscript scripts/get_count_matrix.R 2> logs/get_count_matrix.log'
+Activating singularity image /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/65ef9760
+Removing temporary output file bus_out/correct_output.bus.
+[Wed Oct 21 21:06:13 2020]
+Finished job 3.
+5 of 8 steps (62%) done
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	run_analysis
+Selected jobs (1):
+	run_analysis
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Wed Oct 21 21:06:13 2020]
+rule run_analysis:
+    input: counts.RData
+    output: SRS4824198.h5ad, SRS4824198.RData
+    log: logs/seurat.log
+    jobid: 2
+    benchmark: benchmarks/analysis.txt
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198 --bind /scratch/mfiruleva/winter/genomes/mus:/home --bind /scratch/mfiruleva/GSEs_processing/wget_and_process:/files --bind /mnt/tank/scratch/mfiruleva/scn/config/65ef9760:/mnt/tank/scratch/mfiruleva/scn/config/65ef9760 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/65ef9760'\''; set -euo pipefail;  Rscript scripts/analysis.R 2> logs/seurat.log'
+Activating singularity image /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/65ef9760
+[Wed Oct 21 21:14:12 2020]
+Finished job 2.
+6 of 8 steps (75%) done
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	add_uns_to_h5ad
+Selected jobs (1):
+	add_uns_to_h5ad
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Wed Oct 21 21:14:12 2020]
+localrule add_uns_to_h5ad:
+    input: SRS4824198.h5ad
+    output: SRS4824198_with_uns.h5ad
+    jobid: 1
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198 --bind /scratch/mfiruleva/winter/genomes/mus:/home --bind /scratch/mfiruleva/GSEs_processing/wget_and_process:/files --bind /mnt/tank/scratch/mfiruleva/scn/config/65ef9760:/mnt/tank/scratch/mfiruleva/scn/config/65ef9760 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/65ef9760'\''; set -euo pipefail;  python scripts/add_uns.py --h5 SRS4824198.h5ad --h5_out SRS4824198_with_uns.h5ad --kallisto_script kallisto.sh          --s_d sample_description.csv --summary_file /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv'
+Activating singularity image /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/65ef9760
+Removing temporary output file SRS4824198.h5ad.
+[Wed Oct 21 21:14:57 2020]
+Finished job 1.
+7 of 8 steps (88%) done
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	all
+Selected jobs (1):
+	all
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Wed Oct 21 21:14:57 2020]
+localrule all:
+    input: SRS4824198_with_uns.h5ad
+    jobid: 0
+
+[Wed Oct 21 21:14:57 2020]
+Finished job 0.
+8 of 8 steps (100%) done
+Complete log: /mnt/tank/scratch/mfiruleva/scn/data/GSE131776/SRS4824198/.snakemake/log/2020-10-21T142231.482249.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

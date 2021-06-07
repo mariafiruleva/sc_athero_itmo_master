@@ -1,0 +1,20 @@
+
+## data = {dataset_id: {resolution: resolution_name, clusters: myeloid_clusters}}
+## put all merged/GSE[0-9]*.RData outputs from the raw_data_processing results intp data folder
+
+data = {
+    'GSE149069': {'res': 'integrated_snn_res.0.6', 'clusters': '2 3'},
+    'GSE131777': {'res': 'integrated_snn_res.0.6', 'clusters': '4 9 10 15'},
+    'GSE123587': {'res': 'integrated_snn_res.0.2', 'clusters': '0 1 2 4'},
+    'GSE154692': {'res': 'integrated_snn_res.0.2', 'clusters': '2 3 6'},
+    'GSE154817': {'res': 'integrated_snn_res.0.2', 'clusters': '0 1 2'},
+    'GSE116240': {'res': 'integrated_snn_res.0.2', 'clusters': '0 1 2'},
+    'GSE131776': {'res': 'integrated_snn_res.0.2', 'clusters': '6 8'},
+    'GSE155513': {'res': 'integrated_snn_res.0.2', 'clusters': '3 5'}
+}
+include: "rules/get_myeloid_meta.smk"
+include: "rules/add_uns.smk"
+include: "rules/secondary analysis.smk"
+
+rule all:
+    input: rda='out/athero_merged.RData', h5='out/athero_merged.h5ad'

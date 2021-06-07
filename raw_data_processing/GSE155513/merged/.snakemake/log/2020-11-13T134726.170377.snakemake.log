@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/__init__.py", line 580, in snakemake
+    success = workflow.execute(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/workflow.py", line 610, in execute
+    dag.init()
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 168, in init
+    job = self.update([job], progress=progress)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 733, in update
+    raise exceptions[0]
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 694, in update
+    self.update_(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 784, in update_
+    raise ex
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 769, in update_
+    selected_job = self.update(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 733, in update
+    raise exceptions[0]
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 694, in update
+    self.update_(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 784, in update_
+    raise ex
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 769, in update_
+    selected_job = self.update(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 733, in update
+    raise exceptions[0]
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 694, in update
+    self.update_(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 805, in update_
+    raise MissingInputException(job.rule, missing_input)
+snakemake.exceptions.MissingInputException: Missing input files for rule run_analysis:
+/mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124078/counts.RData
+
+MissingInputException in line 1 of /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/merged/rules/secondary_analysis.smk:
+Missing input files for rule run_analysis:
+/mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124078/counts.RData
+unlocking
+removed all locks

@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	all
+	1	define_version
+	1	fastq_dump
+	1	get_count_matrix
+	1	kallisto
+	1	run_analysis
+	7
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	fastq_dump
+Selected jobs (1):
+	fastq_dump
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Wed Oct 21 13:23:59 2020]
+rule fastq_dump:
+    output: SRR12363107_sra.txt
+    jobid: 6
+    wildcards: accession=SRR12363107
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124067  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124067  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124067  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124067  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124067  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda --version'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124067  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'conda info --json'
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124067 --bind /scratch/mfiruleva/winter/genomes/mus:/home --bind /scratch/mfiruleva/GSEs_processing/wget_and_process:/files --bind /mnt/tank/scratch/mfiruleva/scn/config/65ef9760:/mnt/tank/scratch/mfiruleva/scn/config/65ef9760 --bind /mnt/tank/scratch/mfiruleva/scn/stats/summary.csv:/mnt/tank/scratch/mfiruleva/scn/stats/summary.csv --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg bash -c 'source /opt/conda/bin/activate '\''/mnt/tank/scratch/mfiruleva/scn/config/65ef9760'\''; set -euo pipefail;  esearch -db sra -query SRR12363107 | efetch -format metadata | grep -Po '\''average="(\d+)"'\'' | awk '\''!x[$0]++'\'' | sed '\''s/average=//g'\'' | sed '\''s/"//g'\'' > SRR12363107_sra.txt'
+Activating singularity image /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/65ef9760

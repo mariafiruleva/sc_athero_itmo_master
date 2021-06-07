@@ -1,0 +1,11 @@
+import pandas as pd
+
+
+
+include: "rules/secondary_analysis.smk"
+include: "rules/add_uns.smk"
+
+localrules: add_uns_to_h5ad
+
+rule all:
+    input: "GSE123587_with_uns.h5ad"

@@ -1,0 +1,90 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	all
+	1	define_version
+	1	fastq_dump
+	1	get_count_matrix
+	1	kallisto
+	1	run_analysis
+	7
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	fastq_dump
+Selected jobs (1):
+	fastq_dump
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Fri Dec  4 13:55:02 2020]
+rule fastq_dump:
+    output: SRR7425023_sra.txt, SRR7425023_tmp
+    jobid: 6
+    wildcards: accession=SRR7425023
+
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/7c2bd866
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2130, in run_wrapper
+    run(
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/get_data.smk", line 25, in __rule_fastq_dump
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 176, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  timeout 20s fastq-dump --outdir SRR7425023_tmp --split-files SRR7425023 || true
+         esearch -db sra -query SRR7425023 | efetch -format metadata | grep -Po 'average="\K.*?(?=")' | head -$(ls SRR7425023_tmp | wc -l) > SRR7425023_sra.txt' returned non-zero exit status 141.
+
+[Fri Dec  4 13:55:41 2020]
+Error in rule fastq_dump:
+    jobid: 6
+    output: SRR7425023_sra.txt, SRR7425023_tmp
+    conda-env: /mnt/tank/scratch/mfiruleva/scn/config/7c2bd866
+    shell:
+        
+         timeout 20s fastq-dump --outdir SRR7425023_tmp --split-files SRR7425023 || true
+         esearch -db sra -query SRR7425023 | efetch -format metadata | grep -Po 'average="\K.*?(?=")' | head -$(ls SRR7425023_tmp | wc -l) > SRR7425023_sra.txt
+         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2130, in run_wrapper
+    run(
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/get_data.smk", line 25, in __rule_fastq_dump
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 176, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  timeout 20s fastq-dump --outdir SRR7425023_tmp --split-files SRR7425023 || true
+         esearch -db sra -query SRR7425023 | efetch -format metadata | grep -Po 'average="\K.*?(?=")' | head -$(ls SRR7425023_tmp | wc -l) > SRR7425023_sra.txt' returned non-zero exit status 141.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 493, in _callback
+    raise ex
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 479, in cached_or_run
+    run_func(*args)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2160, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in line 8 of /mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/get_data.smk:
+Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  timeout 20s fastq-dump --outdir SRR7425023_tmp --split-files SRR7425023 || true
+         esearch -db sra -query SRR7425023 | efetch -format metadata | grep -Po 'average="\K.*?(?=")' | head -$(ls SRR7425023_tmp | wc -l) > SRR7425023_sra.txt' returned non-zero exit status 141.
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/get_data.smk", line 8, in __rule_fastq_dump
+
+RuleException:
+CalledProcessError in line 8 of /mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/get_data.smk:
+Command 'source /nfs/home/mfiruleva/anaconda3/bin/activate '/mnt/tank/scratch/mfiruleva/scn/config/7c2bd866'; set -euo pipefail;  timeout 20s fastq-dump --outdir SRR7425023_tmp --split-files SRR7425023 || true
+         esearch -db sra -query SRR7425023 | efetch -format metadata | grep -Po 'average="\K.*?(?=")' | head -$(ls SRR7425023_tmp | wc -l) > SRR7425023_sra.txt' returned non-zero exit status 141.
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/get_data.smk", line 8, in __rule_fastq_dump
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+Removing output files of failed job fastq_dump since they might be corrupted:
+SRR7425023_sra.txt, SRR7425023_tmp
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/.snakemake/log/2020-12-04T135501.215307.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

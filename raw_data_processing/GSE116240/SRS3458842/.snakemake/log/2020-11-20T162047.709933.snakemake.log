@@ -1,0 +1,4 @@
+AttributeError in line 16 of /mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/run_kallisto.smk:
+'Rules' object has no attribute 'define_version'
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/Snakefile", line 9, in <module>
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458842/rules/run_kallisto.smk", line 16, in <module>

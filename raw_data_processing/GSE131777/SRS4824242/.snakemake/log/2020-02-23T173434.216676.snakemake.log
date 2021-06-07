@@ -1,0 +1,86 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	define_version
+	1	download_the_beginning_of_fastqs
+	1	get_count_matrix
+	1	kallisto
+	1	prepare_loading
+	1	run_analysis
+	7
+
+[Sun Feb 23 17:34:34 2020]
+rule prepare_loading:
+    input: sample_description.csv
+    output: download_the_beginning_of_fqs.sh
+    jobid: 6
+
+[Sun Feb 23 17:34:35 2020]
+Finished job 6.
+1 of 7 steps (14%) done
+
+[Sun Feb 23 17:34:35 2020]
+rule download_the_beginning_of_fastqs:
+    input: download_the_beginning_of_fqs.sh
+    output: R1.gz
+    jobid: 5
+    benchmark: benchmarks/download_the_beginning_of_fqs.txt
+
+[Sun Feb 23 17:54:36 2020]
+Finished job 5.
+2 of 7 steps (29%) done
+
+[Sun Feb 23 17:54:36 2020]
+rule define_version:
+    input: R1.gz, sample_description.csv
+    output: kallisto.sh
+    jobid: 4
+
+[Sun Feb 23 17:54:56 2020]
+Finished job 4.
+3 of 7 steps (43%) done
+
+[Sun Feb 23 17:54:56 2020]
+rule kallisto:
+    input: kallisto.sh
+    output: bus_out
+    jobid: 3
+    benchmark: benchmarks/kallisto.txt
+
+[Sun Feb 23 18:30:32 2020]
+Finished job 3.
+4 of 7 steps (57%) done
+
+[Sun Feb 23 18:30:32 2020]
+rule get_count_matrix:
+    input: bus_out
+    output: counts.RData
+    jobid: 2
+    benchmark: benchmarks/get_count_matrix.txt
+
+[Sun Feb 23 18:31:04 2020]
+Finished job 2.
+5 of 7 steps (71%) done
+
+[Sun Feb 23 18:31:04 2020]
+rule run_analysis:
+    input: counts.RData
+    output: SRS4824242.h5ad, SRS4824242.RData
+    jobid: 1
+    benchmark: benchmarks/analysis.txt
+
+[Sun Feb 23 18:31:12 2020]
+Error in rule run_analysis:
+    jobid: 1
+    output: SRS4824242.h5ad, SRS4824242.RData
+    shell:
+        /scratch/opt/R/3.6.0/bin/Rscript analysis.R
+        (exited with non-zero exit code)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/tank/scratch/mfiruleva/scn/10_fq/GSE131777/SRS4824242/.snakemake/log/2020-02-23T173434.216676.snakemake.log

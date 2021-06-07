@@ -1,0 +1,30 @@
+Loading required namespace: hdf5r
+Предупреждение:
+В .method_extract_priors(dataset, method$wrapper$inputs, give_priors) :
+  Unknown priors requested: group_ids
+Coloring by grouping
+Предупреждение:
+All elements of `...` must be named.
+Did you want `positions = c(comp_1, comp_2)`? 
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone

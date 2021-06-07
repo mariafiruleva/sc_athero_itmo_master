@@ -1,0 +1,81 @@
+configfile: 'config.yaml'
+
+
+## data = {dataset_id: {resolution: resolution_name, clusters: myeloid_clusters}}
+## put all merged/GSE[0-9]*.RData outputs from the raw_data_processing results intp data folder
+
+data = {
+    'GSE149069': {'res': 'integrated_snn_res.0.6', 'clusters': '2 3'},
+    'GSE131777': {'res': 'integrated_snn_res.0.6', 'clusters': '4 9 10 15'},
+    'GSE123587': {'res': 'integrated_snn_res.0.2', 'clusters': '0 1 2 4'},
+    'GSE154692': {'res': 'integrated_snn_res.0.2', 'clusters': '2 3 6'},
+    'GSE154817': {'res': 'integrated_snn_res.0.2', 'clusters': '0 1 2'},
+    'GSE116240': {'res': 'integrated_snn_res.0.2', 'clusters': '0 1 2'},
+    'GSE131776': {'res': 'integrated_snn_res.0.2', 'clusters': '6 8'},
+    'GSE155513': {'res': 'integrated_snn_res.0.2', 'clusters': '3 5'}
+}
+
+
+rule collect_outputs:
+    input: "out/all/trade_seq.RData",
+            expand("out/{tool}/rdata/trajectory.RData", tool=config['tool']),
+            expand("out/{tool}/plots/trajectory_clusters.png", tool=config['tool']),
+            expand(directory("out/{tool}/plots/hmaps"), tool=config['tool']),
+            expand("out/{tool}/rdata/sds.RData", tool=config['tool'])
+
+rule get_cells:
+    input: rda='data/{gse_id}.RData', annot='annotations/{gse_id}.tsv'
+    output: rda='target/{gse_id}_target.RData'
+    benchmark: "benchmarks/get_cells/{gse_id}.txt"
+    log: 'logs/get_cells/{gse_id}.txt'
+    params: res=lambda wildcards: data[wildcards.gse_id]['res'],
+            clusters=lambda wildcards: data[wildcards.gse_id]['clusters']
+    message: 'Start get_cells rule, dataset: {wildcards.gse_id}, ident = {params.res}, clusters = {params.clusters}'
+    shell: "/scratch/opt/R/3.6.0/bin/Rscript scripts/get_cells.R --in_rda {input.rda} --out_rda {output.rda} --ident {params.res} --clusters {params.clusters} --annot {input.annot} 2> {log}"
+
+rule integrate:
+    input: rda=expand('target/{gse_id}_target.RData', gse_id=data.keys())
+    output: rda='out/athero_merged.RData', h5='out/athero_merged.h5ad'
+    benchmark: "benchmarks/integrate.txt"
+    log: 'logs/integrate.txt'
+    message: 'Start integration with target samples'
+    conda: "/mnt/tank/scratch/mfiruleva/scn/config/5d179225.yaml"
+    singularity: "docker://mfiruleva/scn:latest"
+    shell: "Rscript scripts/merge_samples.R 2> {log}"
+
+rule ti_inference:
+    input: rda=rules.integrate.output.rda
+    output: rda="out/{tool}/rdata/trajectory.RData",
+            sds="out/{tool}/rdata/sds.RData",
+            plt="out/{tool}/plots/trajectory_clusters.png",
+            hmps=directory("out/{tool}/plots/hmaps")
+    benchmark: "benchmarks/{tool}.txt"
+    log: 'logs/{tool}.txt'
+    params: sng_cache=config['sng_cache'], assay_counts=config['assay_counts'],
+          assay_data=config['assay_data'], ident=config['res'],
+          out_dir=lambda wildcards: f'out/{wildcards.tool}', tool=lambda wildcards: wildcards.tool
+    message:
+           """
+           Start trajectory analysis with target cells, tool: {wildcards.tool}, assay_counts: {params.assay_counts}, \
+           assay_data: {params.assay_data}, resolution: {params.ident}
+           """
+    shell:
+         """
+         /scratch/opt/R/3.6.0/bin/Rscript scripts/custom_slingshot.R --data {input.rda} \
+         --assay_counts {params.assay_counts} --assay_data {params.assay_data} \
+         --ident {params.ident} --out_dir {params.out_dir} 2> {log}
+         """
+
+rule trade_seq:
+    input: rda="/mnt/tank/scratch/mfiruleva/scn/data/athero_merged/trajectory/without_11/target/data/target.RData",
+           traj=rules.ti_inference.output.rda,
+           sds=rules.ti_inference.output.sds
+    output: rda="out/reduced/trade_seq.RData"
+    params: out_dir="/mnt/tank/scratch/mfiruleva/scn/data/athero_merged/trajectory/without_11/without_4/out/reduced", nknots=8
+    log: "logs/trade_seq.log"
+    benchmark: "logs/trade_seq.log"
+    threads: 10
+    shell:
+        """
+        /mnt/tank/scratch/mfiruleva/scn/data/athero_merged/trajectory/without_11/out/custom_slingshot/trade/f11bb1fb/bin/Rscript scripts/trade_seq.R --rda {input.rda} --traj {input.traj} --sds {input.sds} --thr {threads} --nknots {params.nknots} --out_dir {params.out_dir}
+        """

@@ -1,0 +1,10 @@
+in_data: 'athero_merged.RData' ## output from myeloid_metadataset_preparation step
+
+clusters: '0 2 5 8' ## target clusters (monocytes, macrophages)
+res: 'integrated_snn_res.0.4' ## target resolution
+
+assay_counts: 'SCT'
+assay_data: 'integrated'
+tool:
+  - 'custom_slingshot'
+sng_cache: '/path/to/sin' ## path to singularity cache dir

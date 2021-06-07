@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	all
+	1	define_version
+	1	fastq_dump
+	1	get_count_matrix
+	1	kallisto
+	1	run_analysis
+	7
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	fastq_dump
+Selected jobs (1):
+	fastq_dump
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Fri Nov  6 17:57:40 2020]
+rule fastq_dump:
+    output: SRR12363117_sra.txt
+    jobid: 6
+    wildcards: accession=SRR12363117
+
+Activating conda environment: /mnt/tank/scratch/mfiruleva/scn/config/7c2bd866

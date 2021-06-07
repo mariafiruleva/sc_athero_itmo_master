@@ -1,0 +1,126 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	add_uns_to_h5ad
+	1	all
+	1	get_count_matrix
+	1	kallisto
+	1	run_analysis
+	5
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807}
+Ready jobs (1):
+	kallisto
+Selected jobs (1):
+	kallisto
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806}
+
+[Sun Sep  6 18:44:11 2020]
+rule kallisto:
+    input: kallisto.sh
+    output: R1.gz, R2.gz, bus_out/correct_output.bus, bus_out/output.bus
+    log: logs/kallisto.log
+    jobid: 4
+    benchmark: benchmarks/kallisto.txt
+
+ singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052767  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 376, in _check
+    shell.check_output(self._get_cmd("type conda"), stderr=subprocess.STDOUT)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 44, in check_output
+    return sp.check_output(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 411, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 512, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command ' singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052767  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'' returned non-zero exit status 255.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2078, in run_wrapper
+    run(
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052767/rules/run_kallisto.smk", line 27, in __rule_kallisto
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 116, in __new__
+    cmd = Conda(container_img).shellcmd(conda_env, cmd)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 349, in __new__
+    inst.__init__(container_img=container_img)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 362, in __init__
+    self._check()
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 379, in _check
+    raise CreateCondaEnvironmentException(
+snakemake.exceptions.CreateCondaEnvironmentException: The 'conda' command is not available inside your singularity container image. Snakemake mounts your conda installation into singularity. Sometimes, this can fail because of shell restrictions. It has been tested to work with docker://ubuntu, but it e.g. fails with docker://bash 
+
+[Sun Sep  6 18:44:13 2020]
+Error in rule kallisto:
+    jobid: 4
+    output: R1.gz, R2.gz, bus_out/correct_output.bus, bus_out/output.bus
+    log: logs/kallisto.log (check log file(s) for error message)
+    conda-env: /mnt/tank/scratch/mfiruleva/scn/config/65ef9760
+    shell:
+        bash kallisto.sh 2> logs/kallisto.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 376, in _check
+    shell.check_output(self._get_cmd("type conda"), stderr=subprocess.STDOUT)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 44, in check_output
+    return sp.check_output(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 411, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 512, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command ' singularity exec --home /mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052767  --bind /nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages:/mnt/snakemake /mnt/tank/scratch/mfiruleva/scn/config/sin/e78b32002e592105c700c757fbe8a8e4.simg sh -c 'type conda'' returned non-zero exit status 255.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2078, in run_wrapper
+    run(
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052767/rules/run_kallisto.smk", line 27, in __rule_kallisto
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 116, in __new__
+    cmd = Conda(container_img).shellcmd(conda_env, cmd)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 349, in __new__
+    inst.__init__(container_img=container_img)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 362, in __init__
+    self._check()
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 379, in _check
+    raise CreateCondaEnvironmentException(
+snakemake.exceptions.CreateCondaEnvironmentException: The 'conda' command is not available inside your singularity container image. Snakemake mounts your conda installation into singularity. Sometimes, this can fail because of shell restrictions. It has been tested to work with docker://ubuntu, but it e.g. fails with docker://bash 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 493, in _callback
+    raise ex
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 479, in cached_or_run
+    run_func(*args)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/executors.py", line 2160, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CreateCondaEnvironmentException in line 10 of /mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052767/rules/run_kallisto.smk:
+The 'conda' command is not available inside your singularity container image. Snakemake mounts your conda installation into singularity. Sometimes, this can fail because of shell restrictions. It has been tested to work with docker://ubuntu, but it e.g. fails with docker://bash 
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052767/rules/run_kallisto.smk", line 10, in __rule_kallisto
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 349, in __new__
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 362, in __init__
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 379, in _check
+
+RuleException:
+CreateCondaEnvironmentException in line 10 of /mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052767/rules/run_kallisto.smk:
+The 'conda' command is not available inside your singularity container image. Snakemake mounts your conda installation into singularity. Sometimes, this can fail because of shell restrictions. It has been tested to work with docker://ubuntu, but it e.g. fails with docker://bash 
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052767/rules/run_kallisto.smk", line 10, in __rule_kallisto
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 349, in __new__
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 362, in __init__
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 379, in _check
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/tank/scratch/mfiruleva/scn/data/GSE154817/SRS7052767/.snakemake/log/2020-09-06T184410.784493.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

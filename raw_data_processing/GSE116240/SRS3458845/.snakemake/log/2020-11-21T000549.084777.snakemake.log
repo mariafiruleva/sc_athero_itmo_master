@@ -1,0 +1,17 @@
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/__init__.py", line 495, in snakemake
+    workflow.include(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/workflow.py", line 987, in include
+    exec(compile(code, snakefile, "exec"), self.globals)
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458845/Snakefile", line 11, in <module>
+    include: "rules/secondary_analysis.smk"
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/workflow.py", line 987, in include
+    exec(compile(code, snakefile, "exec"), self.globals)
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458845/rules/run_kallisto.smk", line 17, in <module>
+    output: is_merged(), get_tmp_bams(),
+AttributeError: 'Rules' object has no attribute 'define_version'
+
+AttributeError in line 16 of /mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458845/rules/run_kallisto.smk:
+'Rules' object has no attribute 'define_version'
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458845/Snakefile", line 9, in <module>
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE116240/SRS3458845/rules/run_kallisto.smk", line 16, in <module>

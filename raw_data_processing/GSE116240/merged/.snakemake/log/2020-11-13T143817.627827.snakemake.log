@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Singularity image location: /mnt/tank/scratch/mfiruleva/scn/config/e78b32002e592105c700c757fbe8a8e4.simg
+Creating conda environment /mnt/tank/scratch/mfiruleva/scn/config/5d179225.yaml...
+Downloading and installing remote packages.
+Full Traceback (most recent call last):
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/__init__.py", line 580, in snakemake
+    success = workflow.execute(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/workflow.py", line 789, in execute
+    dag.create_conda_envs(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/dag.py", line 265, in create_conda_envs
+    env.create(dryrun)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/deployment/conda.py", line 299, in create
+    out = shell.check_output(cmd, stderr=subprocess.STDOUT)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/site-packages/snakemake/shell.py", line 44, in check_output
+    return sp.check_output(
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 411, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 491, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/nfs/home/mfiruleva/anaconda3/envs/scn_cor/lib/python3.8/subprocess.py", line 1011, in communicate
+    stdout = self.stdout.read()
+KeyboardInterrupt
+
+Cancelling snakemake on user request.
+unlocking
+removing lock
+removing lock
+removed all locks

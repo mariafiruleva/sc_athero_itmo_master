@@ -1,0 +1,2 @@
+,GSE,study_accession,secondary_sample_accession,sample_accession,experiment_accession,run_accession,tax_id,scientific_name,fastq_ftp,submitted_ftp,ftp,technology,fq_dump,bam
+1,GSE116240,PRJNA477843,SRS3458845,SAMN09483507,SRX4295850,SRR7425024,10090,Mus musculus,NA,ftp.sra.ebi.ac.uk/vol1/SRA728/SRA728071/bam/total_foam.bam;ftp.sra.ebi.ac.uk/vol1/run/SRR742/SRR7425024/total_foam.bam.bai,NA,10x,yes,yes

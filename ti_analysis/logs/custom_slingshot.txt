@@ -1,0 +1,42 @@
+Загрузка требуемого пакета: princurve
+slingshot version: 1.4.0
+Using full covariance matrix
+Предупреждение:
+В run_fun(expression = wrap_data$expression, priors = priors, parameters = parameters,  :
+  PAM (the default clustering method) does not scale well to a lot of cells. You might encounter memory issues. This can be resolved by using the CLARA clustering method, i.e. cluster_method = 'clara'.
+Предупреждения:
+1: `as_data_frame()` is deprecated as of tibble 2.0.0.
+Please use `as_tibble()` instead.
+The signature and semantics have changed, see `?as_tibble`.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated. 
+2: `data_frame()` is deprecated as of tibble 1.1.0.
+Please use `tibble()` instead.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_warnings()` to see where this warning was generated. 
+Coloring by grouping
+Предупреждение:
+All elements of `...` must be named.
+Did you want `positions = c(comp_1, comp_2)`? 
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone
+Saving 7 x 7 in image
+root cell or milestone not provided, trying first outgoing milestone_id
+Using '1' as root
+Coloring by milestone

@@ -1,0 +1,3 @@
+KeyError in line 6 of /mnt/tank/scratch/mfiruleva/scn/data/GSE149069/SRS6514323/Snakefile:
+'secondary_sample_accession'
+  File "/mnt/tank/scratch/mfiruleva/scn/data/GSE149069/SRS6514323/Snakefile", line 6, in <module>

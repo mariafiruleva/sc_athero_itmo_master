@@ -1,0 +1,17 @@
+import pandas as pd
+
+description = pd.read_csv('sample_description.csv').reset_index().to_dict("records")
+
+runs = [x['run_accession'] for x in description]
+
+include: "rules/get_data.smk"
+include: "rules/define_version.smk"
+include: "rules/run_kallisto.smk"
+include: "rules/get_counts.smk"
+include: "rules/secondary_analysis.smk"
+include: "rules/add_uns.smk"
+
+localrules: add_uns_to_h5ad
+
+rule all:
+    input: "SRS7124072_with_uns.h5ad"

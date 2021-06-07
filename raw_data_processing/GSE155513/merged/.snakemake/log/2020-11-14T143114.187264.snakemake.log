@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 1 of /mnt/tank/scratch/mfiruleva/scn/data/GSE155513/merged/rules/secondary_analysis.smk:
+Missing input files for rule run_analysis:
+/mnt/tank/scratch/mfiruleva/scn/data/GSE155513/SRS7124078/counts.RData
